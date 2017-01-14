@@ -1,0 +1,84 @@
+.section
+  padding: ms(3) 5%
+  background-color: $background
+
+  @include small
+    padding: ms(3)
+
+  @include medium
+    padding: ms(5)
+
+  &__header
+    text-align: center
+
+  &__headline
+
+  &__subhead
+    margin-top: -(ms(-4))!important
+    font-style: italic
+    display: block
+    margin: 0 auto ms(3)
+
+  p
+    display: block
+    margin: 0 auto ms(3)
+
+  p,
+  h3,
+  h4
+    max-width: 46.75rem
+    margin-left: auto
+    margin-right: auto
+
+  & + &
+    padding-top: 0
+
+.feature-section
+  color: #fff
+  position: relative
+  overflow: hidden
+  height: auto
+  max-height: ms(16)
+  background-size: cover
+  background-position: 0
+  background-repeat: no-repeat
+  background-color: $background
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0)
+  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0)
+  padding: ms(3) 5% ms(5)
+
+  @include small
+    padding: ms(3) ms(3) ms(5)
+
+  @include medium
+    padding: ms(5) ms(5) ms(7)
+
+  &__header
+    margin-bottom: ms(3)
+
+  &__content
+    width: 100%
+    max-width: 30em
+    margin-bottom: ms(1)
+
+  &__image
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    width: 100%
+
+  a
+    color: $brand
+    border-color: $brand
+
+    &:hover
+      color: tint($brand, 100%)
+      border-color: tint($brand, 100%)
+
+  @include medium 
+    & + .section
+      padding-top: ms(3)
+
+  @include large
+    background-size: contain

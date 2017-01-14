@@ -1,0 +1,56 @@
+.hero-logo
+  width: 90%
+  max-width: 21.875rem
+  height: auto
+
+.feature-section#homepage-hero
+  background-image: url(/assets/images/hero_image.jpg)
+  background-position: top left
+  background-attachment: fixed
+  background-color: #45444A
+
+  .feature-section__header,
+  .feature-section__content
+    max-width: 46.75rem
+    margin-right: auto
+    margin-left: auto
+
+  @include extra-small
+    background-position: top right
+
+  @include small
+    background-position: top center
+
+#ethics
+  background-color: #fff
+  padding: ms(3) 5%
+  -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%)
+  clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%)
+
+  @include small
+    padding: ms(3)
+    -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%)
+    clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%)
+
+  @include medium
+    padding: ms(5)
+
+  .two-column
+    
+    h3 + p
+      
+      @include medium
+        font-size: ms(0)
+        max-width: 46.75rem
+        margin: 0 auto ms(3)
+        -webkit-column-count: 2
+        -moz-column-count: 2
+        column-count: 2
+        text-align: justify
+        hyphens: auto
+        -webkit-hyphens: auto
+        -moz-hyphens: auto
+        -ms-hyphens: auto
+        -webkit-column-gap: 2em
+        -moz-column-gap: 2em
+        column-gap: ms(2)

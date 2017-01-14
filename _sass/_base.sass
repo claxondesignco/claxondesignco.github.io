@@ -1,0 +1,61 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html
+  font-size: 100%
+  padding: 0.25rem
+
+
+body 
+  background: $background
+  color: $text
+  font-family: $sans
+  font-size: $font-size
+  font-weight: $font-weight
+
+  @include retina
+    font-weight: $font-weight-retina
+
+p
+  margin-bottom: ms(3)
+  line-height: $line-height
+
+h1,
+h2,
+  font-family: 'Abril Fatface', cursive
+  font-weight: 400
+
+h2
+  font-size: ms(5)
+  margin-bottom: ms(1)
+
+  @include medium
+    font-size: ms(7)
+
+h3
+  font-size: ms(1)
+  margin-bottom: ms(1)
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 0.05em
+
+  @include retina
+    font-weight: 400
+
+  @include medium
+  //  font-size: 3.6rem
+
+a
+  color: $accent
+  text-decoration: none
+  border-bottom: 1px solid $accent
+  transition: color 250ms ease, border-color 250ms ease
+
+  &:hover
+    color: shade($brand, 15%)
+    border-color: shade($brand, 15%)
+
+img
+  display: block

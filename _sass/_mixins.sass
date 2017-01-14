@@ -1,0 +1,41 @@
+$sans: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-size:          ms(1)
+$font-weight:        300
+$font-weight-retina: 400
+$line-height:        1.618
+
+$text:               #333338
+$background:         #F8F5F2
+$brand:              #BF8A49
+$brand-on-white:     #B57C3D
+$accent:             #5dc8be
+
+$grey-color:         #828282
+$grey-color-light:   lighten($grey-color, 40%)
+$grey-color-dark:    darken($grey-color, 25%)
+
+@function tint($color, $percentage)
+  @return mix(white, $color, $percentage)
+
+@function shade($color, $percentage)
+  @return mix(black, $color, $percentage)
+
+@mixin retina
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    @content
+
+@mixin extra-small
+  @media (min-width: 375px)
+    @content
+
+@mixin small
+  @media (min-width: 660px)
+    @content
+
+@mixin medium
+  @media (min-width: 770px)
+    @content
+
+@mixin large
+  @media (min-width: 1250px)
+    @content
