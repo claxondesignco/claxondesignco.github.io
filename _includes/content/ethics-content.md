@@ -8,7 +8,7 @@ I believe all businesses have a responsibility to turn down clients who engage i
 
 ### Funding & Grants
 
-I don't work with funded startups or companies receiving government grants. It's nothing personal, I just think projects go better when it's your own hard-earned cash on the line.  
+I hesitate to work with funded startups or companies receiving government grants. It's nothing personal, I just think projects go better when it's your own hard-earned cash on the line.  
 
 ### In Closing  
 
