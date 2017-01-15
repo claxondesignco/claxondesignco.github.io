@@ -1,5 +1,12 @@
 .section.cta
   background: $accent
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00ead2), to(#40b8af))
+  background-image: -webkit-linear-gradient(left top, #00ead2, #40b8af)
+  background-image: -moz-linear-gradient(left top, #00ead2, #40b8af)
+  background-image: -o-linear-gradient(left top, #00ead2, #40b8af)
+  background-image: -ms-linear-gradient(left top, #00ead2, #40b8af)
+  background-image: linear-gradient(left top, #00ead2, #40b8af)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ead2', EndColorStr='#40b8af')
   color: #FFF
   -webkit-clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0)
   clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0)
@@ -28,6 +35,9 @@
 
   a
     color: $background
+
+    &:hover
+      color: $text
 
   & + footer[role=contentinfo]::before
     background-color: $accent
