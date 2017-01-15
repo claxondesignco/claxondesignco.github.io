@@ -20,6 +20,10 @@ body
   @include retina
     font-weight: $font-weight-retina
 
+*::selection
+  background: $text
+  color: #FFF
+
 p
   margin-bottom: ms(3)
   line-height: $line-height
@@ -27,7 +31,6 @@ p
   @include medium
     &::before
       content: ""
-
 
 h1,
 h2,
@@ -56,12 +59,12 @@ h3
 a
   color: $accent
   text-decoration: none
-  border-bottom: 1px solid currentColor
+  border-bottom: 2px solid currentColor
   transition: color 250ms ease, border-color 250ms ease
+  font-weight: 400
 
   &:hover
-    color: shade($brand, 15%)
-    border-color: shade($brand, 15%)
+    color: $brand-on-white
 
 .strike
   text-decoration: line-through

@@ -1,9 +1,9 @@
 .section
-  padding: ms(3) 5%
+  padding: ms(5) 5%
   background-color: $background
 
   @include small
-    padding: ms(3)
+    padding: ms(5)
 
   @include medium
     padding: ms(5)
@@ -15,11 +15,18 @@
 
   &__headline
 
+    & + .section__subhead
+      margin-top: -(ms(0))!important
+
   &__subhead
-    margin-top: -(ms(0))!important
+    font-family: $sans
     font-style: italic
+    font-weight: 300
     display: block
     margin: 0 auto ms(3)
+
+    @include retina
+      font-weight: 400
 
   p
     display: block
@@ -31,9 +38,6 @@
     max-width: 46.75rem
     margin-left: auto
     margin-right: auto
-
-  & + &
-    padding-top: 0
 
   .two-column
     
@@ -53,17 +57,16 @@
   position: relative
   overflow: hidden
   height: auto
-  max-height: ms(16)
   background-size: cover
   background-position: 0
   background-repeat: no-repeat
   background-color: $background
   -webkit-clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0)
   clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0)
-  padding: ms(3) 5% ms(5)
+  padding: ms(3) 5% ms(6)
 
   @include small
-    padding: ms(3) ms(3) ms(5)
+    padding: ms(3) ms(3) ms(6)
 
   @include medium
     padding: ms(5) ms(5) ms(7)
