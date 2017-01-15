@@ -1,6 +1,6 @@
 ### Charities  
 
-I support non-profit organizations and charities and offer reduced rates for them, including a few pro-bono days a month for design and consulting. If you represent a non-profit or charitable organization, [contact me](#contact) for more information.  
+I support non-profit organizations and charities and offer them reduced rates, including a few pro-bono days a month for design and consulting. If you represent a non-profit or charitable organization, [contact me](#contact) for more information.  
 
 ### Social Responsibility  
 
