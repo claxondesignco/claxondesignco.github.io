@@ -4,7 +4,7 @@ I support non-profit organizations and charities and offer reduced rates for the
 
 ### Social Responsibility  
 
-I believe all businesses have a responsibility to turn down clients who engage in, promote, or profit from any actions or speech that harms (intentionally or otherwise) or discriminates against any community group or the public at large. This includes ensuring the truthfulness of communication and message.  
+I believe all businesses have a responsibility to turn down clients who engage in, promote, or profit from any actions or speech that harms or discriminates against any community group or the public at large. This includes ensuring the truthfulness of communication and message.  
 
 ### In Closing  
 
