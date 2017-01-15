@@ -7,7 +7,7 @@
   background-image: -ms-linear-gradient(left top, #00ead2, #40b8af)
   background-image: linear-gradient(left top, #00ead2, #40b8af)
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#00ead2', EndColorStr='#40b8af')
-  color: #FFF
+  color: $text
   -webkit-clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0)
   clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0)
   padding: ms(8) 5% ms(4)
@@ -34,10 +34,10 @@
       margin-bottom: ms(0)
 
   a
-    color: $background
+    color: $text
 
     &:hover
-      color: $text
+      color: #fff
 
   & + footer[role=contentinfo]::before
     background-color: $accent
