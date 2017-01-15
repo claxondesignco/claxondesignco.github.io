@@ -2,7 +2,10 @@
 
 I support non-profit organizations and charities and offer reduced rates for them, including a few pro-bono days a month for design and consulting. If you represent a non-profit or charitable organization, [contact me](#contact) for more information.  
 
+### Social Responsibility  
 
+I believe all businesses have a responsibility to turn down clients who engage in, promote, or profit from any actions or speech that harms (intentionally or otherwise) or discriminates against any community group or the public at large. This includes ensuring the truthfulness of communication and message.  
+I don't take work from companies who make products that kill people.  
 
 ### In Closing  
 

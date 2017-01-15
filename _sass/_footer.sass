@@ -1,0 +1,39 @@
+footer[role="contentinfo"]
+  padding: ms(7) 5% ms(3)
+  background-color: $text
+  color: #fff
+  min-height: ms(9)
+  position: relative
+
+  @include small
+    padding: ms(7) ms(3) ms(3)
+
+  @include medium
+    padding: ms(8) ms(5) ms(5)
+
+  &::before
+    content: ""
+    background-color: #fff
+    height: ms(5)
+    position: absolute
+    display: block
+    top: -1px
+    left: 0
+    right: 0
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 1%, 0 100%, 0 0)
+    clip-path: polygon(100% 0, 100% 100%, 50% 1%, 0 100%, 0 0)
+
+    @include medium
+      height: ms(7)
+
+.footer
+
+  &__content
+    display: block
+    margin: 0 auto ms(3)
+    max-width: 46.75rem
+    font-size: ms(0)
+
+    a
+      color: $brand
+      border-color: $brand

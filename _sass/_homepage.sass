@@ -14,9 +14,6 @@
     margin-right: auto
     margin-left: auto
 
-  @include extra-small
-    background-position: top right
-
   @include small
     background-position: top center
     background-attachment: fixed
@@ -37,7 +34,7 @@
 
   .two-column
     
-    h3 + p
+    h3 ~ p
       
       @include medium
         font-size: ms(0)
