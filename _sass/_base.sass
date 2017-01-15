@@ -5,6 +5,7 @@
 
 html
   font-size: 100%
+  border: 0.125rem solid $brand
 
   @include yuge
     font-size: 140%
@@ -22,6 +23,11 @@ body
 p
   margin-bottom: ms(3)
   line-height: $line-height
+
+  @include medium
+    &::before
+      content: ""
+
 
 h1,
 h2,
