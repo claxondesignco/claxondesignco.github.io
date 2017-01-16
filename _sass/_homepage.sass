@@ -20,6 +20,19 @@
   @include medium
     background-position: top center
 
+  &::before
+    content: ""
+    bottom: -86.5%
+    position: absolute
+    height: 100%
+    left: 0
+    right: 0
+    z-index: 0
+    background: $brand
+    -webkit-clip-path: polygon(50% 13%, 100% 0, 100% 100%, 0 100%, 0 0)
+    clip-path: polygon(50% 13%, 100% 0, 100% 100%, 0 100%, 0 0)
+    pointer-events: none
+
 #ethics
   background-color: #fff
   padding: ms(6) 5% ms(7)
