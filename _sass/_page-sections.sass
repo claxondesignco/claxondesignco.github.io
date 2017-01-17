@@ -13,7 +13,7 @@
 
   &__header
     text-align: center
-    max-width: 46.75rem
+    max-width: $medium-column-max-width
     margin: 0 auto
 
   &__headline
@@ -24,6 +24,7 @@
   &__subhead
     font-family: $sans
     font-style: italic
+    font-size: ms(1)
     font-weight: 300
     display: block
     margin: 0 auto ms(3)
@@ -38,22 +39,57 @@
   p,
   h3,
   h4
-    max-width: 46.75rem
+    max-width: $medium-column-max-width
     margin-left: auto
     margin-right: auto
 
-  .two-column
-    
-    h3 ~ p
-      
-      @include medium
+  .columns
+
+    @include medium
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: baseline
+      align-content: stretch
+      max-width: $medium-column-max-width
+      margin-left: auto
+      margin-right: auto
+
+      .columns__section
+        width: 50%
+        padding-right: ms(1)
+
+        &:nth-of-type(even)
+          padding-right: 0
+          padding-left: ms(1)
+
+      p
         font-size: ms(0)
-        max-width: 46.75rem
-        margin: 0 auto ms(3)
         text-align: justify
         hyphens: auto
-        column-count: 2
-        column-gap: ms(3)
+
+    @include large
+      max-width: ms(19)
+
+      // .columns__section
+      //   width: 33%
+      //   padding: 0
+      //
+      //   &:nth-of-type(3n+1)
+      //     padding-right: ms(-1)
+      //
+      //   &:nth-of-type(3n+2)
+      //     padding-left: ms(-1)
+      //     padding-right: ms(-1)
+      //
+      //   &:nth-of-type(3n+3)
+      //     padding-left: ms(-1)
+
+  .inline-cta
+    text-align: center
+    font-size: ms(1)
+    margin-top: ms(4)
 
 .feature-section
   color: #fff
@@ -99,6 +135,6 @@
     &:hover
       color: tint($brand, 100%)
 
-  @include medium 
+  @include medium
     & + .section
       padding-top: ms(3)
