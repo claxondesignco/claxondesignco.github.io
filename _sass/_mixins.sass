@@ -40,8 +40,12 @@ $grey-color-dark:    darken($grey-color, 25%)
   @media (min-width: 770px)
     @content
 
+@mixin big
+  @media (min-width: 1024px)
+    @content
+
 @mixin large
-  @media (min-width: 1200px)
+  @media (min-width: 1160px)
     @content
 
 @mixin yuge
