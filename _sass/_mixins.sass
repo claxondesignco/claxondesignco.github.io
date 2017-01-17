@@ -4,6 +4,9 @@ $font-weight:        300
 $font-weight-retina: 400
 $line-height:        1.618
 
+$medium-column-max-width: ms(18)
+$large-three-column-width: ms(20)
+
 $text:               #333338
 $background:         #F8F5F2
 $brand:              #BF8A49 //#d9a25c
@@ -38,7 +41,7 @@ $grey-color-dark:    darken($grey-color, 25%)
     @content
 
 @mixin large
-  @media (min-width: 1250px)
+  @media (min-width: 1200px)
     @content
 
 @mixin yuge
