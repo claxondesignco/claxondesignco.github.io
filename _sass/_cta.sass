@@ -1,23 +1,28 @@
 .section.cta
   background: $text
   color: #FFF
-  -webkit-clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0)
-  clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0)
-  padding: ms(8) 5% ms(4)
-  margin-top: -(ms(4))
+  -webkit-clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0)
+  clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0)
+  padding: ms(11) 5% ms(4)
+  margin-top: -(ms(9))
   text-align: center
   position: relative
 
+  @include extra-small
+    padding: ms(11) 5% ms(4)
+    margin-top: -(ms(11))
+
   @include small
-    padding: ms(8) ms(3) ms(4)
+    padding: ms(11) ms(3) ms(3)
+    margin-top: -(ms(8))
 
   @include medium
-    padding: ms(8) ms(3) ms(4)
-    margin-top: -(ms(7))
+    padding: ms(11) ms(3) ms(4)
+    margin-top: -(ms(9))
 
   &::before
     content: ""
-    top: -84.3%
+    top: -69.23%
     position: absolute
     height: 100%
     left: 0
@@ -25,9 +30,12 @@
     bottom: 0
     z-index: 0
     background: $brand
-    -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0)
-    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0)
+    -webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0)
+    clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0)
     pointer-events: none
+
+    @include medium
+      top: -69.35%
 
   .section__subhead
     font-size: ms(3)
