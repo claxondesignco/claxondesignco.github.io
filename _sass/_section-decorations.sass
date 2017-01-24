@@ -1,0 +1,66 @@
+.top-angle-up
+  position: relative
+  margin-top: ms(8)
+
+  &::before
+    content: ""
+    display: block
+    height: ms(8)
+    -webkit-clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0 100%, 0 100%)
+    clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0 100%, 0 100%)
+    background-color: inherit
+    position: absolute
+    bottom: 99.95%
+    left: 0
+    right: 0
+    z-index: 9
+    pointer-events: none
+
+.bottom-angle-down
+  position: relative
+
+  @include small
+    padding: ms(4)
+
+  &::after
+    content: ""
+    display: block
+    height: ms(8)
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 50% 100%, 0 0%, 0 0)
+    clip-path: polygon(100% 0, 100% 0%, 50% 100%, 0 0%, 0 0)
+    background-color: inherit
+    position: absolute
+    top: 100%
+    left: 0
+    right: 0
+    pointer-events: none
+
+  & + *
+    margin-top: ms(6)
+
+    @include small
+      margin-top: ms(8)
+
+.bottom-angle-up
+  position: relative
+  padding-bottom: ms(6)
+
+  &::after
+    content: ""
+    display: block
+    height: ms(8)
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 0%, 0 100%, 0 0)
+    clip-path: polygon(100% 0, 100% 100%, 50% 0%, 0 100%, 0 0)
+    background-color: inherit
+    position: absolute
+    top: 100%
+    left: 0
+    right: 0
+    pointer-events: none
+
+  & + *
+    margin-top: ms(6)
+
+    @include small
+      margin-top: ms(8)
+
