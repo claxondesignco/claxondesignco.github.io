@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="326px" height="326px" viewBox="0 0 326 326" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="326px" height="316px" viewBox="0 0 326 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
     <title>Funding Copy</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Funding-Copy" transform="translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
-            <g id="Group" transform="translate(160.000000, 92.000000) scale(-1, 1) translate(-160.000000, -92.000000) " stroke-linecap="round">
+            <g id="Group" transform="translate(160.000000, 87.000000) scale(-1, 1) translate(-160.000000, -87.000000) " stroke-linecap="round">
                 <path d="M160,40 L160,0" id="Path-3"></path>
-                <path d="M160,101 L160,60" id="Path-3"></path>
-                <path d="M240,119.5 L310,50" id="Path-3-Copy"></path>
-                <path d="M80,120 L40,80" id="Path-3-Copy"></path>
-                <path d="M30,70 L10,50" id="Path-3-Copy-2"></path>
-                <path d="M120.5,111.5 L90,50" id="Path-4" stroke-linejoin="round"></path>
-                <path d="M229.5,110.5 L200,50" id="Path-4" stroke-linejoin="round" transform="translate(215.000000, 80.500000) scale(-1, 1) translate(-215.000000, -80.500000) "></path>
-                <path d="M60,181.5 L0,181.5" id="Path-5" stroke-linejoin="round"></path>
-                <path d="M279.506409,181 L260,181" id="Path-5-Copy" stroke-linejoin="round"></path>
-                <path d="M319.5,181 L290,181" id="Path-5-Copy-2" stroke-linejoin="round"></path>
-                <path d="M260,150.056641 L319.705078,120" id="Path-6" stroke-linejoin="round"></path>
-                <path d="M0,150.056641 L59.7050781,120" id="Path-6" stroke-linejoin="round" transform="translate(29.852539, 135.028320) scale(-1, 1) translate(-29.852539, -135.028320) "></path>
+                <path d="M160,91 L160,50" id="Path-3"></path>
+                <path d="M240,109.5 L310,40" id="Path-3-Copy"></path>
+                <path d="M80,110 L40,70" id="Path-3-Copy"></path>
+                <path d="M30,60 L10,40" id="Path-3-Copy-2"></path>
+                <path d="M120.5,101.5 L90,40" id="Path-4" stroke-linejoin="round"></path>
+                <path d="M229.5,100.5 L200,40" id="Path-4" stroke-linejoin="round" transform="translate(215.000000, 70.500000) scale(-1, 1) translate(-215.000000, -70.500000) "></path>
+                <path d="M60,171.5 L0,171.5" id="Path-5" stroke-linejoin="round"></path>
+                <path d="M279.506409,171 L260,171" id="Path-5-Copy" stroke-linejoin="round"></path>
+                <path d="M319.5,171 L290,171" id="Path-5-Copy-2" stroke-linejoin="round"></path>
+                <path d="M260,140.056641 L319.705078,110" id="Path-6" stroke-linejoin="round"></path>
+                <path d="M0,140.056641 L59.7050781,110" id="Path-6" stroke-linejoin="round" transform="translate(29.852539, 125.028320) scale(-1, 1) translate(-29.852539, -125.028320) "></path>
             </g>
-            <polyline id="Path-12" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" points="150 141 140 121 150 111 160 121 170 111 180 121 170 141"></polyline>
-            <path d="M140,151 C140,141 140,141 160,141 C180,141 180,141 180,151 C180,151 140,151 140,151 Z" id="Path-11" fill="#FFFFFF"></path>
-            <path d="M90.0122535,301 C90.0122535,292 90.0122536,270 90.0122535,251.041612 C90.0122536,200 93.9236566,151 160.211159,151 C225.496822,151 229.711639,194.230809 229.981709,248.533982 C230.002084,252.630901 229.981705,296.790844 229.981705,301 C229.981705,310 196.46973,320 161,320 C125.53027,320 90.0122535,310 90.0122535,301 Z" id="Path-9" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"></path>
-            <path d="M180,221 C180,211 180,201 160,201 C140,201 140,211 140,221 C140,231 160,231 160,231 C160,231 180,231 180,241 C180,251 180,261 160,261 C140,261 140,251 140,241" id="Path-10" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M160,181 L160,191" id="Path-13" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M160,271 L160,281" id="Path-13-Copy" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path-12" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" points="150 131 140 111 150 101 160 111 170 101 180 111 170 131"></polyline>
+            <path d="M140,141 C140,131 140,131 160,131 C180,131 180,131 180,141 C180,141 140,141 140,141 Z" id="Path-11" fill="#FFFFFF"></path>
+            <path d="M90.0122535,291 C90.0122535,282 90.0122536,260 90.0122535,241.041612 C90.0122536,190 93.9236566,141 160.211159,141 C225.496822,141 229.711639,184.230809 229.981709,238.533982 C230.002084,242.630901 229.981705,286.790844 229.981705,291 C229.981705,300 196.46973,310 161,310 C125.53027,310 90.0122535,300 90.0122535,291 Z" id="Path-9" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"></path>
+            <path d="M180,211 C180,201 180,191 160,191 C140,191 140,201 140,211 C140,221 160,221 160,221 C160,221 180,221 180,231 C180,241 180,251 160,251 C140,251 140,241 140,231" id="Path-10" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M160,171 L160,181" id="Path-13" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M160,261 L160,271" id="Path-13-Copy" stroke-linecap="round" stroke-linejoin="round"></path>
         </g>
     </g>
 </svg>
