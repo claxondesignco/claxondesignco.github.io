@@ -1,0 +1,107 @@
+<svg class="hide">
+  <defs>
+
+    <symbol id="charities">
+      <svg width="326px" height="356px" viewBox="0 0 326 356" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Charities</title>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+              <g id="Charities" transform="translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
+                  <path d="M230,269.876952 C230,269.876952 230,249.676952 220,259.876952 C210,269.676952 210,279.876952 210,279.876952 L200,289.676952 L190,312.676952 L210,312.676952 C210,312.676952 230,269.476952 230,269.876952 Z" id="Path-7-Copy" stroke-linejoin="round"></path>
+                  <path d="M250,259.8 C250,259.8 250,239.8 240,249.8 C230,259.8 234.086566,263.670152 230,269.8 C225.913434,275.929848 220,279.8 220,279.8 L210,299.8 L230,299.8 L250,259.8 Z" id="Path-7" stroke-linejoin="round" fill="#FFFFFF"></path>
+                  <path d="M80,330 C80,330 140,350 160,350 C180,350 240,310 240,310 L260,270 C260,270 270,240 260,240 C250,240 250,250 240,270 C232.634486,282.363783 210,300 210,300 C210,300 180,320 160,320 C140,320 120,310 120,310 C120,310 140,320 160,320 C180,320 210,300 220,290 C230,270 210,270 210,270 C210,270 197.154667,275.849096 190,280 C180.308998,285.622403 180,290 160,290 C160,290 140,280 140,280 C140,280 130,270 110,270 C90,270 70,290 70,290 L40,290 L40,330 C60,330 80,330 80,330 Z" id="Path" stroke-linejoin="round" fill="#FFFFFF"></path>
+                  <path d="M159.999999,150 C159.999999,150 169.999999,120 199.999999,120 C229.999999,120 250,140 240.000007,170 C230.000014,200 160,250 160,250 C160,250 90.0000004,200 80,170 C69.9999996,140 89.9999994,120 119.999999,120 C149.999999,120 159.999999,150 159.999999,150 Z" id="Path-2" stroke-linejoin="round" fill="#FFFFFF"></path>
+                  <path d="M160,50 L160,0" id="Path-3"></path>
+                  <path d="M160,110 L160,60" id="Path-3"></path>
+                  <path d="M240,109.5 L310,40" id="Path-3-Copy"></path>
+                  <path d="M80,110 L40,70" id="Path-3-Copy"></path>
+                  <path d="M30,60 L10,40" id="Path-3-Copy-2"></path>
+                  <path d="M120.5,101.5 L90,40" id="Path-4" stroke-linejoin="round"></path>
+                  <path d="M229.5,100.5 L200,40" id="Path-4" stroke-linejoin="round" transform="translate(215.000000, 70.500000) scale(-1, 1) translate(-215.000000, -70.500000) "></path>
+                  <path d="M60,171.5 L0,171.5" id="Path-5" stroke-linejoin="round"></path>
+                  <path d="M279.506409,171 L260,171" id="Path-5-Copy" stroke-linejoin="round"></path>
+                  <path d="M319.5,171 L290,171" id="Path-5-Copy-2" stroke-linejoin="round"></path>
+                  <path d="M260,140.056641 L319.705078,110" id="Path-6" stroke-linejoin="round"></path>
+                  <path d="M0,140.056641 L59.7050781,110" id="Path-6" stroke-linejoin="round" transform="translate(29.852539, 125.028320) scale(-1, 1) translate(-29.852539, -125.028320) "></path>
+              </g>
+          </g>
+      </svg>
+
+    </symbol>
+
+    <symbol id="social-responsibility">
+
+      <svg width="326px" height="313px" viewBox="0 0 326 313" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Social Responsibility</title>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+              <g id="Social-Responsibility" transform="translate(163.000000, 156.385013) scale(-1, 1) translate(-163.000000, -156.385013) translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
+                  <path d="M118.256019,153.037201 C118.256019,166.949674 104.343546,180.862147 104.343546,201.730856 C104.343546,215.643329 111.299783,222.599565 111.299783,222.599565" id="Path-14" stroke-linejoin="round"></path>
+                  <path d="M118.256019,187.818383 C118.256019,187.818383 117.392999,192.09992 115.807071,199.886842 C114.221142,207.673764 113.681478,208.491788 113.681478,210.279418 C113.681478,215.26372 125.212255,215.643329 125.212255,215.643329" id="Path-15" stroke-linejoin="round"></path>
+                  <path d="M125.212255,243.468274 C125.212255,243.468274 123.893695,234.530801 126.482584,232.138576 C129.071472,229.746351 132.168492,229.555802 132.168492,229.555802 C132.168492,229.555802 133.456795,224.489782 139.127446,222.599565 C144.798096,220.709348 153.037201,222.599565 153.037201,222.599565" id="Path-17" stroke-linejoin="round"></path>
+                  <path d="M132.168492,180.862147 C132.168492,180.862147 132.168492,166.949674 146.080965,166.949674 C159.993438,166.949674 173.90591,173.90591 173.90591,173.90591" id="Path-18" stroke-linejoin="round"></path>
+                  <path d="M118.256019,153.037201 C132.168492,153.037201 139.124728,153.037201 153.037201,153.037201 C192.392924,153.037201 208.687092,187.818383 215.643329,187.818383 C222.599565,187.818383 223.295189,187.818383 228.164554,183.644641 C233.03392,179.470899 233.03392,173.90591 242.077027,173.90591" id="Path-16" stroke-linejoin="round"></path>
+                  <path d="M146.080965,180.862147 C153.037201,180.862147 166.949674,173.90591 166.949674,173.90591" id="Path-19" stroke-linejoin="round"></path>
+                  <path d="M243.468274,173.90591 C243.468274,173.90591 194.774624,132.168492 173.90591,125.212255 C153.037197,118.256019 118.256019,132.168492 118.256019,132.168492 C118.256019,132.168492 97.3873096,146.080965 90.4310734,173.90591 C90.4310734,194.77462 83.4748372,215.643329 104.343546,229.555802" id="Path-20" stroke-linejoin="round"></path>
+                  <path d="M257.380752,159.993438 C257.380752,159.993438 215.375676,90.4310734 159.993437,90.4310734 C104.611198,90.4310734 90.4310734,132.168492 90.4310734,132.168492 C85.0318384,147.725598 90.4310734,173.90591 90.4310734,173.90591" id="Path-21" stroke-linejoin="round"></path>
+                  <path d="M208.687092,97.3873098 L257.380747,20.8687092 L208.687092,97.3873098 Z" id="Path-22" stroke-linejoin="round"></path>
+                  <path d="M250.424511,132.168492 L319.986875,83.474837" id="Path-23" stroke-linejoin="round"></path>
+                  <path d="M160.689061,81.387966 L153.037201,0" id="Path-24" stroke-linejoin="round"></path>
+                  <path d="M67.8036175,45.4780356 L41.7374185,13.9124728" id="Path-25" stroke-linejoin="round"></path>
+                  <path d="M109.908535,94.6048152 L74.4186047,52.9198966" id="Path-25" stroke-linejoin="round"></path>
+                  <path d="M79.9967188,145.385341 L0,118.256019" id="Path-26" stroke-linejoin="round"></path>
+                  <path d="M130.777245,271.988844 C130.777245,271.988844 125.212256,264.336984 132.168492,257.380747 C139.124728,250.424511 139.124729,250.424511 153.037201,243.468274 C166.949673,236.512038 194.77462,229.555802 194.77462,229.555802 C194.77462,229.555802 201.730857,222.599565 208.687092,215.643329 C215.643328,208.687092 215.643329,201.730856 215.643329,201.730856 L217.034576,212.860834 C217.034576,212.860834 219.81707,217.7302 223.990813,217.7302 C228.164556,217.7302 234.425168,217.7302 241.381404,213.556458 C248.337639,209.382716 253.207007,203.122103 251.815758,191.992125 C250.42451,180.862147 242.772651,173.210287 242.772651,173.210287" id="Path-27" stroke-linejoin="round"></path>
+                  <path d="M243.468274,153.037201 L236.512038,159.993438" id="Path-28" stroke-linejoin="round"></path>
+                  <path d="M236.848301,144.858868 L229.555802,153.037201" id="Path-29"></path>
+                  <path d="M219.59765,145.950535 L228.240638,134.042736" id="Path-30"></path>
+                  <path d="M208.35015,137.175759 L216.849801,123.374016" id="Path-31"></path>
+                  <path d="M196.140732,129.549034 L204.63427,113.876443" id="Path-31-Copy"></path>
+                  <path d="M183.999926,121.853698 L190.225214,105.99769" id="Path-31-Copy-2"></path>
+                  <path d="M169.036545,117.959156 L174.284971,99.5821926" id="Path-31-Copy-3"></path>
+                  <path d="M153.037201,97.3873098 L153.037201,118.256019" id="Path-32"></path>
+                  <path d="M137.959015,98.7513843 L139.565607,119.471322" id="Path-33"></path>
+                  <path d="M121.376815,106.882844 L125.770656,124.266642" id="Path-34"></path>
+                  <path d="M107.532953,117.012184 L112.748772,129.682181" id="Path-35"></path>
+                  <path d="M98.4511249,129.322141 L102.633698,139.041172" id="Path-36"></path>
+                  <path d="M94.9614582,151.643916 L91.9826402,147.969474" id="Path-37"></path>
+                  <path d="M237.506562,220.115971 C237.506562,220.115971 234.167025,229.951166 237.143806,242.530813 C240.120586,255.11046 255.598212,287.148548 255.598212,287.148548" id="Path-38"></path>
+                  <path d="M153.037201,306.770026 L153.732825,290.075058 C153.732825,290.075058 146.760685,287.202314 142.602846,283.814446 C138.445008,280.426577 134.255363,276.162586 134.255363,276.162586" id="Path-39" stroke-linejoin="round"></path>
+                  <path d="M81.387966,210.773963 L12.5212255,228.860178" id="Path-40"></path>
+                  <path d="M105.734793,252.511382 L42.4330421,301.205037" id="Path-41"></path>
+              </g>
+          </g>
+      </svg>
+
+    </symbol>
+
+    <symbol id="funding">
+      <svg width="326px" height="316px" viewBox="0 0 326 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Funding</title>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Funding-Copy" transform="translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
+                  <g id="Group" transform="translate(160.000000, 87.000000) scale(-1, 1) translate(-160.000000, -87.000000) " stroke-linecap="round">
+                      <path d="M160,40 L160,0" id="Path-3"></path>
+                      <path d="M160,91 L160,50" id="Path-3"></path>
+                      <path d="M240,109.5 L310,40" id="Path-3-Copy"></path>
+                      <path d="M80,110 L40,70" id="Path-3-Copy"></path>
+                      <path d="M30,60 L10,40" id="Path-3-Copy-2"></path>
+                      <path d="M120.5,101.5 L90,40" id="Path-4" stroke-linejoin="round"></path>
+                      <path d="M229.5,100.5 L200,40" id="Path-4" stroke-linejoin="round" transform="translate(215.000000, 70.500000) scale(-1, 1) translate(-215.000000, -70.500000) "></path>
+                      <path d="M60,171.5 L0,171.5" id="Path-5" stroke-linejoin="round"></path>
+                      <path d="M279.506409,171 L260,171" id="Path-5-Copy" stroke-linejoin="round"></path>
+                      <path d="M319.5,171 L290,171" id="Path-5-Copy-2" stroke-linejoin="round"></path>
+                      <path d="M260,140.056641 L319.705078,110" id="Path-6" stroke-linejoin="round"></path>
+                      <path d="M0,140.056641 L59.7050781,110" id="Path-6" stroke-linejoin="round" transform="translate(29.852539, 125.028320) scale(-1, 1) translate(-29.852539, -125.028320) "></path>
+                  </g>
+                  <polyline id="Path-12" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" points="150 131 140 111 150 101 160 111 170 101 180 111 170 131"></polyline>
+                  <path d="M140,141 C140,131 140,131 160,131 C180,131 180,131 180,141 C180,141 140,141 140,141 Z" id="Path-11" fill="#FFFFFF"></path>
+                  <path d="M90.0122535,291 C90.0122535,282 90.0122536,260 90.0122535,241.041612 C90.0122536,190 93.9236566,141 160.211159,141 C225.496822,141 229.711639,184.230809 229.981709,238.533982 C230.002084,242.630901 229.981705,286.790844 229.981705,291 C229.981705,300 196.46973,310 161,310 C125.53027,310 90.0122535,300 90.0122535,291 Z" id="Path-9" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"></path>
+                  <path d="M180,211 C180,201 180,191 160,191 C140,191 140,201 140,211 C140,221 160,221 160,221 C160,221 180,221 180,231 C180,241 180,251 160,251 C140,251 140,241 140,231" id="Path-10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M160,171 L160,181" id="Path-13" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M160,261 L160,271" id="Path-13-Copy" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+          </g>
+      </svg>
+
+    </symbol>
+
+  </defs>
+</svg>
