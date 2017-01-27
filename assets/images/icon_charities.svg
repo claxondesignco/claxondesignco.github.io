@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="326px" height="366px" viewBox="0 0 326 366" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Charities</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Charities" transform="translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
+            <path d="M230,279.876952 C230,279.876952 230,259.676952 220,269.876952 C210,279.676952 210,289.876952 210,289.876952 L200,299.676952 L190,322.676952 L210,322.676952 C210,322.676952 230,279.476952 230,279.876952 Z" id="Path-7-Copy" stroke-linejoin="round"></path>
+            <path d="M250,269.8 C250,269.8 250,249.8 240,259.8 C230,269.8 234.086566,273.670152 230,279.8 C225.913434,285.929848 220,289.8 220,289.8 L210,309.8 L230,309.8 L250,269.8 Z" id="Path-7" stroke-linejoin="round" fill="#FFFFFF"></path>
+            <path d="M80,340 C80,340 140,360 160,360 C180,360 240,320 240,320 L260,280 C260,280 270,250 260,250 C250,250 250,260 240,280 C232.634486,292.363783 210,310 210,310 C210,310 180,330 160,330 C140,330 120,320 120,320 C120,320 140,330 160,330 C180,330 210,310 220,300 C230,280 210,280 210,280 C210,280 197.154667,285.849096 190,290 C180.308998,295.622403 180,300 160,300 C160,300 140,290 140,290 C140,290 130,280 110,280 C90,280 70,300 70,300 L40,300 L40,340 C60,340 80,340 80,340 Z" id="Path" stroke-linejoin="round" fill="#FFFFFF"></path>
+            <path d="M159.999999,160 C159.999999,160 169.999999,130 199.999999,130 C229.999999,130 250,150 240.000007,180 C230.000014,210 160,260 160,260 C160,260 90.0000004,210 80,180 C69.9999996,150 89.9999994,130 119.999999,130 C149.999999,130 159.999999,160 159.999999,160 Z" id="Path-2" stroke-linejoin="round" fill="#FFFFFF"></path>
+            <path d="M160,50 L160,0" id="Path-3"></path>
+            <path d="M160,120 L160,70" id="Path-3"></path>
+            <path d="M240,119.5 L310,50" id="Path-3-Copy"></path>
+            <path d="M80,120 L40,80" id="Path-3-Copy"></path>
+            <path d="M30,70 L10,50" id="Path-3-Copy-2"></path>
+            <path d="M120.5,111.5 L90,50" id="Path-4" stroke-linejoin="round"></path>
+            <path d="M229.5,110.5 L200,50" id="Path-4" stroke-linejoin="round" transform="translate(215.000000, 80.500000) scale(-1, 1) translate(-215.000000, -80.500000) "></path>
+            <path d="M60,181.5 L0,181.5" id="Path-5" stroke-linejoin="round"></path>
+            <path d="M279.506409,181 L260,181" id="Path-5-Copy" stroke-linejoin="round"></path>
+            <path d="M319.5,181 L290,181" id="Path-5-Copy-2" stroke-linejoin="round"></path>
+            <path d="M260,150.056641 L319.705078,120" id="Path-6" stroke-linejoin="round"></path>
+            <path d="M0,150.056641 L59.7050781,120" id="Path-6" stroke-linejoin="round" transform="translate(29.852539, 135.028320) scale(-1, 1) translate(-29.852539, -135.028320) "></path>
+        </g>
+    </g>
+</svg>
