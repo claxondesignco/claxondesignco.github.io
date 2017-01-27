@@ -1,24 +1,29 @@
-
 <svg width="326px" height="356px" viewBox="0 0 326 356" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Charities</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
         <g id="Charities" transform="translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
-            <path d="M230,269.876952 C230,269.876952 230,249.676952 220,259.876952 C210,269.676952 210,279.876952 210,279.876952 L200,289.676952 L190,312.676952 L210,312.676952 C210,312.676952 230,269.476952 230,269.876952 Z" id="Path-7-Copy" stroke-linejoin="round"></path>
-            <path d="M250,259.8 C250,259.8 250,239.8 240,249.8 C230,259.8 234.086566,263.670152 230,269.8 C225.913434,275.929848 220,279.8 220,279.8 L210,299.8 L230,299.8 L250,259.8 Z" id="Path-7" stroke-linejoin="round" fill="#FFFFFF"></path>
-            <path d="M80,330 C80,330 140,350 160,350 C180,350 240,310 240,310 L260,270 C260,270 270,240 260,240 C250,240 250,250 240,270 C232.634486,282.363783 210,300 210,300 C210,300 180,320 160,320 C140,320 120,310 120,310 C120,310 140,320 160,320 C180,320 210,300 220,290 C230,270 210,270 210,270 C210,270 197.154667,275.849096 190,280 C180.308998,285.622403 180,290 160,290 C160,290 140,280 140,280 C140,280 130,270 110,270 C90,270 70,290 70,290 L40,290 L40,330 C60,330 80,330 80,330 Z" id="Path" stroke-linejoin="round" fill="#FFFFFF"></path>
-            <path d="M159.999999,150 C159.999999,150 169.999999,120 199.999999,120 C229.999999,120 250,140 240.000007,170 C230.000014,200 160,250 160,250 C160,250 90.0000004,200 80,170 C69.9999996,140 89.9999994,120 119.999999,120 C149.999999,120 159.999999,150 159.999999,150 Z" id="Path-2" stroke-linejoin="round" fill="#FFFFFF"></path>
-            <path d="M160,50 L160,0" id="Path-3"></path>
-            <path d="M160,110 L160,60" id="Path-3"></path>
-            <path d="M240,109.5 L310,40" id="Path-3-Copy"></path>
-            <path d="M80,110 L40,70" id="Path-3-Copy"></path>
-            <path d="M30,60 L10,40" id="Path-3-Copy-2"></path>
-            <path d="M120.5,101.5 L90,40" id="Path-4" stroke-linejoin="round"></path>
-            <path d="M229.5,100.5 L200,40" id="Path-4" stroke-linejoin="round" transform="translate(215.000000, 70.500000) scale(-1, 1) translate(-215.000000, -70.500000) "></path>
-            <path d="M60,171.5 L0,171.5" id="Path-5" stroke-linejoin="round"></path>
-            <path d="M279.506409,171 L260,171" id="Path-5-Copy" stroke-linejoin="round"></path>
-            <path d="M319.5,171 L290,171" id="Path-5-Copy-2" stroke-linejoin="round"></path>
-            <path d="M260,140.056641 L319.705078,110" id="Path-6" stroke-linejoin="round"></path>
-            <path d="M0,140.056641 L59.7050781,110" id="Path-6" stroke-linejoin="round" transform="translate(29.852539, 125.028320) scale(-1, 1) translate(-29.852539, -125.028320) "></path>
+            <g id="hand" transform="translate(40.000000, 240.000000)" stroke-linejoin="round">
+                <path d="M190,29.8769517 C190,29.8769517 190,9.6769516 180,19.8769517 C170,29.676952 170,39.8769517 170,39.8769517 L160,49.6769518 L150,72.6769518 L170,72.6769518 C170,72.6769518 190,29.4769519 190,29.8769517 Z" id="Path-7-Copy"></path>
+                <path d="M210,19.8000001 C210,19.8000001 210,-0.200000122 200,9.80000008 C190,19.8000003 194.086566,23.6701518 190,29.8000001 C185.913434,35.9298484 180,39.8000001 180,39.8000001 L170,59.8000001 L190,59.8000001 L210,19.8000001 Z" id="Path-7" fill="#FFFFFF"></path>
+                <path d="M40,90 C40,90 100,110 120,110 C140,110 200,70 200,70 L220,30 C220,30 230,3.13351411e-15 220,0 C210,-3.13351411e-15 210,10 200,30 C192.634486,42.363783 170,60 170,60 C170,60 140,80 120,80 C100,80 80,70 80,70 C80,70 100,80 120,80 C140,80 170,60 180,50 C190,30 170,30 170,30 C170,30 157.154667,35.8490958 150,40 C140.308998,45.6224034 140,50 120,50 C120,50 100,40 100,40 C100,40 90,30 70,30 C50,30 30,50 30,50 L0,50 L0,90 C20,90 40,90 40,90 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+            <g id="heart" transform="translate(77.000000, 120.000000)" fill="#FFFFFF" stroke-linejoin="round">
+                <path d="M82.9999994,30 C82.9999994,30 92.9999994,0 122.999999,0 C152.999999,0 173,20 163.000007,50 C153.000014,80 83,130 83,130 C83,130 13.0000004,80 3.00000003,50 C-7.00000037,20 12.9999994,-1.10688828e-08 42.9999994,0 C72.9999994,-1.10688828e-08 82.9999994,30 82.9999994,30 Z" id="Path-2"></path>
+            </g>
+            <g id="rays">
+                <path d="M160,50 L160,0" id="Path-3"></path>
+                <path d="M160,110 L160,60" id="Path-3"></path>
+                <path d="M240,109.5 L310,40" id="Path-3-Copy"></path>
+                <path d="M80,110 L40,70" id="Path-3-Copy"></path>
+                <path d="M30,60 L10,40" id="Path-3-Copy-2"></path>
+                <path d="M120.5,101.5 L90,40" id="Path-4" stroke-linejoin="round"></path>
+                <path d="M229.5,100.5 L200,40" id="Path-4" stroke-linejoin="round" transform="translate(215.000000, 70.500000) scale(-1, 1) translate(-215.000000, -70.500000) "></path>
+                <path d="M60,171.5 L0,171.5" id="Path-5" stroke-linejoin="round"></path>
+                <path d="M279.506409,171 L260,171" id="Path-5-Copy" stroke-linejoin="round"></path>
+                <path d="M319.5,171 L290,171" id="Path-5-Copy-2" stroke-linejoin="round"></path>
+                <path d="M260,140.056641 L319.705078,110" id="Path-6" stroke-linejoin="round"></path>
+                <path d="M0,140.056641 L59.7050781,110" id="Path-6" stroke-linejoin="round" transform="translate(29.852539, 125.028320) scale(-1, 1) translate(-29.852539, -125.028320) "></path>
+            </g>
         </g>
     </g>
 </svg>
