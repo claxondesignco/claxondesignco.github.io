@@ -1,27 +1,31 @@
-<svg width="326px" height="316px" viewBox="0 0 326 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="286px" height="296px" viewBox="0 0 286 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
     <title>VC Funding</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="VC-Funding" transform="translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
             <g id="rays" stroke-linecap="round">
-                <path d="M160,35 L160,0" id="Path-3" transform="translate(160.000000, 17.500000) scale(-1, 1) translate(-160.000000, -17.500000) "></path>
-                <path d="M160,80 L160,50" id="Path-3" transform="translate(160.000000, 65.000000) scale(-1, 1) translate(-160.000000, -65.000000) "></path>
-                <path d="M10,130 L100,40" id="Path-3-Copy" transform="translate(55.000000, 85.000000) scale(-1, 1) translate(-55.000000, -85.000000) "></path>
-                <path d="M280,130 L220,70" id="Path-3-Copy" transform="translate(250.000000, 100.000000) scale(-1, 1) translate(-250.000000, -100.000000) "></path>
-                <path d="M310,60 L290,40" id="Path-3-Copy-2" transform="translate(300.000000, 50.000000) scale(-1, 1) translate(-300.000000, -50.000000) "></path>
-                <path d="M229.5,101.5 L199,40" id="Path-4" stroke-linejoin="round" transform="translate(214.500000, 71.000000) scale(-1, 1) translate(-214.500000, -71.000000) "></path>
-                <path d="M119.5,100.5 L90,40" id="Path-4" stroke-linejoin="round"></path>
-                <path d="M320,171.5 L260,171.5" id="Path-5" stroke-linejoin="round" transform="translate(290.000000, 171.500000) scale(-1, 1) translate(-290.000000, -171.500000) "></path>
-                <path d="M59.5064087,171 L40,171" id="Path-5-Copy" stroke-linejoin="round" transform="translate(50.000000, 171.000000) scale(-1, 1) translate(-50.000000, -171.000000) "></path>
-                <path d="M29.5,171 L0,171" id="Path-5-Copy-2" stroke-linejoin="round" transform="translate(15.000000, 171.000000) scale(-1, 1) translate(-15.000000, -171.000000) "></path>
-                <path d="M0.294921875,140.056641 L60,110" id="Path-6" stroke-linejoin="round" transform="translate(30.147461, 125.028320) scale(-1, 1) translate(-30.147461, -125.028320) "></path>
-                <path d="M260.294922,140.056641 L320,110" id="Path-6" stroke-linejoin="round"></path>
+                <path d="M140,15 L140,0" id="Path-3" transform="translate(140.000000, 7.500000) scale(-1, 1) translate(-140.000000, -7.500000) "></path>
+                <path d="M140,60 L140,30" id="Path-3" transform="translate(140.000000, 45.000000) scale(-1, 1) translate(-140.000000, -45.000000) "></path>
+                <path d="M10,110 L80,40" id="Path-3-Copy" transform="translate(45.000000, 75.000000) scale(-1, 1) translate(-45.000000, -75.000000) "></path>
+                <path d="M230,110 L200,80" id="Path-3-Copy" transform="translate(215.000000, 95.000000) scale(-1, 1) translate(-215.000000, -95.000000) "></path>
+                <path d="M270,70 L240,40" id="Path-3-Copy-2" transform="translate(255.000000, 55.000000) scale(-1, 1) translate(-255.000000, -55.000000) "></path>
+                <path d="M199.5,81.5 L169,20" id="Path-4" stroke-linejoin="round" transform="translate(184.500000, 51.000000) scale(-1, 1) translate(-184.500000, -51.000000) "></path>
+                <path d="M109.5,80.5 L80,20" id="Path-4" stroke-linejoin="round"></path>
+                <path d="M280,151.5 L230,151.5" id="Path-5" stroke-linejoin="round" transform="translate(255.000000, 151.500000) scale(-1, 1) translate(-255.000000, -151.500000) "></path>
+                <path d="M49.5064087,151 L30,151" id="Path-5-Copy" stroke-linejoin="round" transform="translate(40.000000, 151.000000) scale(-1, 1) translate(-40.000000, -151.000000) "></path>
+                <path d="M20,151 L0.5,151" id="Path-5-Copy-2" stroke-linejoin="round" transform="translate(10.250000, 151.000000) scale(-1, 1) translate(-10.250000, -151.000000) "></path>
+                <path d="M0.294921875,130.056641 L60,100" id="Path-6" stroke-linejoin="round" transform="translate(30.147461, 115.028320) scale(-1, 1) translate(-30.147461, -115.028320) "></path>
+                <path d="M220.294922,130.056641 L280,100" id="Path-6" stroke-linejoin="round"></path>
             </g>
-            <g id="bag" transform="translate(90.000000, 101.000000)" fill="#FFFFFF">
+            <g id="bag" transform="translate(70.000000, 81.000000)" fill="#FFFFFF">
                 <polyline id="Path-12" stroke-linecap="round" stroke-linejoin="round" points="60 30 50 10 60 0 70 10 80 0 90 10 80 30"></polyline>
                 <path d="M50,40 C50,30 50,30 70,30 C90,30 90,30 90,40 C90,40 50,40 50,40 Z" id="Path-11"></path>
                 <path d="M0.0122535178,190 C0.0122535178,181 0.0122535687,159 0.0122535178,140.041612 C0.0122535687,89 3.92365657,40 70.2111588,40 C135.496822,40 139.711639,83.2308088 139.981709,137.533982 C140.002084,141.630901 139.981705,185.790844 139.981705,190 C139.981705,199 106.46973,209 71,209 C35.5302696,209 0.0122535178,199 0.0122535178,190 Z" id="Path-9" stroke-linecap="round" stroke-linejoin="round"></path>
             </g>
-            <g id="dollar-sign" transform="translate(140.000000, 171.000000)" stroke-linecap="round" stroke-linejoin="round">
+            <g id="dollar-sign" transform="translate(120.000000, 151.000000)" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M40,40 C40,30 40,20 20,20 C0,20 5.55111512e-16,30 0,40 C0,50 20,50 20,50 C20,50 40,50 40,60 C40,70 40,80 20,80 C0,80 6.91159174e-09,70 0,60" id="Path-10"></path>
                 <path d="M20,0 L20,10" id="Path-13"></path>
                 <path d="M20,90 L20,100" id="Path-13-Copy"></path>
