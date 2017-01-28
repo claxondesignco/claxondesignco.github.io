@@ -3,25 +3,25 @@
 
     <symbol id="charities">
 
-      {% include icons/icon_charities.svg %}
+      {% include /icons/icon_charities.svg %}
 
     </symbol>
 
     <symbol id="social-responsibility">
 
-      {% include icons/icon_social-responsibility.svg %}
+      {% include /icons/icon_social-responsibility.svg %}
 
     </symbol>
 
     <symbol id="honesty">
 
-      {% include icons/icon_honesty.svg %}
+      {% include /icons/icon_honesty.svg %}
 
     </symbol>
 
     <symbol id="vc-funding">
 
-      {% include icons/icon_funding.svg %}
+      {% include /icons/icon_funding.svg %}
 
     </symbol>
 
