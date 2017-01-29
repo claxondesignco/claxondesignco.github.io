@@ -70,8 +70,9 @@ h3
   font-weight: 400
   text-transform: uppercase
   letter-spacing: 0.05em
-  color: $brand
-  
+  color: $text
+  -webkit-font-smoothing: antialiased
+
   @include retina
     font-weight: 700
 
@@ -81,6 +82,7 @@ a
   border-bottom: 2px solid currentColor
   transition: color 250ms ease, border-color 250ms ease
   font-weight: 400
+  -webkit-font-smoothing: antialiased
 
   &:hover
     color: $text
