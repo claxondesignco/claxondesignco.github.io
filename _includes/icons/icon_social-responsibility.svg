@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="226px" height="256px" viewBox="0 0 226 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="226px" height="254px" viewBox="0 0 226 254" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
     <title>Social Responsibility 2</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
         <g id="Social-Responsibility-2" transform="translate(3.000000, 3.000000)" stroke="#BF8A49" stroke-width="5">
             <path d="M110,40 L110,220" id="Path-44"></path>
-            <path d="M10,41.5 L210,41.5" id="Path-47"></path>
-            <polygon id="Path-48" fill-opacity="0.1" fill="#BF8A49" points="80 230 139.999999 230 139.999999 220 80 220"></polygon>
-            <polygon id="Path-48" fill-opacity="0.1" fill="#BF8A49" points="80 40 139.999999 40 139.999999 30 80 30"></polygon>
-            <polygon id="Path-48-Copy" fill-opacity="0.1" fill="#BF8A49" points="50 240 169.999999 240 169.999999 230 50 230"></polygon>
-            <polygon id="Path-48-Copy-2" fill-opacity="0.1" fill="#BF8A49" points="10 250 209.999999 250 209.999999 240 10 240"></polygon>
-            <polyline id="Path-49" points="60 150 30 70 0 150"></polyline>
-            <polyline id="Path-49-Copy" points="220 150 190 70 160 150"></polyline>
-            <path d="M60,150 C60,150 60,170 40,170 C20,170 20,170 20,170 C0,170 0,150 0,150 L60,150 Z" id="Path-50" fill-opacity="0.1" fill="#BF8A49"></path>
-            <path d="M220,150 C220,150 220,170 200,170 C200,170 180,170 180,170 C160,170 160,150 160,150 L220,150 Z" id="Path-50-Copy" fill-opacity="0.1" fill="#BF8A49"></path>
-            <path d="M110,30 L110,0 L110,30 Z" id="Path-51"></path>
-            <path d="M30,150 L30,40" id="Path-52"></path>
-            <path d="M190,150 L190,40" id="Path-52"></path>
+            <path d="M10,41.5 L210,41.5" id="Path-47" stroke-linecap="round"></path>
+            <path d="M50,238 L50,229 L80,229 L80,220 L139.999999,220 L139.999999,229 L169.999999,229 L169.999999,238 L209.999999,238 L209.999999,248 L10,248 L10,238 L50,238 Z" id="Combined-Shape" stroke-linecap="round" fill-opacity="0.1" fill="#BF8A49"></path>
+            <polygon id="Path-48" stroke-linecap="round" fill-opacity="0.1" fill="#BF8A49" points="80 41 139.999999 41 139.999999 31 80 31"></polygon>
+            <polyline id="Path-49" stroke-linecap="round" points="60 150 30 70 0 150"></polyline>
+            <polyline id="Path-49-Copy" stroke-linecap="round" points="220 150 190 70 160 150"></polyline>
+            <path d="M60,150 C60,150 60,170 30,170 C0,170 0,150 0,150 L60,150 Z" id="Path-50" stroke-linecap="round" fill-opacity="0.1" fill="#BF8A49"></path>
+            <path d="M220,150 C220,150 220,170 190,170 C160,170 160,150 160,150 L220,150 Z" id="Path-50-Copy" stroke-linecap="round" fill-opacity="0.1" fill="#BF8A49"></path>
+            <path d="M110,30 L110,0 L110,30 Z" id="Path-51" stroke-linecap="round"></path>
+            <path d="M30,150 L30,40" id="Path-52" stroke-linecap="round"></path>
+            <path d="M190,150 L190,40" id="Path-52" stroke-linecap="round"></path>
         </g>
     </g>
 </svg>
