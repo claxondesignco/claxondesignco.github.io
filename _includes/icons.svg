@@ -25,5 +25,11 @@
 
     </symbol>
 
+    <symbol id="code">
+
+      {% include /icons/icon_code.svg %}
+
+    </symbol>
+
   </defs>
 </svg>

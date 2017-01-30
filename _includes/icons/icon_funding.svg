@@ -8,10 +8,10 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="VC-Funding-Copy" transform="translate(3.000000, 3.000000)">
-            <g id="bag" transform="translate(56.000000, 27.000000)" stroke="#BF8A49" stroke-width="5">
-                <polyline id="Path-12" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" points="51 25.5502392 42.5 8.51674641 51 0 59.5 8.51674641 68 0 76.5 8.51674641 68 25.5502392"></polyline>
+            <g id="bag" transform="translate(56.000000, 27.000000)" stroke="#BF8A49" stroke-width="5" fill="#BF8A49" fill-opacity="0.1">
+                <polyline id="Path-12" stroke-linecap="round" stroke-linejoin="round" points="51 25.5502392 42.5 8.51674641 51 0 59.5 8.51674641 68 0 76.5 8.51674641 68 25.5502392"></polyline>
                 <path d="M0.0104154901,161.818182 C0.0104154901,154.15311 0.0104155334,135.416268 0.0104154901,119.269889 C0.0104155334,75.7990431 3.33510809,34.0669856 59.6794849,34.0669856 C115.172298,34.0669856 118.754893,70.8855692 118.984452,117.134205 C119.001772,120.623447 118.98445,158.23335 118.98445,161.818182 C118.98445,169.483254 90.4992709,178 60.35,178 C30.2007291,178 0.0104154901,169.483254 0.0104154901,161.818182 Z" id="Path-9" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M42.5,34.0669856 C42.5,25.5502392 42.5,25.5502392 59.5,25.5502392 C76.5,25.5502392 76.5,25.5502392 76.5,34.0669856 C76.5,34.0669856 42.5,34.0669856 42.5,34.0669856 Z" id="Path-11" fill="#FFFFFF"></path>
+                <path d="M42.5,34.0669856 C42.5,25.5502392 42.5,25.5502392 59.5,25.5502392 C76.5,25.5502392 76.5,25.5502392 76.5,34.0669856 C76.5,34.0669856 42.5,34.0669856 42.5,34.0669856 Z" id="Path-11"></path>
             </g>
             <g id="dollar-sign" transform="translate(99.000000, 87.000000)" stroke="#BF8A49" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M34,34 C34,25.5 34,17 17,17 C0,17 4.71844785e-16,25.5 0,34 C0,42.5 17,42.5 17,42.5 C17,42.5 34,42.5 34,51 C34,59.5 34,68 17,68 C0,68 5.87485298e-09,59.5 0,51" id="Path-10"></path>

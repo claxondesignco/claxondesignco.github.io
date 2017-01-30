@@ -5,9 +5,6 @@
   @include small
     padding: ms(5)
 
-  & + &
-    padding-top: 0
-
   &__header
     text-align: center
     max-width: $medium-column-max-width
@@ -55,8 +52,6 @@
     &__section
       clear: left
 
-    @include medium
-
     @include big
       display: flex
       flex-direction: row
@@ -65,22 +60,50 @@
       align-items: baseline
       align-content: stretch
       max-width: ms(20)
+      margin-bottom: ms(3)
 
-      .columns__section
-        width: 50%
-        padding-right: ms(1)
-        clear: none
+    &.two
 
-        &:nth-of-type(even)
-          padding-right: 0
-          padding-left: ms(1)
+      @include big
+
+        .columns__section
+          width: 50%
+          padding-right: ms(1)
+          clear: none
+
+          &:nth-of-type(even)
+            padding-right: 0
+            padding-left: ms(1)
+
+    &.three
+
+      @include big
+
+        .columns__section
+          width: 33.333%
+          clear: none
+
+          &:nth-of-type(3n+1)
+            padding-right: ms(1)
+            clear: left
+
+          &:nth-of-type(3n+2)
+            padding-left: 0.6875rem
+            padding-right: 0.6875rem
+
+          &:nth-of-type(3n+3)
+            padding-left: ms(1)
+
+    & + .inline-cta
+      @include big
+        margin-top: ms(3)
 
   .inline-cta
     clear: left
     text-align: center
     font-size: ms(1)
     font-style: italic
-    margin-top: ms(3)
+    margin-top: ms(5)
 
 .feature-section
   color: #fff
