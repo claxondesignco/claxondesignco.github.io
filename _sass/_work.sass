@@ -1,6 +1,15 @@
 .section#work
   color: #fff
   background-color: $text
+  overflow: hidden
+  position: relative
+  z-index: -1
+
+  h2,
+  h3,
+  p
+    z-index: 2
+    position: relative
 
   .section__headline
     color: #fff
@@ -19,6 +28,8 @@
   svg
     max-width: 100%
 
+  .columns__section
+
   @include small
 
     figure
@@ -27,3 +38,143 @@
 
     svg
       margin-bottom: 0
+
+.shots
+  list-style: none
+  height: 0
+  mix-blend-mode: multiply
+  opacity: 0.5
+
+  .shots-container .shots--shot,
+  .shots-custom .shots--shot--custom
+    width: 45%!important
+    box-shadow: -3px 6px 12px rgba(0, 0, 0, 0.20)
+    list-style: none
+
+    @include big
+      width: 33%!important
+
+    img
+      height: auto
+      width: 100%
+      z-index: -1
+
+  .shots-custom .shots--shot--custom
+    z-index: 0
+    position: absolute
+
+    &:nth-of-type(1)
+      top: 28%
+      right: -15%
+      transform: rotate(-7deg)
+
+      @include big
+        top: 12%
+
+    &:nth-of-type(2)
+      top: 78%
+      right: -12%
+      transform: rotate(12deg)
+
+      @include big
+        top: 52%
+
+  .shots-container .shots--shot
+    z-index: -1
+    position: absolute
+
+    &:nth-of-type(1)
+      top: ms(5)
+      transform: rotate(-5deg)
+
+      @include medium
+        width: 16%
+
+    &:nth-of-type(3)
+      top: ms(7)
+      right: 0
+      transform: rotate(8deg)
+
+      @include medium
+        width: 15%
+
+    &:nth-of-type(4)
+      bottom: ms(12)
+      right: ms(3)
+      transform: rotate(-10deg)
+
+      @include medium
+        width: 13%
+
+    &:nth-of-type(5)
+      bottom: 31%
+      left: -2%
+      transform: rotate(-4deg)
+
+      @include medium
+        width: 17%
+
+      @include big
+        bottom: ms(9)
+
+    &:nth-of-type(7)
+      top: ms(12)
+      left: -5%
+      transform: rotate(4deg)
+
+      @include medium
+        width: 14.285714286%
+
+    &:nth-of-type(8)
+      top: ms(5)
+      left: ms(8)
+      transform: rotate(2deg)
+
+      @include medium
+        width: 19%
+
+    &:nth-of-type(10)
+      top: ms(8)
+      right: 14%
+      transform: rotate(-3deg)
+      z-index: -2
+
+      @include medium
+        width: 14%
+
+    &:nth-of-type(12)
+      bottom: 1%
+      right: 24%
+      transform: rotate(1deg)
+      z-index: -2
+
+      @include medium
+        width: 16%
+
+    &:nth-of-type(2)
+      bottom: -22%
+      left: 20%
+      transform: rotate(4deg)
+
+    &:nth-of-type(6)
+      bottom: -5%
+      right: 12%
+      transform: rotate(-7deg)
+
+      @include big
+        bottom: -22%
+
+    &:nth-of-type(9)
+      bottom: -30%
+      left: -8%
+      transform: rotate(-12deg)
+      z-index: -3
+
+    &:nth-of-type(11)
+      bottom: -2%
+      right: -40%
+      transform: rotate(7deg)
+      z-index: -3
+
+      @include big
+        bottom: -33%
