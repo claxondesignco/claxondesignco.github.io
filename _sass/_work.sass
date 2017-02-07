@@ -5,10 +5,24 @@
   position: relative
   z-index: -1
 
+  &::before
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    content: ""
+    background-color: rgba(51, 51, 56, 0.9)
+    position: absolute
+    //mix-blend-mode: multiply
+    z-index: 1
+
+  header.section__header
+    z-index: 20
+
   h2,
   h3,
   p
-    z-index: 2
+    z-index: 10
     position: relative
 
   .section__headline
@@ -29,6 +43,8 @@
     max-width: 100%
 
   .columns__section
+    position: relative
+    z-index: 10
 
   @include small
 
@@ -42,14 +58,13 @@
 .shots
   list-style: none
   height: 0
-  mix-blend-mode: multiply
-  opacity: 0.25
 
   .shots-container .shots--shot,
   .shots-custom .shots--shot--custom
     width: 45%!important
     box-shadow: -3px 6px 12px rgba(0, 0, 0, 0.20)
     list-style: none
+    transition: transform 500ms ease
 
     @include big
       width: 33%!important
@@ -57,7 +72,7 @@
     img
       height: auto
       width: 100%
-      z-index: -1
+      filter: grayscale(100%)
 
   .shots-custom .shots--shot--custom
     z-index: 0
@@ -80,7 +95,7 @@
         top: 52%
 
   .shots-container .shots--shot
-    z-index: -1
+    z-index: -6
     position: absolute
 
     &:nth-of-type(1)
@@ -137,7 +152,7 @@
       top: ms(8)
       right: 14%
       transform: rotate(-3deg)
-      z-index: -2
+      z-index: -7
 
       @include medium
         width: 14%
@@ -146,7 +161,7 @@
       bottom: 1%
       right: 24%
       transform: rotate(1deg)
-      z-index: -2
+      z-index: -7
 
       @include medium
         width: 16%
@@ -168,13 +183,13 @@
       bottom: -30%
       left: -8%
       transform: rotate(-12deg)
-      z-index: -3
+      z-index: -8
 
     &:nth-of-type(11)
       bottom: -2%
       right: -40%
       transform: rotate(7deg)
-      z-index: -3
+      z-index: -8
 
       @include big
         bottom: -33%

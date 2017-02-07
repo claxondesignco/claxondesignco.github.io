@@ -28,8 +28,8 @@
   <ul class="shots" aria="hidden" role="presentation">
     <li>
       <ul class="shots-custom">
-        <li class="shots--shot--custom" aria="hidden" role="presentation"><img src="/assets/images/stackoverflow.jpg"></li>
-        <li class="shots--shot--custom" aria="hidden" role="presentation"><img src="/assets/images/jitterbit.jpg"></li>
+        <li class="shots--shot--custom wow fadeIn" aria="hidden" role="presentation"><img src="/assets/images/stackoverflow.jpg"></li>
+        <li class="shots--shot--custom wow fadeIn" aria="hidden" role="presentation"><img src="/assets/images/jitterbit.jpg"></li>
       </ul>
     </li>
     <li>
@@ -51,7 +51,7 @@
 
       shots.forEach(function(shot) {
         // See the Dribbble docs for all available shot properties.
-        html.push('<li class="shots--shot" aria="hidden" role="presentation">');
+        html.push('<li class="shots--shot wow fadeIn" aria="hidden" role="presentation">');
         // html.push('<a href="' + shot.html_url + '" title="' + shot.title + '">');
         html.push('<img src="' + shot.images.normal + '">');
         //html.push('</a>');
