@@ -1,36 +1,9 @@
 .menu-button
-  background: transparent
-  border: none
-  color: $text
-  font-size: ms(0)
-  font-family: $sans
-  text-transform: uppercase
-  width: ms(1)
-  height: ms(1)
-  position: fixed
-  top: 3rem
-  left: 5%
-  z-index: 110
   cursor: pointer
-  text-align: center
-  padding: 0
-  transform: rotate(0deg)
   transition: transform 300ms ease-in
-
-  @include extra-small
-    top: 3rem
-
-  @include small
-    left: ms(3)
-    top: 1.7rem
-
-  @include medium
-    display: none
-    visibility: hidden
 
   svg
     path
-      fill: $brand
       transition: fill 175ms ease-in
 
   &:hover
@@ -51,58 +24,16 @@
         fill: $brand
 
 nav[role="navigation"]
-  position: fixed
-  top: -50%
-  left: 0
-  right: 0
-  width: auto
-  background: #FFF
-  color: $brand
-  z-index: 100
-  font-size: ms(-2)
-  padding: 0 ms(-2) ms(-2) ms(6)
-  opacity: 0
   transition: top 500ms ease-in-out, opacity 500ms ease-in-out
 
   &.open
     top: 0
     opacity: 0.95
 
-  @include medium
-    top: 0
-    opacity: 0.95
-    padding: 0 ms(-2) 0
-
-  .navigation-list
-    list-style: none
-
   .navigation-list-item
-    display: inline
-    float: left
-
-    &.email-item
-      float: left
-
-      @include medium
-        float: right
 
   a,
   a.navigation-list-item-link
-    color: $brand
-    text-decoration: none
-    border: none
-    font-weight: 400
-    letter-spacing: 0.1em
-    font-family: $sans
-    text-transform: uppercase
-    -webkit-font-smoothing: subpixel-antialiased
-    padding: ms(-2) ms(-3) 0
-    display: inline-block
-    white-space: nowrap
-
-    @include medium
-      padding: ms(-2) ms(-3)
-      // font-weight: 300
 
     &.active
       color: $text
