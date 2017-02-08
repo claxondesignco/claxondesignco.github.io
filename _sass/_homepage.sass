@@ -1,11 +1,18 @@
 #homepage-hero
   border-top: 0.125rem solid $brand
 
+  @include medium
+    margin-top: 2.9375rem
+
+  h1 .logo-name
+    display: none
+
 .hero-logo
   width: 90%
   max-width: 21.875rem
   height: auto
   margin: 0 auto
+  display: block
 
 .feature-section#homepage-hero
   background-image: url(/assets/images/temp_hero.jpg)
@@ -32,7 +39,7 @@
     clip-path: polygon(50% 97%, 100% 0, 100% 3%, 50% 100%, 0 3%, 0 0)
     pointer-events: none
 
-#simplicity
+#simplicity-section
   padding-top: ms(7)
 
   br
@@ -45,7 +52,7 @@
     br
       display: initial
 
-#ethics
+#ethics-section
   background: #fff
   padding-top: ms(2)
 

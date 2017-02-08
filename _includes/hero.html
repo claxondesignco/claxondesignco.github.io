@@ -1,8 +1,8 @@
 <div class="feature-section"{% if page.hero-id %} id="{{ page.hero-id }}"{% endif %}>
-  <header role="banner" class="feature-section__header wow fadeIn">
-    {{ page.hero-header }}
+  <header role="banner" class="feature-section__header" itemscope="" itemtype="http://schema.org/Organization">
+    <h1><span itemprop="name" class="logo-name"><strong>Claxon Design Co.</strong></span>{% include logo_light.svg %}</h1>
   </header>
-  <div class="feature-section__content wow fadeIn">
+  <div class="feature-section__content">
     <p>{{ page.hero-text }}</p>
   </div>
 </div>

@@ -1,4 +1,4 @@
-.section#work
+.section#work-section
   color: #fff
   background-color: $text
   overflow: hidden
@@ -64,7 +64,6 @@
     width: 45%!important
     box-shadow: -3px 6px 12px rgba(0, 0, 0, 0.20)
     list-style: none
-    transition: transform 500ms ease
 
     @include big
       width: 33%!important
@@ -101,6 +100,8 @@
     &:nth-of-type(1)
       top: ms(5)
       transform: rotate(-5deg)
+      display: none
+      visibility: hidden
 
       @include medium
         width: 16%
@@ -153,6 +154,8 @@
       right: 14%
       transform: rotate(-3deg)
       z-index: -7
+      display: none
+      visibility: hidden
 
       @include medium
         width: 14%
@@ -170,6 +173,8 @@
       bottom: -22%
       left: 20%
       transform: rotate(4deg)
+      display: none
+      visibility: hidden
 
     &:nth-of-type(6)
       bottom: -5%
@@ -184,6 +189,8 @@
       left: -8%
       transform: rotate(-12deg)
       z-index: -8
+      display: none
+      visibility: hidden
 
     &:nth-of-type(11)
       bottom: -2%
