@@ -12,7 +12,9 @@
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:image" content="/assets/images/claxondesignco_preview.png" />
-    <script src="/js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      {% include_relative js/jquery.js %}
+    </script>
     <style>
       {% capture inline_css %}
         {% include critical-css.scss %}
