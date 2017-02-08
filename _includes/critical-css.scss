@@ -308,6 +308,8 @@ a {
 
 #homepage-hero {
   border-top: .125rem solid #BF8A49;
+  height: 88vh
+  min-height: 30.2rem
 }
 
 @media (min-width: 770px) {
@@ -326,6 +328,7 @@ a {
   height: auto;
   margin: 0 auto;
   display: block;
+  margin-top: 12vh
 }
 
 .feature-section#homepage-hero {
