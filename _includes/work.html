@@ -8,24 +8,30 @@
     </li>
     <li>
       <ul class="shots-container">
+        <li class="shots--shot" aria="hidden" role="presentation">
+          <img src="assets/images/brock_cagann_site.png">
+        </li>
+        <li class="shots--shot" aria="hidden" role="presentation">
+          <img src="assets/images/css-iphone.png">
+        </li>
+        <li class="shots--shot" aria="hidden" role="presentation">
+          <img src="assets/images/ursimian.png">
+        </li>
+        <li class="shots--shot" aria="hidden" role="presentation">
+          <img src="assets/images/ursimian_sketch_1x.jpg">
+        </li>
+        <li class="shots--shot" aria="hidden" role="presentation">
+          <img src="assets/images/simplesyrup_1x.png">
+        </li>
+        <li class="shots--shot" aria="hidden" role="presentation">
+          <img src="assets/images/espresso_machine.png">
+        </li>
+        <li class="shots--shot" aria="hidden" role="presentation">
+          <img src="assets/images/owl_1x.png">
+        </li>
       </ul>
     </li>
   </ul>
-  <script src="/js/jribbble.min.js"></script>
-  <script>
-    $.jribbble.setToken('34672c6e4f58bbfcfedf4bca7142d7f83ba84103bb38b13476ab928a4c55bdaa');
-    $.jribbble.users('adamclaxon').shots('hidpi').then(function(shots) {
-      var html = [];
-
-      shots.forEach(function(shot) {
-        html.push('<li class="shots--shot" aria="hidden" role="presentation">');
-        html.push('<img src="' + shot.images.normal + '">');
-        html.push('</li>');
-      });
-
-      $('.shots-container').html(html.join(''));
-    });
-  </script>
   <header class="section__header">
     <h2 class="section__headline" id="work">Work</h2>
     <p class="section__subhead">Maecenas faucibus mollis interdum.</p>
