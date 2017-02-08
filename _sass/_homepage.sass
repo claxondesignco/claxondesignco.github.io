@@ -1,5 +1,32 @@
+
+@keyframes logo-top-animation
+  0%
+    fill: transparent
+  5%
+    fill: transparent
+  100%
+    fill: #FFF
+
+@keyframes logo-bottom-animation
+  0%
+    fill: transparent
+  5%
+    fill: transparent
+  100%
+    fill: $brand
+
+@keyframes hero-copy
+  0%
+    color: transparent
+  15%
+    color: transparent
+  100%
+    color: #fff
+
 #homepage-hero
   border-top: 0.125rem solid $brand
+  height: 88vh
+  min-height: 30.2rem
 
   @include medium
     margin-top: 2.9375rem
@@ -12,7 +39,14 @@
   max-width: 21.875rem
   height: auto
   margin: 0 auto
+  margin-top: 12vh
   display: block
+
+  path#Claxon
+    animation: logo-top-animation 8s 0 ease
+
+  path#DESIGN-CO
+    animation: logo-bottom-animation 9s 0 ease
 
 .feature-section#homepage-hero
   background-image: url(/assets/images/temp_hero.jpg)
@@ -25,6 +59,9 @@
     max-width: $medium-column-max-width
     margin-right: auto
     margin-left: auto
+
+  .feature-section__content
+    animation: hero-copy 10s 0 ease
 
   &::after
     content: ""
