@@ -25,10 +25,10 @@
 
 #homepage-hero
   border-top: 0.125rem solid $brand
-  height: 88vh
-  min-height: 30.2rem
 
   @include medium
+    height: 88vh
+    min-height: 30.2rem
     margin-top: 2.9375rem
 
   h1 .logo-name
@@ -39,8 +39,10 @@
   max-width: 21.875rem
   height: auto
   margin: 0 auto
-  margin-top: 12vh
   display: block
+
+  @include medium
+    margin-top: 12vh
 
   path#Claxon
     animation: logo-top-animation 8s 0 ease
