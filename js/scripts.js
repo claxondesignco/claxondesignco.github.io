@@ -74,7 +74,7 @@ $(".navigation-list-item-link").not("[href='#about']").click(function(){
 });
 
 $("#about-toggle").not(".active").click(function(){
-    $("#about-section-placeholder").load("about.html");
+    $("#about-section").addClass("open");
     $( this ).addClass("active");
     $("body").addClass("no-scroll");
     $("nav").removeClass('open');
