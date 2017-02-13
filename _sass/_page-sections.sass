@@ -13,8 +13,12 @@
     padding-bottom: ms(1)
 
   &__headline
-    margin-top: -(ms(10))
-    padding-top: ms(10)
+    margin-top: -(ms(6))
+    padding-top: ms(6)
+
+    @include medium
+      margin-top: -(ms(10))
+      padding-top: ms(10)
 
   &__subhead
     font-family: $sans
@@ -35,8 +39,10 @@
     margin: 0 auto ms(3)
 
   p,
+  h2,
   h3,
-  h4
+  h4,
+  li
     max-width: $medium-column-max-width
     margin-left: auto
     margin-right: auto

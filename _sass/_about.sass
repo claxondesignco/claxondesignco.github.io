@@ -1,0 +1,75 @@
+@keyframes about-section
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.about-section
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  z-index: 50
+  // background: rgba(255,255,255, 0.97)
+  animation: about-section .5s 0 ease
+  overflow: scroll
+  opacity: 0
+  transition: opacity .25s ease-in-out
+  pointer-events: none
+  box-shadow: 0 0px 2px rgba(191, 138, 73, 0.2)
+  background-color: $background
+  background-color: #fff
+
+  @include small
+    //left: 25%
+
+  @include big
+    left: 0
+
+  &.open
+    pointer-events: auto
+    opacity: 1
+
+  .about-section-content
+    max-width: $medium-column-max-width
+    margin-left: auto
+    margin-right: auto
+    margin-top: 1em
+    background-color: #fff
+
+    @include medium
+      // left: 35%
+      margin-top: 2.9375rem
+
+  h2
+    font-family: $sans
+    font-weight: 700
+    font-style: italic
+    text-transform: none
+    font-size: ms(2)
+    margin-bottom: ms(0)
+    line-height: 1.5em
+    color: $brand
+
+  a
+    border: none
+
+  img.profile-image
+    height: auto
+    width: ms(11)
+    float: left
+    margin-right: 1em
+    margin-bottom: 1em
+
+    @include medium
+      margin-left: -13%
+
+.writing
+  list-style: none
+  line-height: 1.5em
+
+  li
+    font-size: ms(0)
+    a
+      font-size: ms(1)
