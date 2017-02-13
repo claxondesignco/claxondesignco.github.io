@@ -88,3 +88,5 @@ $('html').click(function(e) {
     $("body").removeClass("no-scroll");
   }
 });
+
+smartquotes()
