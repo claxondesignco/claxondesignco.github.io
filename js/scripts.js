@@ -1,3 +1,6 @@
+$(".hero-logo").delay(1000).animate({ opacity: 1 }, 1500);
+$("#homepage-hero .feature-section__content").delay(1750).animate({ opacity: 1 }, 1500);
+
 $(function(){
   $('.footnote-label').click(function(){
     $(this).next().toggleClass('display');

@@ -1,3 +1,9 @@
+@keyframes fade-in-animation
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
 #homepage-hero
   border-top: 0.125rem solid $brand
   display: table
@@ -28,11 +34,12 @@
   height: auto
   margin: 0 auto
   display: block
+  opacity: 0
 
 .feature-section#homepage-hero
   background-image: url(/assets/images/temp_hero.jpg)
   background-color: #333236
-  background-position: left center
+  background-position: center
   background-size: cover
 
   .feature-section__header,
@@ -40,6 +47,9 @@
     max-width: $medium-column-max-width
     margin-right: auto
     margin-left: auto
+
+  .feature-section__content
+    opacity: 0
 
   &::after
     content: ""
@@ -56,9 +66,7 @@
 
 #simplicity-section
   padding-top: 3.625rem
+  z-index: 2
 
   @inlude small
     padding-top: 5.69531rem
-
-  br
-    display: none

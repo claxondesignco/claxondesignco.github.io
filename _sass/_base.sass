@@ -15,23 +15,6 @@ html
   font-size: 100%
 
   @include big
-    // border: 0.125rem solid $brand
-
-    //&::before,
-    //&::after
-      content: ""
-      height: 0.125rem
-      position: fixed
-      right: 0
-      left: 0
-      z-index: 99
-      background-color: $brand
-
-    //&::before
-      top: 0
-
-    //&::after
-      bottom: 0
 
   @include yuge
     font-size: 140%
@@ -52,6 +35,7 @@ body
 p
   margin-bottom: ms(3)
   line-height: $line-height
+  text-align: justify
 
 h1,
 h2,
@@ -70,13 +54,13 @@ h2
     font-size: ms(6)
 
 h3
-  font-size: ms(1)
-  margin-bottom: ms(1)
-  font-weight: 400
+  font-size: ms(0)
+  margin-bottom: 1em
+  font-weight: 700
   text-transform: uppercase
-  letter-spacing: 0.05em
+  letter-spacing: 0.1em
   color: $text
-  -webkit-font-smoothing: antialiased
+  // -webkit-font-smoothing: antialiased
 
   @include retina
     font-weight: 700

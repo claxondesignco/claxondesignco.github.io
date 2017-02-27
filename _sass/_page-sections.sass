@@ -22,17 +22,27 @@
 
   &__subhead
     font-family: $sans
-    font-size: ms(0)
+    font-size: ms(1)
     font-weight: 700
     text-transform: uppercase
     letter-spacing: 0.1em
     display: block
     margin: 0 auto ms(3)
     color: $brand-on-white
-    -webkit-font-smoothing: antialiased
+    text-align: center
+    // -webkit-font-smoothing: antialiased
 
     @include retina
       font-weight: 700
+
+    br
+      display: none
+
+    @include small
+      white-space: nowrap
+
+      br
+        display: initial
 
   p
     display: block

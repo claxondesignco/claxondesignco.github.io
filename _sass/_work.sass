@@ -3,7 +3,7 @@
   background-color: $text
   overflow: hidden
   position: relative
-  z-index: -1
+  z-index: 1
 
   &::before
     top: 0
@@ -15,6 +15,7 @@
     position: absolute
     //mix-blend-mode: multiply
     z-index: 1
+    pointer-events: none
 
   header.section__header
     z-index: 20
@@ -29,6 +30,11 @@
     color: #fff
 
   h3
+    color: $brand
+
+  a,
+  a:hover,
+  a:visited
     color: $brand
 
   .section__subhead
@@ -58,6 +64,10 @@
 .shots
   list-style: none
   height: 0
+  pointer-events: none
+
+  *
+    pointer-events: none
 
   .shots-container .shots--shot,
   .shots-custom .shots--shot--custom
