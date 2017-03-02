@@ -78,12 +78,12 @@ $(".navigation-list-item-link").not("[href='#about']").click(function(){
   $(".menu-button").removeClass('active');
 });
 
-$("#about-toggle").not(".active").click(function(){
-    $("#about-section").addClass("open");
-    $( this ).addClass("active");
-    $("body").addClass("no-scroll");
-    $("nav").removeClass('open');
-    $(".menu-button").removeClass('active');
+$("#about-toggle").click(function(){
+    $("#about-section").toggleClass("open");
+    $( this ).toggleClass("active");
+    $("body").toggleClass("no-scroll");
+    $("nav").toggleClass('open');
+    $(".menu-button").toggleClass('active');
 });
 
 $('html').click(function(e) {
