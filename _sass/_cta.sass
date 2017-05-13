@@ -1,11 +1,7 @@
-.bottom-angle-down + .section.cta
-  margin-top: ms(5)
-
 .section.cta
-  background: $text
-  color: #FFF
-  -webkit-font-smoothing: antialiased
-  padding: ms(6) 5% ms(4)
+  background: #FFF
+  color: $text
+  padding: 0 5% ms(4)
   text-align: center
   position: relative
 
@@ -13,37 +9,10 @@
     text-align: center
 
   @include small
-    padding: ms(6) ms(3) ms(3)
+    padding: 0 ms(3) ms(3)
 
   @include medium
-    padding: ms(6) ms(3) ms(4)
-
-  &::before
-    content: ""
-    position: absolute
-    height: ms(8)
-    left: 0
-    right: 0
-    bottom: 99.8%
-    z-index: 0
-    background: inherit
-    -webkit-clip-path: polygon(50% 100%, 100% 0, 100% 100%, 0 100%, 0 0)
-    clip-path: polygon(50% 100%, 100% 0, 100% 100%, 0 100%, 0 0)
-    display: block
-    pointer-events: none
-
-  &::after
-    content: ""
-    position: absolute
-    height: ms(8)
-    left: 0
-    right: 0
-    bottom: 99.8%
-    z-index: 1
-    background: $brand
-    -webkit-clip-path: polygon(50% 97%, 100% 0, 100% 3%, 50% 100%, 0 3%, 0 0)
-    clip-path: polygon(50% 97%, 100% 0, 100% 3%, 50% 100%, 0 3%, 0 0)
-    pointer-events: none
+    padding: 0 ms(3) ms(4)
 
   .section__subhead
     font-size: ms(3)
@@ -63,7 +32,7 @@
       margin-bottom: ms(0)
 
   a
-    color: #FFF
+    color: $brand
 
     &:hover
       color: $brand
