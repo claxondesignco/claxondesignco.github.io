@@ -94,4 +94,15 @@ $('html').click(function(e) {
   }
 });
 
+
+$('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]').focus( function() {
+  $(this).parent().addClass('active');
+});
+
+$('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]').blur( function() {
+  if( $(this).val().length === 0 ) {
+    $(this).parent().removeClass('active');
+  }
+});
+
 smartquotes()

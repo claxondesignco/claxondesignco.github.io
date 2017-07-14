@@ -1,0 +1,23 @@
+<form>
+  <div>
+    <label for="name">Name</label>
+    <input name="input" type="text" id="name">
+  </div>
+  <div>
+    <label for="email">Email Address</label>
+    <input name="email" type="email" id="email">
+  </div>
+  <div>
+    <label for="phone-number">Phone Number</label>
+    <input name="phone-number" type="tel" id="phone-number">
+  </div>
+
+  <fieldset>
+    <legend>Project needs:<br><span>(select all that apply)</legend>
+    <input id="website" type="checkbox" name="project-needs" value="website"><label for="website">Website Design & Development</label><br>
+    <input id="branding" type="checkbox" name="project-needs" value="branding"><label for="branding">Branding</label><br>
+    <input id="content-strategy" type="checkbox" name="project-needs" value="content-strategy"><label for="content-strategy">Content Strategy</label>
+  </fieldset>
+  <label for="project-details">Project Details:</label>
+  <textarea rows="6" id="project-details" name="project-details"></textarea>
+</form>
