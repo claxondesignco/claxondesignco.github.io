@@ -6,7 +6,7 @@ $field-padding: .618rem
 $light-gray: #767676
 $text-color: #333338
 $highlight: $accent
-$dark-highlight: #037EB2
+$dark-highlight: $accent
 $light-background: #fafafa
 
 @mixin desktop
@@ -165,7 +165,7 @@ input[type="checkbox"]
   &:checked
   
     & + label::before
-      border-color: $dark-highlight
+      border-color: $accent
       border-top: 0
       border-right: 0
       border-radius: 0
