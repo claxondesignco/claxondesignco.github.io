@@ -1,37 +1,14 @@
 .about-section
-  opacity: 0
-  position: fixed
-  top: 0
-  right: 0
-  left: 0
-  bottom: 0
-  z-index: 50
-  overflow: scroll
-  transition: opacity .25s ease-in-out
-  pointer-events: none
-  box-shadow: 0 0px 2px rgba(191, 138, 73, 0.2)
-  background-color: $background
   background-color: #fff
-
-  @include small
-    //left: 25%
-
-  @include big
-    left: 0
-
-  &.open
-    pointer-events: auto
-    opacity: 1
+  padding-bottom: ms(3)
 
   .about-section-content
     max-width: $medium-column-max-width
     margin-left: auto
     margin-right: auto
-    margin-top: 1em
     background-color: #fff
 
     @include medium
-      // left: 35%
       margin-top: 2.9375rem
 
   h2
@@ -61,6 +38,14 @@
 
     @include medium
       margin-left: -13%
+
+  & + .section.cta
+    background: $text
+    color: $brand
+    margin-top: ms(4)
+
+    @include medium
+      margin-bottom: ms(6)
 
 .writing
   list-style: none
