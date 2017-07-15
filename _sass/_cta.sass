@@ -8,6 +8,15 @@
   p
     text-align: center
 
+    &.thanks
+      display: none
+      visibility: hidden
+
+      &.display
+        display: initial
+        visibility: visible
+        margin-bottom: ms(3)
+
   @include small
     padding: 0 ms(3) ms(3)
 
@@ -22,6 +31,8 @@
     text-transform: initial
     font-weight: 300
     letter-spacing: initial
+    margin-top: -(ms(5))
+    padding-top: ms(5)
 
     @include small
       font-size: ms(4)
@@ -30,6 +41,8 @@
     @include medium
       font-size: ms(5)
       margin-bottom: ms(0)
+      margin-top: -(ms(7))
+      padding-top: ms(7)
 
   a
     color: $brand

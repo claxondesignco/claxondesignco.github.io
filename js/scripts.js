@@ -70,6 +70,20 @@ $("#ethics").waypoint(function(direction) {
   }
 });
 
+$("#contact").waypoint(function(direction){
+  if (direction === 'down') {
+    $('a').not("[href='#about']").removeClass("active");
+    $("[href='#contact']").addClass("active");
+  }
+});
+
+$("#contact").waypoint(function(direction) {
+  if (direction === 'up') {
+    $('a').not("[href='#about']").removeClass("active");
+    $("[href='#ethics']").addClass("active");
+  }
+});
+
 $(".navigation-list-item-link").not("[href='#about']").click(function(){
   $("#about-section").removeClass("open");
   $("[href='#about']").removeClass("active");
@@ -104,5 +118,11 @@ $('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]
     $(this).parent().removeClass('active');
   }
 });
+
+function formsubmit() {
+  $(".thanks").addClass("display");
+  $("#contact_form").addClass("hide");
+  $(".email-cta").addClass("hide");
+};
 
 smartquotes()
