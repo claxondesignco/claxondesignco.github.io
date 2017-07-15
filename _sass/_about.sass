@@ -52,9 +52,12 @@
       background: $text
 
     input[type="checkbox"]:checked+label::before
-      border-color: #009292
+      border-color: $accent
       border-top: 0
       border-right: 0
+
+    input[type="checkbox"]:focus+label::before
+      border-color: $accent
 
 .writing
   list-style: none
