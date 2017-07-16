@@ -105,6 +105,7 @@ $('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]
 function formsubmit() {
   $(".thanks").addClass("display");
   $("#contact_form").addClass("hide");
+  $(".brand-questionnaire").addClass("hide");
   $(".email-cta").addClass("hide");
 };
 
