@@ -53,3 +53,15 @@ $grey-color-dark:    darken($grey-color, 25%)
 @mixin yuge
   @media (min-width: 1860px)
     @content
+
+@mixin iphone
+  @media only screen and (min-device-width : 375px) and (max-device-width : 667px)
+    @content
+
+@mixin iphoneplus
+  @media only screen and (min-device-width : 414px) and (max-device-width : 736px)
+    @content
+
+@mixin ipad
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2)
+    @content

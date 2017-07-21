@@ -44,6 +44,15 @@
   background-attachment: fixed
   z-index: 2
 
+  @include iphone
+    background-attachment: initial
+
+  @include iphoneplus
+    background-attachment: initial
+
+  @include ipad
+    background-attachment: initial
+
   .feature-section__header,
   .feature-section__content
     max-width: $medium-column-max-width
