@@ -33,12 +33,14 @@ $("#simplicity").waypoint(function(direction){
   if (direction === 'down') {
     $('a').not("[href='#about']").removeClass("active");
     $("[href='#simplicity']").addClass("active");
+    $(".site-navigation").addClass("navigation-dark");
   }
 });
 
 $("#simplicity").waypoint(function(direction) {
   if (direction === 'up') {
     $('a').not("[href='#about']").removeClass("active");
+    $(".site-navigation").removeClass("navigation-dark");
   }
 });
 
