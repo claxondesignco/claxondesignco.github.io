@@ -28,16 +28,49 @@ footer[role="contentinfo"]
 
 .footer
 
-  &__content
+  &__content,
+  &__info
     display: block
     margin: 0 auto
-    max-width: 46.75rem
-    font-size: ms(0)
+    max-width: 64.87317rem
+    font-size: ms(1)
     text-align: center
+    clear: both
 
     p
       text-align: center
 
+      &.legal
+        display: inline-block
+        width: 100%
+
+        @include medium
+          margin-left: 25%
+          width: 50%
+          vertical-align: middle
+
     a
       color: $brand
       border-color: $brand
+
+    .badges
+      vertical-align: middle
+      display: inline-block
+      width: 100%
+      padding-top: ms(-1)
+
+      @include medium
+        width: 25%
+        float: right
+        padding-top: 0
+
+      .badge
+        max-height: ms(3)
+        max-width: ms(9)
+        vertical-align: middle
+        display: inline
+        opacity: .75
+
+        @include medium
+          margin-top: -3px
+          float: right
