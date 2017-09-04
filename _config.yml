@@ -6,3 +6,4 @@ url: "http://claxondesign.co"
 markdown: kramdown
 sass:
   style: compressed
+incremental: true
