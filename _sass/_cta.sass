@@ -1,7 +1,7 @@
 .section.cta
-  background: #FFF
+  background: $accent
   color: $text
-  padding: 0 5% ms(4)
+  padding: ms(2) 5% ms(4)
   text-align: center
   position: relative
   z-index: 2
@@ -10,21 +10,21 @@
     text-align: center
 
   @include small
-    padding: 0 ms(3) ms(3)
+    padding: ms(2) ms(3) ms(3)
 
   @include medium
-    padding: 0 ms(3) ms(4)
+    padding: ms(2) ms(3) ms(4)
 
   .section__subhead
     font-size: ms(3)
     margin-bottom: ms(-4)
-    color: $brand
+    color: #FFF
     font-style: italic
     text-transform: initial
     font-weight: 300
     letter-spacing: initial
     margin-top: -(ms(5))
-    padding-top: ms(5)
+    padding-top: ms(6)
 
     @include small
       font-size: ms(4)
@@ -33,11 +33,11 @@
     @include medium
       font-size: ms(5)
       margin-bottom: ms(0)
-      margin-top: -(ms(7))
-      padding-top: ms(7)
+      margin-top: -(ms(6))
+      padding-top: ms(9)
 
   a
-    color: $brand
+    color: $background
 
     &:hover
-      color: $brand
+      color: $text

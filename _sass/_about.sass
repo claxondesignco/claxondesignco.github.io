@@ -1,12 +1,12 @@
 .about-section
-  background-color: #fff
+  background-color: $background
   padding-bottom: ms(3)
 
   .about-section-content
     max-width: $medium-column-max-width
     margin-left: auto
     margin-right: auto
-    background-color: #fff
+    background-color: $background
 
     @include medium
       margin-top: 2.9375rem
@@ -47,23 +47,33 @@
     color: $brand
     margin-top: ms(4)
 
-    form div.active label, form div.complete label
+    a:hover,
+    a:visited
       color: $brand
+
+    form div.active label, form div.complete label
+      color: $background
+
+    form h3
+      color: $brand
+
+    input[type="checkbox"]+label
+      color: $background
 
     input[type="checkbox"]+label::before
       border: 2px solid #767676
       background: $text
 
     input[type="checkbox"]:checked+label::before
-      border-color: $accent
+      border-color: $brand
       border-top: 0
       border-right: 0
 
     input[type="checkbox"]:focus+label::before
-      border-color: $accent
+      border-color: $brand
 
     input[type="submit"]:hover, input[type="submit"]:visited
-      color: $accent
+      color: $brand
 
 .writing
   list-style: none

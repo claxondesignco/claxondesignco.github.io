@@ -5,7 +5,7 @@ $border-radius: 0px
 $field-padding: .618rem
 $light-gray: #767676
 $text-color: #333338
-$highlight: $accent
+$highlight: $text
 $dark-highlight: $accent
 $light-background: #fafafa
 
@@ -66,10 +66,10 @@ form
       label
         left: 0
         top: -1.618em
-        color: #333338
+        color: $text
 
   h3
-    color: $brand-on-white
+    color: $text
 
 input[type="text"],
 input[type="email"],
@@ -89,7 +89,7 @@ textarea
   
   &:focus
     outline: none
-    border-color: $highlight
+    border-color: $brand
 
 input[type="submit"],
 input[type="reset"],
@@ -97,7 +97,7 @@ input[type="button"],
 button
   background: none
   border: 0
-  color: $brand
+  color: $background
   font: inherit
   font-weight: 400
   line-height: normal
@@ -165,7 +165,7 @@ input[type="checkbox"]
   &:checked
   
     & + label::before
-      border-color: $accent
+      border-color: $text
       border-top: 0
       border-right: 0
       border-radius: 0
@@ -177,7 +177,7 @@ input[type="checkbox"]
   &:checked:focus
 
     & + label::before
-      border-color: $highlight
+      border-color: $background
 
 fieldset
   border: none
@@ -195,7 +195,8 @@ legend
   font-size: ms(0)
 
   span
-    color: $light-gray
+    color: $background
+    font-weight: 300
 
 p.thanks
   display: none
