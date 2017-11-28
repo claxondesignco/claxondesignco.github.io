@@ -97,6 +97,7 @@ input[type="button"],
 button
   background: none
   border: 0
+  border-radius: 0
   color: $background
   font: inherit
   font-weight: 400
@@ -138,6 +139,7 @@ input[type="checkbox"]
     position: relative
     -webkit-transform: translate3d(0, 0, 0)
     transform: translateZ(0)
+    color: $background
 
     &::before
       content: ""
@@ -149,7 +151,7 @@ input[type="checkbox"]
       left: -1.8em
       border: $form-border
       border-radius: $border-radius
-      background: $light-background
+      background: transparent
       vertical-align: top
       box-sizing: border-box
       -webkit-transform: translate3d(0, 0, 0)
