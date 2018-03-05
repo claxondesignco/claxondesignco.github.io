@@ -224,7 +224,7 @@ section {
 	width: 10em;
 	text-align: center;
 	top: 51%;
-	color: rgba(0,0,0,.25);
+	color: rgba(0,0,0,.2);
 	font: 900 0.745rem/0.745rem "Karla";
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
@@ -236,13 +236,28 @@ section {
 	}
 }
 
+.section-title::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 6.4rem;
+	pointer-events: none;
+	box-shadow: inset 10px -1.323em 20px 0px #fff;
+}
+
 section.dark {
 	background-color: #242427;
 	color: #f8f5f2;
 }
 
 section.dark .section-title::before {
-	color: rgba(255,255,255, .25);
+	color: rgba(255,255,255,.2);
+}
+
+section.dark .section-title::after {
+	box-shadow: inset 10px -1.323em 10px 0px #242427;
 }
 
 section.dark a {
