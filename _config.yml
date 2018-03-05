@@ -25,8 +25,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
+sass:
+  style: compressed
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
