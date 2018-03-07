@@ -55,19 +55,19 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 #### Ethics & Priorities  
 
-- Charities  
+- #### Charities  
 
 	I support non-profit organizations and charities and offer them reduced rates, including a few pro-bono days a month for design and consulting. If you represent a non-profit or charitable organization, contact me for more information.  
 
-- Social Responsibility  
+- #### Social Responsibility  
 
 	I support civil rights and will not work with companies or organizations who engage in, promote, or profit from actions or speech that harms or discriminates against marginalized communities.  
 
-- Honesty  
+- #### Honesty  
 
 	I work to ensure truthfulness in communication and message, and I don’t work with companies whose messaging is dishonest or misleading.  
 
-- VC&nbsp;Funding  
+- #### VC&nbsp;Funding  
 
 	I hesitate to work with funded startups. It’s nothing personal, I just think projects go better when it’s your own, hard-earned cash on the line.
 
@@ -77,19 +77,19 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 #### Services  
  
-- Web Development  
+- #### Web Development  
 	- Web Design  
 	- UI/UX Design  
 	- Front End Development  
 	- Wordpress Hosting  
   - Accessibility & Web Standards Testing
-- Illustration  
+- #### Illustration  
 	- Icon Design  
 	- Editorial  
-- Print  
+- #### Print  
 	- Stationary  
 	- Apparel  
-- Brand Identity  
+- #### Brand Identity  
 	- Visual Systems  
 	- Logo Design  
 	- Brand Guidelines  

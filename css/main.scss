@@ -428,11 +428,14 @@ section.has-background{
 	display: grid;
 }
 
-.services > ul > li, .ethics ul li p:first-child {
+.services > ul > li, .services li > h3, .services li > h4, .ethics li > h3, .ethics li > h4, .ethics ul li p:first-child {
 	font-family: $serif;
 	font-size: ms(1);
+  font-weight: 400;
 	margin: 0 0 ms(1);
 	letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: $white-t4;
 }
 
 .services > ul li, .ethics ul li {
