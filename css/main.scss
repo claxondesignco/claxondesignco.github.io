@@ -29,7 +29,7 @@ body {
   width: 100%;
 }
 
-body > p {
+main > p {
 	margin-left: 2.2rem;
 }
 
@@ -159,27 +159,75 @@ nav[role="navigation"] {
   top: 0;
   right: 0;
   z-index: 9;
-  margin-top: ms(5);
+  font-size: ms(-1);
+  line-height: ms(2);
+  margin: ms(5) 5% 0 0;
+
+  button#toggle {
+    background: none;
+    border: 0;
+    color: $gold-s1;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $sans;
+    font-size: inherit;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7653333325rem;
+    transition: all 250ms ease;
+
+    &::before {
+      content: "";
+      width: 1em;
+      display: inline-block;
+      border-top: 0.13rem solid $gold-s1;
+      border-bottom: 0.13rem solid $gold-s1;
+      height: 0.3em;
+      margin: 0 0.7em 0.1em 0;
+    }
+
+    &:hover {
+      color: $red;
+
+      &::before {
+        border-color: $red;
+      }
+    }
+  }
 
   ul {
     list-style: none;
     text-align: right;
-    margin: 0 ms(3) 0 0;
+    display: block;
+    margin: 0;
+    transition: all 500ms ease;
+
+    &.hidden {
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
 
     li {
+      margin: 0;
       font-size: ms(-1);
       line-height: ms(2);
-      display: inline-block;
-      margin: 0;
-      
+
       a {
         text-shadow: none;
-        margin-right: ms(1)
       }
     }
   }
 }
 
+@media (min-width: 1328px) {
+  nav[role="navigation"] {
+    margin: ms(5) ms(3) 0 0;
+  }
+}
 #color-scheme + ul {
 	list-style: none;
 	margin: 0;
@@ -251,7 +299,7 @@ section {
 	position: fixed;
 	width: 10em;
 	text-align: center;
-	top: 51%;
+	top: 49vh;
 	color: rgba(0,0,0,.2);
 	font: 900 ms(-1) $mono;
   line-height: ms(-1);
@@ -470,7 +518,7 @@ section.dark > h5 {
 	border: none;
 
   &:hover {
-    color: $red-t1;
+    color: $white-t4;
   }
 }
 
