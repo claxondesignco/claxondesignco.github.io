@@ -332,7 +332,6 @@ section.light .section-title::after {
 	box-shadow: inset 10px -1.323rem 10px 0px $white-t1, inset 10px 1.323rem 10px 0px $white-t1;
 }
 
-
 section.light a {
   text-shadow: 0 0.09em 0 $white-t1, 0 0.1em 0 $white-t1, 0.09em 0.12em 0 $white-t1, -0.09em 0.12em 0 $white-t1;
 }
@@ -372,6 +371,20 @@ section.dark h4 {
 
 section.dark > h5 {
 	color: $white;
+}
+
+section.has-background{
+  .section-title::after {
+    box-shadow: none;
+  }
+  a {
+    color: $gold-s3;
+    text-shadow: none;
+
+    &:hover {
+      color: $red-s1;
+    }
+  }
 }
 
 .services,
