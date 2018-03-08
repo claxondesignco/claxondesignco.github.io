@@ -2,6 +2,8 @@
 layout: home
 ---
 
+
+{% include logo_small.svg %}
 <small  markdown="1">Adam Claxon  
 Claxon Design Co.  
 <adam@claxondesign.co></small>  

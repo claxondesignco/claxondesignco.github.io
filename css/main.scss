@@ -34,7 +34,7 @@ main > p {
 }
 
 @media (min-width: 727px) {
-	body > p {
+	main > p {
 		margin-left: 5.8rem;
 	}
 }
@@ -203,7 +203,6 @@ nav[role="navigation"] {
     text-align: right;
     display: block;
     margin: 0;
-    transition: all 500ms ease;
 
     &.hidden {
       overflow: hidden;
@@ -215,6 +214,7 @@ nav[role="navigation"] {
       margin: 0;
       font-size: ms(-1);
       line-height: ms(2);
+      display: block;
 
       a {
         text-shadow: none;
@@ -223,11 +223,39 @@ nav[role="navigation"] {
   }
 }
 
+.js {
+  #menu {
+    display: none;
+  }
+}
+
 @media (min-width: 1328px) {
   nav[role="navigation"] {
     margin: ms(5) ms(3) 0 0;
   }
 }
+
+.logo-small {
+  height: 1rem;
+  margin-bottom: .7653333325rem;
+  width: auto;
+	margin-left: 2.2rem;
+
+  .cd {
+    fill: $gold-t1;
+  }
+
+  .co {
+    fill: $black-t2;
+  }
+}
+
+@media (min-width: 727px) {
+	.logo-small {
+		margin-left: 5.8rem;
+	}
+}
+
 #color-scheme + ul {
 	list-style: none;
 	margin: 0;
@@ -504,7 +532,7 @@ section.has-background{
 }
 
 .pull-quote {
-	background-color: $black;
+	background-color: rgba(36,36,39,.96);
 	color: $white-t4;
 	padding: ms(2);
 	-webkit-font-smoothing: subpixel-antialiased;
