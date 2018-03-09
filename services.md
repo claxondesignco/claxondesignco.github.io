@@ -21,17 +21,17 @@ layout: default
   - Front End Development  
   - Wordpress Hosting  
   - Accessibility & Web Standards
+- ### Brand&nbsp;Identity  
+  - Naming & Identity  
+  - Visual Systems  
+  - Logo Design  
+  - Brand Guidelines  
+  - Creative Direction 
 - ### Illustration  
 	- Icon Design  
 	- Editorial  
 - ### Print  
 	- Stationary  
 	- Apparel  
-- ### Brand Identity  
-  - Naming & Identity  
-  - Visual Systems  
-  - Logo Design  
-  - Brand Guidelines  
-  - Creative Direction 
 
 </div>

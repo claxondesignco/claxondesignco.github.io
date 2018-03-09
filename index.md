@@ -2,12 +2,6 @@
 layout: home
 ---
 
-
-{% include logo_small.svg %}
-<small  markdown="1">Adam Claxon  
-Claxon Design Co.  
-<adam@claxondesign.co></small>  
-
 <section markdown="1"> 
 
 <div aria-hidden="true" class="section-title" data-section-title="Introduction"></div>  

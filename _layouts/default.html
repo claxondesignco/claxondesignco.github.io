@@ -14,11 +14,17 @@
     <nav role="navigation">
       <button id="toggle" aria-label="Navigation Menu" aria-expanded="true">Menu</button>
       <ul id="menu">
+        <li><a href="/services/">Services</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/work/">Work</a></li>
       </ul>
     </nav>
     <main role="main">
+      <a href="/" class="logo-link">{% include logo_small.svg %}</a>
+      <p><small>Adam Claxon<br>
+          Claxon Design Co.<br>
+      <a href="mailto:adam@claxondesign.co">adam@claxondesign.co</a></small></p>
+
       {{ content }}
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
