@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="dark" markdown="1"> 
+<section markdown="1"> 
 
 <div aria-hidden="true" class="section-title" data-section-title="Services"></div>  
 
@@ -10,11 +10,15 @@ layout: default
 
 ## In short, we solve problems.
 
-<div class="services" markdown="1">  
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.   
+
+Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+<div class="columns columns-4" markdown="1">
 
 ## Services  
  
-- ### Web Development  
+- ### Web&nbsp;Development  
 	- Web Design  
 	- UI/UX Design  
   - Responsive Design  

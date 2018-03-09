@@ -47,7 +47,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 ### Homepage Sections  
 
-<div class="ethics" markdown="1">  
+<div class="columns columns-2" markdown="1">  
 
 #### Ethics & Priorities  
 
@@ -69,7 +69,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 </div>
 
-<div class="services" markdown="1">  
+<div class="columns columns-4" markdown="1">  
 
 #### Services  
  
