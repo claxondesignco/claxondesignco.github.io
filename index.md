@@ -1,5 +1,6 @@
 ---
 layout: home
+page-title: Claxon Design Co.
 ---
 
 <section markdown="1"> 
