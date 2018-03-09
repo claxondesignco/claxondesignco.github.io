@@ -1,0 +1,68 @@
+nav[role="navigation"]
+  width: auto
+  position: fixed
+  top: 0
+  right: 0
+  z-index: 9
+  font-size: ms(-1)
+  line-height: ms(2)
+  margin: 3.5594938219rem 5% 0 0
+
+  button#toggle
+    background: none
+    border: 0
+    color: $gold
+    -webkit-appearance: button
+    -webkit-user-select: none
+    cursor: pointer
+    display: inline-block
+    font-family: $sans
+    font-size: inherit
+    text-transform: uppercase
+    margin: 0
+    padding: 0
+    line-height: 1.7653333325rem
+    transition: all 250ms ease
+
+    &::before
+      content: ""
+      width: 1em
+      display: inline-block
+      border-top: 0.13rem solid $gold
+      border-bottom: 0.13rem solid $gold
+      height: 0.3em
+      margin: 0 0.7em 0.1em 0
+
+    &:hover
+      color: $red
+
+      &::before
+        border-color: $red
+
+  ul
+    list-style: none
+    text-align: right
+    display: block
+    margin: 0
+
+    &.hidden
+      overflow: hidden
+      opacity: 0
+      pointer-events: none
+
+    li
+      margin: 0
+      font-size: ms(-1)
+      line-height: ms(2)
+      display: block
+
+      a
+        text-shadow: none
+
+.js
+  #menu
+    display: none
+
+@media (min-width: 1328px)
+  nav[role="navigation"]
+    margin: ms(5) ms(3) 0 0

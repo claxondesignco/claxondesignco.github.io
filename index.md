@@ -82,9 +82,10 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 - #### Web Development  
 	- Web Design  
 	- UI/UX Design  
-	- Front End Development  
-	- Wordpress Hosting  
-  - Accessibility & Web Standards Testing
+  - Responsive Design  
+  - Front End Development  
+  - Wordpress Hosting  
+  - Accessibility & Web Standards
 - #### Illustration  
 	- Icon Design  
 	- Editorial  
@@ -92,10 +93,11 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 	- Stationary  
 	- Apparel  
 - #### Brand Identity  
-	- Visual Systems  
-	- Logo Design  
-	- Brand Guidelines  
-	- Creative Direction 
+  - Naming & Identity  
+  - Visual Systems  
+  - Logo Design  
+  - Brand Guidelines  
+  - Creative Direction 
 
 </div>
 
