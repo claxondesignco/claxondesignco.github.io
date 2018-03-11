@@ -7,6 +7,9 @@ page-title: Claxon Design Co.
 
 <div aria-hidden="true" class="section-title" data-section-title="Introduction"></div>  
 
+<div class="columns columns-2" markdown="1">
+
+<div markdown="1">
 # Website Redesign  
 
 ## What Problems are we Solving?  
@@ -15,6 +18,11 @@ The current site is nice, but ultimately boring. There are few interest-grabbing
 
 The site also lacks a "modern" website feel; no animations, no real "UX" to speak of, etc.—no "delight"; it's boring.  
 
+</div>
+<div>
+<img src="http://via.placeholder.com/350x150">
+</div>
+</div>
 </section>  
 
 <section class="light" markdown="1">  
@@ -48,53 +56,10 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 ### Homepage Sections  
 
-<div class="columns columns-2" markdown="1">  
 
-#### Ethics & Priorities  
+{% include sections-ethics.md %}
 
-- #### Charities  
-
-	I support non-profit organizations and charities and offer them reduced rates, including a few pro-bono days a month for design and consulting. If you represent a non-profit or charitable organization, contact me for more information.  
-
-- #### Social Responsibility  
-
-	I support civil rights and will not work with companies or organizations who engage in, promote, or profit from actions or speech that harms or discriminates against marginalized communities.  
-
-- #### Honesty  
-
-	I work to ensure truthfulness in communication and message, and I don’t work with companies whose messaging is dishonest or misleading.  
-
-- #### VC&nbsp;Funding  
-
-	I hesitate to work with funded startups. It’s nothing personal, I just think projects go better when it’s your own, hard-earned cash on the line.
-
-</div>
-
-<div class="columns columns-4" markdown="1">  
-
-#### Services  
- 
-- #### Web Development  
-	- Web Design  
-	- UI/UX Design  
-  - Responsive Design  
-  - Front End Development  
-  - Wordpress Hosting  
-  - Accessibility & Web Standards
-- #### Illustration  
-	- Icon Design  
-	- Editorial  
-- #### Print  
-	- Stationary  
-	- Apparel  
-- #### Brand Identity  
-  - Naming & Identity  
-  - Visual Systems  
-  - Logo Design  
-  - Brand Guidelines  
-  - Creative Direction 
-
-</div>
+{% include sections-services.md %}
 
 #### Design Process  
 

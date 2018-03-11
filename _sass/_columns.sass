@@ -1,29 +1,32 @@
 .columns
   margin: 0
 
-.columns.columns-4 ul
+.columns.columns-4
   grid: auto / 1fr
 
 @media (min-width: 900px)
-  .columns.columns-2 ul
+  .columns.columns-2
     grid: auto / 1fr 1fr
+    grid-column-gap: ms(3)
 
-.columns.columns-4 ul
+.columns.columns-4
   grid: auto / auto
 
 @media (min-width: 540px)
-  .columns.columns-4 ul
+  .columns.columns-4
     grid: auto / auto auto
+    grid-column-gap: ms(3)
 
 @media (min-width: 840px)
-  .columns.columns-4 ul
+  .columns.columns-4
     grid: auto / auto auto auto auto
+    grid-column-gap: ms(1)
 
-.columns ul
+.columns
   padding: 0
   display: grid
 
-.columns li > h3, .columns li > h4, .columns ul li p:first-child
+.columns li > h3, .columns li > h4, .columns li p:first-child
   font-family: $serif
   font-size: ms(1)
   font-weight: 400
@@ -32,26 +35,22 @@
   text-transform: capitalize
   -webkit-font-smoothing: subpixel-antialiased
 
-section.dark .columns > ul > li, section.dark .columns li > h3, section.dark .columns li > h4, section.dark section.dark .columns ul li p:first-child
+section.dark .columns > li, section.dark .columns li > h3, section.dark .columns li > h4, section.dark section.dark .columns li p:first-child
   color: $white-t4
   -webkit-font-smoothing: antialiased
 
-.columns > ul li
+.columns > li
   list-style: none
   margin-bottom: ms(2)
 
-.columns.columns-4 > ul li
-  padding-right: ms(1)
-
-.columns.columns-2 ul li
-  padding-right: ms(3)
-
-.columns.columns-4 ul li ul
+.columns.columns-4 li ul
   margin-top: ms(1)
   display: block
   margin-bottom: 0
+  list-style: none
+  padding: 0
 
-.columns.columns-4 ul li ul li
+.columns.columns-4 li ul li
   float: none
   width: 100%
   font-family: $sans
@@ -60,5 +59,5 @@ section.dark .columns > ul > li, section.dark .columns li > h3, section.dark .co
   letter-spacing: 0
   -webkit-font-smoothing: subpixel-antialiased
 
-section.dark .columns.columns-4 ul li ul li
+section.dark .columns.columns-4 li ul li
   -webkit-font-smoothing: antialiased

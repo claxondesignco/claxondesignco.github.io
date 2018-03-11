@@ -14,28 +14,4 @@ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut ferm
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-<div class="columns columns-4" markdown="1">
-
-## Services  
- 
-- ### Web&nbsp;Development  
-	- Web Design  
-	- UI/UX Design  
-  - Responsive Design  
-  - Front End Development  
-  - Wordpress Hosting  
-  - Accessibility & Web Standards
-- ### Brand&nbsp;Identity  
-  - Naming & Identity  
-  - Visual Systems  
-  - Logo Design  
-  - Brand Guidelines  
-  - Creative Direction 
-- ### Illustration  
-	- Icon Design  
-	- Editorial  
-- ### Print  
-	- Stationary  
-	- Apparel  
-
-</div>
+{% include sections-services.md %}
