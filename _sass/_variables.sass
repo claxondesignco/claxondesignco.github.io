@@ -1,50 +1,78 @@
 @import "modular-scale/modular-scale"
 
-$sans: Karla, "Trebuchet MS", Helvetica, sans-serif
-$serif: "Playfair Display", "Palatino Linotype", "Book Antiqua", Palatino, serif
-$mono: "Lucida Console", Monaco, monospace
-$ms0: ms(0)
-$ms1: ms(1)
-$ms2: ms(2)
-$ms3: ms(3)
-$ms4: ms(4)
-$ms5: ms(5)
-$ms6: ms(6)
-$ms7: ms(7)
-$ms8: ms(8)
-
 /* Colors
 
-$black: #242427
-$black-t1: #3A3A3D
-$black-t2: #505052
-$black-t3: #666668
-$black-t4: #7C7C7D
-$black-s1: #040408
-$gold: #c1812d
-$gold-t1: #d68f32
-$gold-t2: #da9a47 
-$gold-t3: #dea55b
-$gold-t4: #e2b170
-$gold-s1: #ab7228
-$gold-s2: #966423
-$gold-s3: #80561e
-$gold-s4: #6b4819
-$white: #F8F5F2
-$white-t1: #FAF8F6
-$white-t2: #FDFCFB
-$white-t3: #FEFDFC
-$white-t4: #FFFFFF
-$white-s1: #DFDDDA
-$white-s2: #C6C4C2
-$white-s3: #AEACA9
-$white-s4: #959391
-$red: #d44d56
-$red-t1: #da5e64
-$red-t2: #DE7075
-$red-t3: #E28286
-$red-t4: #E69497
-$red-s1: #C1444B
-$red-s2: #AC3C43
-$red-s3: #97343B
-$red-s4: #822C33
+\:root
+  --black:    #242427
+  --black-t1: #3A3A3D
+  --black-t2: #505052
+  --black-t3: #666668
+  --black-t4: #7C7C7D
+  --black-s1: #040408
+  --gold:     #c1812d
+  --gold-t1:  #d68f32
+  --gold-t2:  #da9a47 
+  --gold-t3:  #dea55b
+  --gold-t4:  #e2b170
+  --gold-s1:  #ab7228
+  --gold-s2:  #966423
+  --gold-s3:  #80561e
+  --gold-s4:  #6b4819
+  --white:    #F8F5F2
+  --white-t1: #FAF8F6
+  --white-t2: #FDFCFB
+  --white-t3: #FEFDFC
+  --white-t4: #FFFFFF
+  --white-s1: #DFDDDA
+  --white-s2: #C6C4C2
+  --white-s3: #AEACA9
+  --white-s4: #959391
+  --red:      #d44d56
+  --red-t1:   #da5e64
+  --red-t2:   #DE7075
+  --red-t3:   #E28286
+  --red-t4:   #E69497
+  --red-s1:   #C1444B
+  --red-s2:   #AC3C43
+  --red-s3:   #97343B
+  --red-s4:   #822C33
+  --sans: Karla, "Trebuchet MS", Helvetica, sans-serif
+  --serif: "Playfair Display", "Palatino Linotype", "Book Antiqua", Palatino, serif
+  --mono: "Lucida Console", Monaco, monospace
+
+$sans: var(--sans)
+$serif: var(--serif)
+$mono: var(--mono)
+$black:    var(--black)
+$black-t1: var(--black-t1)
+$black-t2: var(--black-t2)
+$black-t3: var(--black-t3)
+$black-t4: var(--black-t4)
+$black-s1: var(--black-s1)
+$gold:     var(--gold)
+$gold-t1:  var(--gold-t1)
+$gold-t2:  var(--gold-t2)
+$gold-t3:  var(--gold-t3)
+$gold-t4:  var(--gold-t4)
+$gold-s1:  var(--gold-s1)
+$gold-s2:  var(--gold-s2)
+$gold-s3:  var(--gold-s3)
+$gold-s4:  var(--gold-s4)
+$white:    var(--white)
+$white-t1: var(--white-t1)
+$white-t2: var(--white-t2)
+$white-t3: var(--white-t3)
+$white-t4: var(--white-t4)
+$white-s1: var(--white-s1)
+$white-s2: var(--white-s2)
+$white-s3: var(--white-s3)
+$white-s4: var(--white-s4)
+$red:      var(--red)
+$red-t1:   var(--red-t1)
+$red-t2:   var(--red-t2)
+$red-t3:   var(--red-t3)
+$red-t4:   var(--red-t4)
+$red-s1:   var(--red-s1)
+$red-s2:   var(--red-s2)
+$red-s3:   var(--red-s3)
+$red-s4:   var(--red-s4)

@@ -14,7 +14,7 @@ body
   -webkit-font-smoothing: antialiased
   font-weight: 400
   margin: 0
-  color: $black-t2
+  color: var(--black-t2)
   padding: ms(5) 0 0!important
   margin: 0 0 0 !important
   width: 100%
@@ -51,7 +51,7 @@ h1
   font-family: $serif
   -webkit-font-smoothing: subpixel-antialiased
   font-weight: 900
-  color: $black-s1
+  color: var(--black-s1)
   position: relative
   margin: 0 0 ms(1)
 
@@ -62,7 +62,7 @@ h1 + h2
   font-size: ms(1)
   line-height: ms(3)
   letter-spacing: 0.01em
-  color: $gold
+  color: var(--gold)
   -webkit-font-smoothing: antialiased
   margin: 0 0 ms(1)
 
@@ -72,13 +72,13 @@ h2
   margin: 0 0 ms(1)
   font-family: $serif
   font-weight: 700
-  color: $black-t1
+  color: var(--black-t1)
   -webkit-font-smoothing: subpixel-antialiased
 
 h1 + p,
 h2 + p
   font-size: ms(1)
-  color: $black
+  color: var(--black)
   line-height: ms(2)
 
 p + h2,
@@ -92,13 +92,13 @@ h3
   line-height: ms(1)
   margin: 0 0 ms(2)
   font-weight: 400
-  color: $black-t1
+  color: var(--black-t1)
 
 h4
   font-size: ms(0)
   text-transform: uppercase
   letter-spacing: 0.01em
-  color: $black-t2
+  color: var(--black-t2)
   margin: 0 0 ms(1)
 
 h5
@@ -116,10 +116,10 @@ a
   -o-transition: color .2s ease-in-out
   -ms-transition: color .2s ease-in-out
   transition: color .2s ease-in-out
-  color: $gold
+  color: var(--gold)
   text-decoration: none
   border-bottom: 0.07em solid
   text-shadow: 0 0.09em 0 $white-t4, 0 0.1em 0 $white-t4, 0.09em 0.12em 0 $white-t4, -0.09em 0.12em 0 $white-t4
 
   &:hover
-    color: $red-s1
+    color: var(--red-s1)
