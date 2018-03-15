@@ -119,3 +119,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 - `max-width` on `p` elements  
 
 </section>
+
+<section>
+  {% include contactform.html %}
+</section>
