@@ -13,7 +13,7 @@ $dark-highlight: $accent
 $light-background: $white-t4
 
 label
-  font-size: ms(0)
+  font-size: ms(-1)
   line-height: 1.5em
   font-family: $sans
   color: $black-t2
@@ -37,9 +37,10 @@ form
     transform: translateZ(0)
     
     label
-      font-size: ms(0)
+      font-size: ms(-1)
       line-height: 1.5em
       font-family: $sans
+      font-weight: bold
 
 .js form div label
   position: absolute
@@ -54,6 +55,7 @@ form
     bottom: -$ms1
     color: $red
     font-size: ms(-1)
+    font-weight: 400
 
 .js form div
   &.active,
@@ -61,7 +63,7 @@ form
     
     label
       left: 0
-      top: -$ms1
+      top: -$ms0
 
       &.error
         top: auto
@@ -138,6 +140,7 @@ input[type="checkbox"]
     transform: translateZ(0)
     transition: color $animate-time $animate-timing
     color: $black-t2
+    font-size: $ms0
 
     &::before
       content: ""
