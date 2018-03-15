@@ -52,28 +52,29 @@ form
       line-height: 1.5em
       font-family: $sans
       color: $light-gray
-      position: absolute
-      left: calc(.618em + 2px)
-      top: calc(.618em + 2px)
-      transition: top $animate-time ease-in-out, left $animate-time ease-in-out, color $animate-time ease-in-out
-
-      -webkit-transform: translate3d(0, 0, 0)
-      transform: translateZ(0)
-    
-    &.active,
-    &.complete
-      margin-top: 2.618em
-      
-      &::first-of-type
-        margin-top: 1em
-      
-      label
-        left: 0
-        top: -1.618em
-        color: $text
 
   h3
     color: $text
+
+.js form div label
+  position: absolute
+  left: calc(.618em + 2px)
+  top: calc(.618em + 2px)
+  transition: top $animate-time ease-in-out, left $animate-time ease-in-out, color $animate-time ease-in-out
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translateZ(0)
+
+  &.active,
+  &.complete
+    margin-top: 2.618em
+    
+    &::first-of-type
+      margin-top: 1em
+    
+    label
+      left: 0
+      top: -1.618em
+      color: $text
 
 input[type="text"],
 input[type="email"],
