@@ -1,46 +1,37 @@
 $animate-timing: ease-in-out
 $animate-time: 200ms
-$form-border: 2px solid #ebebeb
 $border-radius: 0px
 $field-padding: .618rem
-$light-gray: #767676
-$text-color: #333338
+$light-gray: $black-t3
+$text-color: $black
 $highlight: $black
 $text: $black
 $background: $black-t3
-$accent: $gold
-$brand: $gold
+$accent: $gold-t1
+$brand: $gold-t1
 $dark-highlight: $accent
-$light-background: #fafafa
+$light-background: $white-t4
 
 @mixin desktop
   @media (min-width: 670px)
     @content
 
-.section.section_form-container
-  height: auto
-  overflow: auto
-
 label
   font-size: ms(0)
   line-height: 1.5em
   font-family: $sans
+  color: $black-t2
 
   h3
     margin-bottom: 0.25em
 
 form
-  margin: 1em auto
-  width: 95%
+  margin: ms(1) 0
   text-align: left
-  
-  @include desktop
-    max-width: 43.24878rem
-    margin-left: auto
-    margin-right: auto
+  max-width: ms(14)
   
   div
-    margin: 1em 0
+    margin: ms(0) 0
     position: relative
     transition: margin $animate-time ease-in-out
     -webkit-transform: translate3d(0, 0, 0)
@@ -48,34 +39,24 @@ form
     
     label
       font-size: ms(0)
-      font-weight: 400
       line-height: 1.5em
       font-family: $sans
-      color: $light-gray
-
-  h3
-    color: $text
 
 .js form div label
   position: absolute
-  left: calc(.618em + 2px)
-  top: calc(.618em + 2px)
-  transition: top $animate-time ease-in-out, left $animate-time ease-in-out, color $animate-time ease-in-out
+  left: 0
+  top: $ms1 - 1rem
+  transition: top $animate-time ease-in-out, color $animate-time ease-in-out
   -webkit-transform: translate3d(0, 0, 0)
   transform: translateZ(0)
 
 .js form div
   &.active,
   &.complete
-    margin-top: 2.618em
-    
-    &::first-of-type
-      margin-top: 1em
     
     label
       left: 0
-      top: -1.618em
-      color: $text
+      top: -$ms1
 
 input[type="text"],
 input[type="email"],
@@ -84,30 +65,32 @@ input[type="url"],
 textarea
   -webkit-appearance: none
   width: 100%
-  padding: $field-padding
+  padding: calc(#{$ms1} - 1rem) 0
   font-size: ms(0)
-  border-radius: $border-radius
-  border: $form-border
+  border: 0
+  border-bottom: ms(-8) solid $white-s1
   transition: border $animate-time $animate-timing
   font-size: ms(0)
   line-height: 1.5em
   font-family: $sans
+  color: $black-s1
   
   &:focus
     outline: none
     border-color: $brand
+
+textarea
+  border: ms(-8) solid $white-s1
+  padding: ms(-1) ms(-1)
 
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button
   background: none
-  border: 0
-  border-radius: 0
-  color: $background
+  color: $gold
   font: inherit
   font-weight: 400
-  line-height: normal
   overflow: visible
   padding: 0
   margin-top: 1em
@@ -116,13 +99,6 @@ button
   -webkit-user-select: none
   -moz-user-select: none
   -ms-user-select: none
-  border-bottom: 2px solid currentColor
-
-.brand-questionnaire input[type="submit"]
-  color: $text
-
-  &:hover
-    color: $brand
 
 input::-moz-focus-inner,
 button::-moz-focus-inner
@@ -151,35 +127,38 @@ input[type="checkbox"]
     position: relative
     -webkit-transform: translate3d(0, 0, 0)
     transform: translateZ(0)
-    color: $background
+    transition: color $animate-time $animate-timing
+    color: $black-t2
 
     &::before
       content: ""
-      width: 1.2em
-      height: 1.2em
+      width: ms(0)
+      height: ms(0)
       display: block
       position: absolute
       top: 0
-      left: -1.8em
-      border: $form-border
-      border-radius: $border-radius
+      left: -1.7em
       background: transparent
+      border: ms(-8) solid $white-s2
       vertical-align: top
       box-sizing: border-box
       -webkit-transform: translate3d(0, 0, 0)
       transform: translateZ(0)
       transition: border $animate-time $animate-timing, transform $animate-time $animate-timing, background $animate-time $animate-timing, height $animate-time $animate-timing
-  
+    
   &:focus
     outline: 0
 
     & + label::before
-      border-color: $highlight
+      border-color: $red
     
   &:checked
+
+    & + label
+      color: $black-s1
   
     & + label::before
-      border-color: $text
+      border-color: $gold-t1
       border-top: 0
       border-right: 0
       border-radius: 0
@@ -191,24 +170,24 @@ input[type="checkbox"]
   &:checked:focus
 
     & + label::before
-      border-color: $background
+      border-color: $red
 
 fieldset
   border: none
   padding: 0
-  margin: 0 0 1em
+  margin: ms(0) 0 ms(2)
 
   h3
-    margin-bottom: 0.25em
+    margin-bottom: 0
   
 legend
-  float: left
   width: 100%
   display: block
-  margin-bottom: 1em
+  margin-bottom: ms(0)
   font-size: ms(0)
 
   span
     color: $background
     font-weight: 300
-
+    font-size: ms(-1)
+    line-height: ms(0)

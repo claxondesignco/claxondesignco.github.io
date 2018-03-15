@@ -121,5 +121,6 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 </section>
 
 <section>
+<div aria-hidden="true" class="section-title" data-section-title="Contact"></div>  
   {% include contactform.html %}
 </section>
