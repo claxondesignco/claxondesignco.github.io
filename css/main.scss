@@ -6,8 +6,8 @@
 @import "navigation";
 
 .logo-small {
-  height: 1rem;
-  margin-bottom: .3rem;
+  height: ms(0);
+  margin-bottom: calc((#{$ms1} - #{$ms0}) / 2);
   width: auto;
 	margin-left: 2.2rem;
 
@@ -110,3 +110,4 @@ code {
 	padding: 0.5em 1em;
 	border-radius: 2px;
 }
+@import "decorations";
