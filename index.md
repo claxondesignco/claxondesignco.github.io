@@ -20,7 +20,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 </div>
 <div>
-<img src="http://via.placeholder.com/350x150">
+<img src="http://endangered.photo/400/300">
 </div>
 </div>
 </section>  
