@@ -30,7 +30,7 @@ form
     margin-bottom: ms(0)
   
   div
-    margin: ms(0) 0
+    margin: ms(1) 0
     position: relative
     transition: margin $animate-time ease-in-out
     -webkit-transform: translate3d(0, 0, 0)
@@ -49,6 +49,12 @@ form
   -webkit-transform: translate3d(0, 0, 0)
   transform: translateZ(0)
 
+  &.error
+    top: auto
+    bottom: -$ms1
+    color: $red
+    font-size: ms(-1)
+
 .js form div
   &.active,
   &.complete
@@ -56,6 +62,9 @@ form
     label
       left: 0
       top: -$ms1
+
+      &.error
+        top: auto
 
 input[type="text"],
 input[type="email"],
