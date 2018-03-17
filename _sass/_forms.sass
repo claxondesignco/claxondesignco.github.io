@@ -125,7 +125,7 @@ div + label
   display: block
   font-weight: bold
 
-input[type="checkbox"]
+form div input[type="checkbox"]
   width: 2em
   position: relative
   overflow: hidden
@@ -142,6 +142,7 @@ input[type="checkbox"]
     transition: color $animate-time $animate-timing
     color: $black-t2
     font-size: $ms0
+    font-weight: 400
     cursor: pointer
 
     &::before
@@ -205,3 +206,6 @@ legend
     font-weight: 300
     font-size: ms(-1)
     line-height: ms(0)
+
+form fieldset .columns > div
+  margin: 0
