@@ -9,7 +9,7 @@ page-title: Claxon Design Co.
 
 <div class="columns columns-2" markdown="1">
 
-<div markdown="1">
+<div markdown="1" class="with-aside">
 # Website Redesign  
 
 ## What Problems are we Solving?  
@@ -19,9 +19,9 @@ The current site is nice, but ultimately boring. There are few interest-grabbing
 The site also lacks a "modern" website feel; no animations, no real "UX" to speak of, etc.—no "delight"; it's boring.  
 
 </div>
-<div>
-<img src="http://endangered.photo/400/300">
-</div>
+  <div class="aside">
+    <img src="http://endangered.photo/400/300">
+  </div>
 </div>
 </section>  
 
