@@ -26,8 +26,8 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 </section>  
 
 <section class="light" markdown="1">  
-
 <div aria-hidden="true" class="section-title" data-section-title="Inspiration"></div>  
+<div data-aos="fade-up" markdown="1">
 
 ## Inspiration   
 
@@ -35,12 +35,13 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 [A.IIX](https://cdn.dribbble.com/users/388811/screenshots/3884812/attachments/883129/4_1.jpg)  
 
+</div>
 </section>  
 
 <section class="dark" markdown="1">  
 
 <div aria-hidden="true" class="section-title" data-section-title="Content"></div>  
-
+<div data-aos="fade-up" markdown="1">
 ## Content  
 
 ### Notes to Hit  
@@ -81,7 +82,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 	- [ICIT Solutions](http://icitsolutions.com)  
 		- Web Design  
 		- Web Development  
-
+</div>
 </section>
 
 <section class="has-background" markdown="1" style="background-image: url(/assets/images/flowers.jpg); background-size: cover;">  

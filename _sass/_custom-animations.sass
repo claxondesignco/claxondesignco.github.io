@@ -1,0 +1,24 @@
+[data-aos=fade-up]
+  transform: translateY(15px)!important
+  display: block
+
+[data-aos^=fade][data-aos^=fade].aos-animate
+  transform: translateY(0)!important
+
+[data-aos="blank-out"]
+  position: relative
+
+[data-aos="blank-out"]::after
+  content: ""
+  height: 1.764rem
+  background-color: $white
+  display: inline-block
+  float: left
+  position: absolute
+  left: 0%
+  top: 0
+  right: 0%
+  transition: all 400ms ease-in-out
+
+[data-aos="blank-out"].aos-animate::after
+  left: 100%
