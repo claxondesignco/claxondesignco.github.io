@@ -29,7 +29,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 <div aria-hidden="true" class="section-title" data-section-title="Inspiration"></div>  
 <div data-aos="fade-up" markdown="1">
 
-## Inspiration   
+<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Inspiration</span></h2>   
 
 [Designers Checklists by Adrien-Heury](http://adrien-heury.net/designers-checklists/)
 
@@ -41,8 +41,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 <section class="dark" markdown="1">  
 
 <div aria-hidden="true" class="section-title" data-section-title="Content"></div>  
-<div data-aos="fade-up" markdown="1">
-## Content  
+<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Content</span></h2>  
 
 ### Notes to Hit  
 
@@ -82,14 +81,13 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 	- [ICIT Solutions](http://icitsolutions.com)  
 		- Web Design  
 		- Web Development  
-</div>
 </section>
 
 <section class="has-background" markdown="1" style="background-image: url(/assets/images/flowers.jpg); background-size: cover;">  
 
 <div aria-hidden="true" class="section-title" data-section-title="Design"></div>  
 
-## Design   
+<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Design</span></h2>
 
 ### Layout  
 
@@ -113,7 +111,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 <div aria-hidden="true" class="section-title" data-section-title="Development"></div>  
 
-## Web Features  
+<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Web Features</span></h2>
 
 - Truly responsive type (i.e., sized in `vh`/`vw`, at least for headlines)
 - Truly custom <abbr>CSS</abbr> Grid  
