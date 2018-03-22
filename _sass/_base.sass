@@ -29,7 +29,8 @@ main > p
 li p
   margin: .5em 0
 
-p, li
+p,
+li
   -webkit-font-smoothing: antialiased
   font-size: ms(0)
   max-width: 34em
@@ -39,7 +40,7 @@ p
   margin: 0 0 ms(1)
 
 li
-  margin: 0.4965rem 0 0.4965rem
+  margin: .4965rem 0 .4965rem
 
 small
   font-size: ms(-1)
@@ -61,7 +62,7 @@ h1 + h2
   font-weight: 700
   font-size: ms(1)
   line-height: ms(3)
-  letter-spacing: 0.01em
+  letter-spacing: .01em
   color: var(--gold)
   -webkit-font-smoothing: antialiased
   margin: 0 0 ms(1)
@@ -97,7 +98,7 @@ h3
 h4
   font-size: ms(0)
   text-transform: uppercase
-  letter-spacing: 0.01em
+  letter-spacing: .01em
   color: var(--black-t2)
   margin: 0 0 ms(1)
 
@@ -111,9 +112,9 @@ ul
   margin-bottom: ms(2)
 
 a,
-input[type="submit"],
-input[type="resit"],
-input[type="button"]
+input[type='submit'],
+input[type='resit'],
+input[type='button']
   -webkit-transition: color .2s ease-in-out
   -moz-transition: color .2s ease-in-out
   -o-transition: color .2s ease-in-out
@@ -122,8 +123,9 @@ input[type="button"]
   color: var(--gold)
   text-decoration: none
   border: 0
-  border-bottom: 0.07em solid currentColor
-  text-shadow: 0 0.09em 0 $white-t4, 0 0.1em 0 $white-t4, 0.09em 0.12em 0 $white-t4, -0.09em 0.12em 0 $white-t4
+  border-bottom: .07em solid currentColor
+  text-shadow: 0 .09em 0 $white-t4, 0 .1em 0 $white-t4, .09em .12em 0 $white-t4, -.09em .12em 0 $white-t4
 
   &:hover
     color: var(--red-s1)
+

@@ -1,6 +1,6 @@
 $animate-timing: ease-in-out
 $animate-time: 200ms
-$border-radius: 0px
+$border-radius: 0
 $field-padding: .618rem
 $light-gray: $black-t3
 $text-color: $black
@@ -19,7 +19,7 @@ label
   color: $black-t4
 
   h2
-    margin-bottom: 0.25em
+    margin-bottom: .25em
 
 form
   margin: 0 0 ms(1)
@@ -28,14 +28,14 @@ form
 
   h2
     margin-bottom: ms(0)
-  
+
   div
     margin: ms(1) 0
     position: relative
     transition: margin $animate-time ease-in-out
     -webkit-transform: translate3d(0, 0, 0)
     transform: translateZ(0)
-    
+
     label
       font-size: ms(-1)
       line-height: 1.5em
@@ -60,7 +60,7 @@ form
 .js form div
   &.active,
   &.complete
-    
+
     label
       left: 0
       top: -$ms0
@@ -68,10 +68,10 @@ form
       &.error
         top: auto
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="url"],
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
 textarea
   -webkit-appearance: none
   width: 100%
@@ -85,7 +85,7 @@ textarea
   font-family: $sans
   color: $black-s1
   background-color: transparent
-  
+
   &:focus
     outline: none
     border-color: $brand
@@ -94,9 +94,9 @@ textarea
   border: ms(-8) solid $white-s1
   padding: ms(-1) ms(-1)
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
 button
   background: none
   color: $gold
@@ -117,7 +117,7 @@ button::-moz-focus-inner
   padding: 0
 
 textarea
-  margin-top: 0.5rem
+  margin-top: .5rem
 
 textarea + label,
 div + label
@@ -125,11 +125,11 @@ div + label
   display: block
   font-weight: bold
 
-form div input[type="checkbox"]
+form div input[type='checkbox']
   width: 2em
   position: relative
   overflow: hidden
-  margin: 0 0.9em 0 0
+  margin: 0 .9em 0 0
   padding: 0
   border: 0
   outline: 0
@@ -146,7 +146,7 @@ form div input[type="checkbox"]
     cursor: pointer
 
     &::before
-      content: ""
+      content: ''
       width: ms(0)
       height: ms(0)
       display: block
@@ -160,18 +160,18 @@ form div input[type="checkbox"]
       -webkit-transform: translate3d(0, 0, 0)
       transform: translateZ(0)
       transition: border $animate-time $animate-timing, transform $animate-time $animate-timing, background $animate-time $animate-timing, height $animate-time $animate-timing
-    
-  &:focus
+
+    &:focus
     outline: 0
 
     & + label::before
       border-color: $red
-    
-  &:checked
+
+    &:checked
 
     & + label
       color: $black-s1
-  
+
     & + label::before
       border-color: $gold-t1
       border-top: 0
@@ -179,10 +179,10 @@ form div input[type="checkbox"]
       border-radius: 0
       -webkit-transform: translate3d(0, 0, 0)
       transform: rotate(-45deg)
-      height: 0.618em
+      height: .618em
       background: transparent
-   
-  &:checked:focus
+
+    &:checked:focus
 
     & + label::before
       border-color: $red
@@ -194,8 +194,8 @@ fieldset
 
   h2
     margin-bottom: 0
-  
-legend
+
+  legend
   width: 100%
   display: block
   margin-bottom: ms(0)
@@ -209,3 +209,4 @@ legend
 
 form fieldset .columns > div
   margin: 0
+

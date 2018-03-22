@@ -24,7 +24,7 @@ section
     width: 6.4rem
 
 .section-title::before
-  content: ""attr(data-section-title)""
+  content: ''attr(data-section-title)''
   display: inline-block
   transform: rotate(-90deg)
   left: -(ms(1))
@@ -36,30 +36,30 @@ section
   font: 900 ms(-1) $mono
   line-height: ms(-1)
   text-transform: uppercase
-  letter-spacing: 0.3em
+  letter-spacing: .3em
 
 @media (min-width: 727px)
   .section-title::before
     left: 2.369rem
 
 .section-title::after
-  content: ""
+  content: ''
   position: absolute
   top: 0
   bottom: 0
   left: 0
   width: 6.4rem
   pointer-events: none
-  box-shadow: inset 10px -1.323rem 20px 0px $white-t4, inset 10px 1.323rem 20px 0px $white-t4
+  box-shadow: inset 10px -1.323rem 20px 0 $white-t4, inset 10px 1.323rem 20px 0 $white-t4
 
 section.light
   background-color: $white-t1
 
 section.light .section-title::after
-  box-shadow: inset 10px -1.323rem 10px 0px $white-t1, inset 10px 1.323rem 10px 0px $white-t1
+  box-shadow: inset 10px -1.323rem 10px 0 $white-t1, inset 10px 1.323rem 10px 0 $white-t1
 
 section.light a
-  text-shadow: 0 0.09em 0 $white-t1, 0 0.1em 0 $white-t1, 0.09em 0.12em 0 $white-t1, -0.09em 0.12em 0 $white-t1
+  text-shadow: 0 .09em 0 $white-t1, 0 .1em 0 $white-t1, .09em .12em 0 $white-t1, -.09em .12em 0 $white-t1
 
 section.dark
   background-color: $black
@@ -69,11 +69,11 @@ section.dark .section-title::before
   color: rgba(255,255,255,.2)
 
 section.dark .section-title::after
-  box-shadow: inset 10px -1.323rem 10px 0px $black, inset 10px 1.323rem 10px 0px $black
+  box-shadow: inset 10px -1.323rem 10px 0 $black, inset 10px 1.323rem 10px 0 $black
 
 section.dark a
   color: $gold-t2
-  text-shadow: 0 0.09em 0 $black, 0 0.1em 0 $black, 0.09em 0.12em 0 $black, -0.09em 0.12em 0 $black
+  text-shadow: 0 .09em 0 $black, 0 .1em 0 $black, .09em .12em 0 $black, -.09em .12em 0 $black
 
   &:hover
     color: $red-t1
@@ -85,7 +85,7 @@ section.dark h2
   color: $white-t4
   -webkit-font-smoothing: antialiased
 
-section.dark h1+h2
+section.dark h1 + h2
   color: $white-s4
 
 section.dark h3
