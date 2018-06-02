@@ -56,6 +56,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 ### Homepage Sections  
 
+
 {% include sections-services.md %}
 
 {% include sections-ethics.md %}
