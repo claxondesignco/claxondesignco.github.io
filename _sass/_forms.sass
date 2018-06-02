@@ -161,19 +161,19 @@ form div input[type='checkbox']
       transform: translateZ(0)
       transition: border $animate-time $animate-timing, transform $animate-time $animate-timing, background $animate-time $animate-timing, height $animate-time $animate-timing
 
-    &:focus
+  &:focus
     outline: 0
 
     & + label::before
-      border-color: $red
+      border-color: $gold
 
-    &:checked
+  &:checked
 
     & + label
       color: $black-s1
 
     & + label::before
-      border-color: $gold-t1
+      border-color: $gold
       border-top: 0
       border-right: 0
       border-radius: 0
@@ -182,7 +182,7 @@ form div input[type='checkbox']
       height: .618em
       background: transparent
 
-    &:checked:focus
+  &:checked:focus
 
     & + label::before
       border-color: $red
