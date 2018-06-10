@@ -21,6 +21,9 @@ label
   h2
     margin-bottom: .25em
 
+  &:hover
+    color: $black-s1
+
 form
   margin: 0 0 ms(1)
   text-align: left
@@ -161,8 +164,17 @@ form div input[type='checkbox']
       transform: translateZ(0)
       transition: border $animate-time $animate-timing, transform $animate-time $animate-timing, background $animate-time $animate-timing, height $animate-time $animate-timing
 
+    &:hover
+      color: $black-s1
+
+      &::before
+        border-color: $black-s1
+
   &:focus
     outline: 0
+
+    & + label
+      color: $black-s1
 
     & + label::before
       border-color: $gold
