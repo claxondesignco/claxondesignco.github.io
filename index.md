@@ -10,18 +10,16 @@ page-title: Claxon Design Co.
 <div class="columns columns-2" markdown="1">
 
 <div markdown="1" class="with-aside">
-# Website Redesign  
+# Communication.  
 
-## What Problems are we Solving?  
+It's how we inform, teach, and sell.
 
-The current site is nice, but ultimately boring. There are few interest-grabbing points on the site, and very little visual interest; the audience is likely to scan it and move on. Given the state of the content, this is the best-case-scenario.  
-
-The site also lacks a "modern" website feel; no animations, no real "UX" to speak of, etc.—no "delight"; it's boring.  
+Every piece of business relies on communication. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Curabitur blandit tempus porttitor. 
 
 </div>
-  <div class="aside">
-    <img src="http://endangered.photo/400/300">
-  </div>
+{::nomarkdown}
+<img class="aside" src="http://placehold.it/400x700">
+{:/}
 </div>
 </section>  
 
@@ -102,7 +100,7 @@ The site also lacks a "modern" website feel; no animations, no real "UX" to spea
 
 #### Pull quotes, testimonials, et al
 
-<blockquote class="pull-quote"><p>It's been fantastic working with Adam; he's fast and talented, with good creative vision, strong communication skills, and a willingness to collaborate that not all designers&nbsp;possess.</p><footer>— <cite><a href="http://www.rocket-strategy.com">Kristen Proctor | Founder, Rocket Strategy</a></cite></footer></blockquote>  
+<blockquote class="pull-quote"><p>It's been fantastic working with Adam; he's fast and talented, with good creative vision, strong communication skills, and a willingness to collaborate that not all designers&nbsp;possess.</p><footer>— <cite>Kristen Proctor | Founder, Rocket Strategy</cite></footer></blockquote>  
 
 </section>  
 
