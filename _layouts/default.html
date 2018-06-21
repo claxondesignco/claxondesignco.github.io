@@ -14,17 +14,18 @@
   </head>
   <body>
     <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-    <nav role="navigation">
-      <button id="toggle" aria-label="Navigation Menu" aria-expanded="true">Menu</button>
-      <ul id="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/work/">Work</a></li>
-      </ul>
-    </nav>
-    <main role="main">
+    <header role="banner">
       <a href="/" class="logo-link" title="Claxon Design Co. - Home">{% include logo_small.svg %}</a>
+      <nav role="navigation">
+        <button id="toggle" aria-label="Navigation Menu" aria-expanded="true"><span class="screen-reader-text">Menu</span>{% include menu-icon.svg %}</button>
+        <ul id="menu">
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/work/">Work</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" id="main">
       {{ content }}
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
