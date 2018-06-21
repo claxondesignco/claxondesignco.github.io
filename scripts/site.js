@@ -8,6 +8,7 @@ $("#toggle").click(function() {
   $( this ).attr('aria-expanded', function (i, attr) {
     return attr == 'true' ? 'false' : 'true'});
   $( "#menu" ).slideToggle( function() {});
+  $( "header[role=banner]" ).toggleClass("expanded");
 });
 
 $('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]').focus( function() {
