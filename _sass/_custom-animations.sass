@@ -1,5 +1,11 @@
 .js
 
+  [data-aos]
+    will-change: auto
+    -webkit-transform: translate3d(0, 0, 0)
+    -webkit-backface-visibility: hidden
+    -webkit-perspective: 1000
+
   [data-aos][data-aos][data-aos-duration="0"], body[data-aos-duration="0"] [data-aos]
     transition-duration: 0
 
@@ -123,7 +129,7 @@
   [data-aos^=fade][data-aos^=fade].aos-animate
     transform: translateY(0)!important
 
-  +keyframes(blank-out-bars)
+/** +keyframes(blank-out-bars)
     0%
       left: -5%
       right: 105%
@@ -134,17 +140,17 @@
       left: 105%
       right: -5%
 
-  [data-aos="blank-out"]
+/** [data-aos="blank-out"]
     position: relative
     transition-property: color
     transition-duration: 0ms
     transition-delay: 0.4s
     color: rgba(58,58,61,0)
 
-  [data-aos="blank-out"].aos-animate
+/** [data-aos="blank-out"].aos-animate
     color: rgba(58,58,61,1)
 
-  [data-aos="blank-out"]::after
+/** [data-aos="blank-out"]::after
     content: ""
     height: 1.333em
     background-color: rgba(58,58,61,1)
@@ -156,7 +162,7 @@
     right: 105%
     transition-delay: 0.4s
 
-  .dark [data-aos="blank-out"]
+/** .dark [data-aos="blank-out"]
     color: rgba(255, 255, 255, 0)
 
     &.aos-animate
@@ -165,6 +171,6 @@
     &::after
       background-color: rgba(255,255,255,1)
 
-  [data-aos="blank-out"].aos-animate::after
+/** [data-aos="blank-out"].aos-animate::after
     animation-name: blank-out-bars
     animation-duration: 0.8s
