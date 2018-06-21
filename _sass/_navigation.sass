@@ -1,12 +1,8 @@
 nav[role="navigation"]
   width: auto
-  position: fixed
-  top: 0
-  right: 0
-  z-index: 9
-  font-size: ms(-1)
+  font-size: ms(0)
   line-height: ms(2)
-  margin: calc(3.5594938219rem + 1em) 5% 0 0
+  padding: 0rem 1rem .4rem 1.25rem
 
   button#toggle
     background: none
@@ -23,27 +19,43 @@ nav[role="navigation"]
     padding: 0
     line-height: ms(-1)
     transition: all 250ms ease
+    text-align: left
+    width: 100%
+    min-height: 40px
 
-    &::before
-      content: ""
-      width: 1em
-      display: inline-block
-      border-top: 0.13rem solid $gold
-      border-bottom: 0.13rem solid $gold
-      height: 0.3em
-      margin: 0 0.7em 0.1em 0
+    & .menu-icon
+      height: ms(-1)
+      width: auto
+      transition: fill 350ms ease
+
+      path
+        transition: transform 350ms ease, opacity 200ms ease
 
     &:hover
       color: $red
 
-      &::before
-        border-color: $red
+      & .menu-icon
+        path
+          fill: var(--red)
+
+  #toggle[aria-expanded=true]
+    & .menu-icon
+      path:nth-of-type(1)
+        transform: rotate(35deg)
+        transform-origin: top left
+
+      path:nth-of-type(2)
+        opacity: 0
+        transition: opacity 450ms ease
+
+      path:nth-of-type(3)
+        transform: rotate(-35deg)
+        transform-origin: bottom left
 
   ul
     list-style: none
-    text-align: right
     display: block
-    margin: 0
+    margin: 0 0 ms(0)
     padding: 0
 
     &.hidden
@@ -53,8 +65,8 @@ nav[role="navigation"]
 
     li
       margin: 0
-      font-size: ms(-1)
-      line-height: ms(2)
+      font-size: ms(0)
+      line-height: ms(3)
       display: block
 
       a
@@ -63,7 +75,3 @@ nav[role="navigation"]
 .js
   #menu
     display: none
-
-@media (min-width: 1328px)
-  nav[role="navigation"]
-    margin: ms(5) ms(3) 0 0

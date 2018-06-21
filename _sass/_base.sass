@@ -21,10 +21,32 @@ body
   font-weight: 400
   margin: 0
   color: var(--black-t2)
-  padding: ms(5) 0 0!important
+  padding: 0 0 ms(4)!important
   margin: 0 0 0 !important
   width: 100%
   background: var(--white-t4)
+
+@media (min-width: 727px)
+  body
+    padding-bottom: 0!important
+
+header[role="banner"]
+  position: fixed
+  z-index: 9
+  bottom: 0
+  left: 0
+  box-shadow: 0 0 0.25rem 0.25rem rgba(106, 72, 30, 0.025)
+  transition: box-shadow 350ms ease-in-out
+  background: $white
+
+  &:hover
+    box-shadow: 0 0 1rem 1rem rgba(106, 72, 30, 0.1)
+
+@media (min-width: 727px)
+  header[role="banner"]
+
+    bottom: unset
+    top: 0
 
 main > p
   margin-left: 2.2rem
@@ -35,6 +57,8 @@ main > p
 
 li p
   margin: .5em 0
+  z-index: 1
+  position: relative
 
 p,
 li
@@ -54,7 +78,7 @@ small
   line-height: ms(2)
 
 h1
-  font-size: ms(4)
+  font-size: ms(3)
   line-height: ms(4)
   font-family: $serif
   -webkit-font-smoothing: subpixel-antialiased
@@ -62,6 +86,10 @@ h1
   color: var(--black-s1)
   position: relative
   margin: 0 0 ms(1)
+
+@media (min-width: 727px)
+  h1
+    font-size: ms(4)
 
 h1 + h2
   font-family: $sans
@@ -118,7 +146,8 @@ ul
   padding-left: ms(1)
   margin-bottom: ms(2)
 
-a,
+p a,
+li a,
 input[type='submit'],
 input[type='resit'],
 input[type='button']
@@ -136,3 +165,20 @@ input[type='button']
   &:hover
     color: var(--red-s1)
 
+.fancy
+  font-family: Garamond, Times, "Times New Roman", serif
+  font-style: italic
+  text-transform: lowercase
+  vertical-align: bottom
+  font-weight: 600
+  margin-left: -0.3em
+  letter-spacing: 0.05em
+
+.intro-type
+  font-family: var(--mono)
+  letter-spacing: 0.1em
+  font-size: ms(-1)
+  line-height: ms(1)
+  font-weight: 500
+  text-transform: uppercase
+  color: $black-t4
