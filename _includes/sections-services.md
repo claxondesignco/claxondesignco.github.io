@@ -12,7 +12,6 @@
     <li>UI/UX Design</li>
     <li>Responsive Design</li>
     <li>Front End Development</li>
-    <li>Wordpress Hosting</li>
     <li>Accessibility & Web Standards</li>
   </ul>
 </li>
