@@ -1,6 +1,6 @@
 section
   margin: 0
-  padding: ms(4) 5% ms(3) ms(5)
+  padding: ms(4) ms(2) ms(3) ms(5)
   width: 100%
   position: relative
 
@@ -9,6 +9,71 @@ section
     margin: 0
     padding: ms(6) ms(4) ms(5) ms(8)
     width: 100%
+
+#introduction
+  min-height: 95vh
+
+.hero
+  align-self: center
+
+  h1
+    font-family: var(--mono)
+    letter-spacing: 0.1em
+    font-size: ms(-1)
+    line-height: ms(1)
+    font-weight: 500
+    text-transform: uppercase
+    color: $gold-t3
+
+  h2
+    font-size: ms(4)
+    text-transform: none
+    line-height: ms(4)
+    font-family: $serif
+    -webkit-font-smoothing: subpixel-antialiased
+    font-weight: 900
+    color: var(--black-s1)
+    position: relative
+    margin: 0 0 ms(1)
+
+  p + p
+    display: inline
+    padding: 0.1em 0.3em
+    -webkit-box-decoration-break: clone
+    -ms-box-decoration-break: clone
+    -o-box-decoration-break: clone
+    box-decoration-break: clone
+    background: var(--white)
+    margin-left: -0.3em
+
+section[class^="full-aside-"]
+  display: grid
+  padding: 0
+  grid-template-rows: ms(4) auto ms(3)
+  grid-template-columns: ms(5) 1fr 1fr ms(2) 0px 0px 0px
+  align-items: center
+
+  .section-title
+    grid-area: section-title
+
+  .with-aside
+    grid-area: content
+
+  .aside,
+  img.aside
+    grid-area: full
+    margin: 0
+
+@media (min-width: 727px)
+  section[class^="full-aside-"]
+    grid-template-rows: ms(6) auto ms(5)
+    grid-template-columns: ms(8) 2fr 1fr ms(3) 1fr 1fr ms(4)
+
+section.full-aside-right
+  grid-template-areas: "section-title top-padding top-padding top-padding full full full" "section-title content content margin full full full"  "section-title bottom-padding bottom-padding margin full full full"
+
+section.full-aside-left
+  grid-template-areas: "section-title full top-padding top-padding top-padding" "section-title full margin content right-padding"  "section-title full margin bottom-padding right-padding"
 
 .section-title
   position: absolute
@@ -84,6 +149,7 @@ section.dark h1
 section.dark h2
   color: $white-t4
   -webkit-font-smoothing: antialiased
+  letter-spacing: 0.03em
 
 section.dark h1 + h2
   color: $white-s4
@@ -107,3 +173,116 @@ section.has-background
 
     &:hover
       color: $red-s1
+
+.ethics-section
+  position: relative
+
+  &::before
+    content: ""
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: top left
+    display: block
+    height: ms(6)
+    width: ms(6)
+    position: absolute
+    opacity: 0.2
+    top: -1em
+    left: -10%
+    z-index: 0
+    mix-blend-mode: multiply
+
+#charities::before
+    background-image: url(/assets/images/icon_charities.svg)
+
+#social-responsibility::before
+  background-image: url(/assets/images/icon_social-responsibility.svg)
+
+#honesty::before
+  background-image: url(/assets/images/icon_honesty.svg)
+
+#vc-funding::before
+  background-image: url(/assets/images/icon_funding.svg)
+  
+.portfolio-item-link
+  text-decoration: none
+  grid-column: 1/3
+  display: block
+
+  &:hover,
+  &:focus
+    .portfolio-item-header
+      h3
+        color: $gold-t4
+    .portfolio-item-image
+      transform: scale(1.03)
+
+.portfolio-item
+  width: auto
+  max-width: unset
+  display: grid
+  grid: ms(6) 1fr 1fr ms(3) 0px / 1fr 45% 45% 2.5%
+  height: 350px
+  position: relative
+  margin-bottom: ms(2)
+  grid-column: 1 / 3
+  max-width: ms(14)
+
+  &::before
+    position: absolute
+    content: ""
+    top: 0
+    right: 0
+    bottom: ms(3)
+    left: 0
+    background: -moz-linear-gradient(left, rgba(36,36,39,0.9) 0%, rgba(36,36,39,0) 100%)
+    background: -webkit-linear-gradient(left, rgba(36,36,39,0.9) 0%,rgba(36,36,39,0) 100%)
+    background: linear-gradient(to right, rgba(36,36,39,0.9) 0%,rgba(36,36,39,0) 100%)
+    z-index: 0
+    mix-blend-mode: multiply
+
+@media (min-width: 1280px)
+  .portfolio-item
+
+.portfolio-item-header
+  grid-area: 1/5/1/1
+  margin: 1em 0 0 0
+  z-index: 1
+  padding: 0.5em 0 3.5em ms(2)
+
+  & > h3
+    font-family: $serif
+    font-size: ms(2)
+    font-weight: 600
+    color: $white-t4
+    letter-spacing: 0.02em
+    margin: 0
+    line-height: 1em
+    transition: color 400ms ease
+
+  & > .intro-type
+    margin: 0
+    color: $gold-t3
+    font-size: ms(-1)
+    font-weight: 500
+
+.portfolio-item-background
+  width: 100%
+  height: 100%
+  object-fit: cover
+  grid-area: 1/1/4/5
+
+.portfolio-item-image
+  grid-area: 2/2/5/4
+  max-width: 100%
+  max-height: 100%
+  width: auto
+  height: auto
+  -webkit-filter: drop-shadow(0.5em 0.5em 1em rgba(0,0,0,0.4))
+  filter: drop-shadow(0.5em 0.5em 1em rgba(0,0,0,0.4))
+  position: relative
+  justify-self: end
+  align-self: start
+  transform: scale(1)
+  transition: transform 400ms ease
+  will-change: transform
