@@ -4,7 +4,7 @@
 
 <ul class="columns columns-2">  
 
-<li markdown="1">  
+<li class="ethics-section" id="charities" markdown="1">  
 
 <h3><span data-aos="fade-up" markdown="1">Charities</span></h3>  
 <span markdown="1" data-aos="fade-in">
@@ -12,7 +12,7 @@ I support non-profit organizations and charities and offer them reduced rates, i
 </span>
 
 </li>
-<li markdown="1">  
+<li class="ethics-section" id="social-responsibility" markdown="1">  
 
 <h3><span data-aos="fade-up" markdown="1">Social&nbsp;Responsibility</span></h3>  
 <span markdown="1" data-aos="fade-in">
@@ -20,7 +20,7 @@ I support civil rights and will not work with companies or organizations who eng
 </span>
 
 </li>
-<li markdown="1">  
+<li class="ethics-section" id="honesty" markdown="1">  
 
 <h3><span data-aos="fade-up" markdown="1">Honesty</span></h3>  
 <span markdown="1" data-aos="fade-in">
@@ -28,7 +28,7 @@ I work to ensure truthfulness in communication and message, and I don’t work w
 </span>
 
 </li>
-<li markdown="1">  
+<li class="ethics-section" id="vc-funding" markdown="1">  
 
 <h3><span data-aos="fade-up" markdown="1">VC&nbsp;Funding</span></h3>  
 <span markdown="1" data-aos="fade-in">
