@@ -1,6 +1,6 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700|Playfair+Display:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Karla:400,400i,700|Playfair+Display:400,700,900');
 @import "variables";
 @import "base";
 @import "navigation";
@@ -9,7 +9,6 @@
   height: ms(2);
   margin-bottom: calc((#{$ms1} - #{$ms0}) / 2);
   width: auto;
-	margin-left: 2.2rem;
 
   .cd {
     fill: $gold-t1;
@@ -22,12 +21,8 @@
 
 .logo-link {
   border-bottom: none;
-}
-
-@media (min-width: 727px) {
-	.logo-small {
-		margin-left: 5.8rem;
-	}
+  padding: 1rem 1.4rem .4rem 1rem;
+  display: block;
 }
 
 #color-scheme + ul {
