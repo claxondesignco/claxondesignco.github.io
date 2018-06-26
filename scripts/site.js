@@ -1,4 +1,8 @@
-document.documentElement.className = "js"
+function addJSClass() {
+    document.documentElement.className = "js";
+}
+
+window.onload = addJSClass();
 
 $(function() {
   $( "#toggle" ).attr('aria-expanded','false');
