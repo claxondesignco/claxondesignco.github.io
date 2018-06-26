@@ -1,0 +1,45 @@
+.lab-collection
+    padding: 0
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(ms(8), 1fr))
+    grid-column-gap: ms(4)
+    grid-row-gap: ms(2)
+
+.lab-list-item
+    list-style: none
+    margin: 0
+    padding: 0
+
+.lab-item
+    width: 100%
+    max-width: 100%
+    margin: 0
+
+    figcaption
+
+        h3
+            font-size: ms(0)
+            line-height: ms(1)
+            margin-bottom: ms(0)
+
+            a
+                margin-bottom: 0
+
+        a
+            margin-bottom: ms(0)
+            display: inline-block
+
+a.lab-link
+    &:nth-of-type(1)
+        border-bottom: none
+
+    &:hover + figcaption > footer h3 a.lab-link
+        color: $red-s1
+
+.lab-item_image
+    width: 100%
+    margin-bottom: ms(0)
+    box-shadow: 15px 15px 40px 5px rgba(148, 100, 48, 0.2),60px 20px 90px rgba(0,0,0,0.05)
+
+.lab-item-codepenlink
+    font-size: ms(-1)

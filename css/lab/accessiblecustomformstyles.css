@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333338;
+}
+
+form {
+  font: 1rem/1.5em sans-serif;
+  margin: 4em auto;
+  width: 95%;
+}
+@media (min-width: 670px) {
+  form {
+    width: 50%;
+  }
+}
+form div {
+  margin: 1em 0;
+  position: relative;
+  transition: margin 200ms ease-in-out;
+  transform: translateZ(0);
+}
+form div label {
+  color: #767676;
+  position: absolute;
+  left: calc(.618em + 2px);
+  top: calc(.618em + 2px);
+  transition: top 200ms ease-in-out, left 200ms ease-in-out, color 200ms ease-in-out;
+  transform: translateZ(0);
+}
+form div.active, form div.complete {
+  margin-top: 2.618em;
+}
+form div.active::first-of-type, form div.complete::first-of-type {
+  margin-top: 1em;
+}
+form div.active label, form div.complete label {
+  left: 0;
+  top: -1.618em;
+  color: #333338;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 0.618rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 2px solid #ebebeb;
+  background: #fafafa;
+  transition: border 200ms ease-in-out;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #34c1fc;
+}
+
+input[type="checkbox"] {
+  width: 2em;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0.5em 0 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  opacity: 0;
+}
+input[type="checkbox"] + label {
+  position: relative;
+  transform: translateZ(0);
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  width: 1.2em;
+  height: 1.2em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -1.8em;
+  border: 2px solid #ebebeb;
+  border-radius: 3px;
+  background: #fafafa;
+  vertical-align: top;
+  box-sizing: border-box;
+  transform: translateZ(0);
+  transition: border 200ms ease-in-out, transform 200ms ease-in-out, background 200ms ease-in-out, height 200ms ease-in-out;
+}
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+input[type="checkbox"]:focus + label::before {
+  border-color: #34c1fc;
+}
+input[type="checkbox"]:checked + label::before {
+  border-color: #037EB2;
+  border-top: 0;
+  border-right: 0;
+  border-radius: 0;
+  transform: rotate(-45deg);
+  height: 0.618em;
+  background: transparent;
+}
+input[type="checkbox"]:checked:focus + label::before {
+  border-color: #34c1fc;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+legend {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+}
+legend span {
+  color: #767676;
+}
