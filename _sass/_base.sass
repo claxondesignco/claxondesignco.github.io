@@ -33,20 +33,16 @@ body
 header[role="banner"]
   position: fixed
   z-index: 9
-  bottom: 0
+  top: 0
   left: 0
   box-shadow: 0 0 0.25rem 0.25rem rgba(106, 72, 30, 0.025)
+  box-shadow: 15px 5px 40px 5px rgba(148, 100, 48, 0.1),60px 20px 90px rgba(0,0,0,0.1)
   transition: box-shadow 350ms ease-in-out
   background: $white
 
   &:hover
     box-shadow: 0 0 1rem 1rem rgba(106, 72, 30, 0.1)
-
-@media (min-width: 727px)
-  header[role="banner"]
-
-    bottom: unset
-    top: 0
+    box-shadow: -15px 5px 40px 5px rgba(148, 100, 48, 0.1), -60px 20px 90px rgba(0,0,0,0.1)
 
 main > p
   margin-left: 2.2rem
@@ -54,6 +50,13 @@ main > p
 @media (min-width: 727px)
   main > p
     margin-left: 5.8rem
+
+main section:first-of-type:not(#introduction)
+    padding-top: ms(8)
+
+@media (min-width: 727px)
+    main section:first-of-type:not(#introduction)
+        padding-top: ms(6)
 
 li p
   margin: .5em 0
@@ -164,6 +167,10 @@ input[type='button']
 
   &:hover
     color: var(--red-s1)
+
+a img
+    text-shadow: none
+    border-bottom: 0
 
 .fancy
   font-family: Garamond, Times, "Times New Roman", serif
