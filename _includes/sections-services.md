@@ -6,24 +6,21 @@
 
 <li>  
  
-  <h3><span data-aos="fade-up">Web&nbsp;Development</span></h3>  
+  <h3><span data-aos="fade-up">Web</span></h3>  
   <ul data-aos="fade-in">  
     <li>Web Design</li>
     <li>UI/UX Design</li>
-    <li>Responsive Design</li>
     <li>Front End Development</li>
     <li>Accessibility & Web Standards</li>
   </ul>
 </li>
 <li markdown="1" >  
 
-  <h3><span data-aos="fade-up">Brand&nbsp;Identity</span></h3>  
+  <h3><span data-aos="fade-up">Brand</span></h3>  
   <ul data-aos="fade-in">  
     <li>Naming & Identity</li>  
-    <li>Visual Systems</li>
     <li>Logo Design</li>
     <li>Brand Guidelines</li> 
-    <li>Creative Direction</li>
   </ul>
 </li>
 <li markdown="1" >  
