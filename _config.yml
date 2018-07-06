@@ -36,6 +36,8 @@ collections:
   lab:
     output: true
     permalink: /lab/:name
+  portfolio:
+    output: false
 
 defaults:
   - scope:

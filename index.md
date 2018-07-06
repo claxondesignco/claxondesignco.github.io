@@ -37,40 +37,31 @@ page-title: Claxon Design Co.
 <h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Work</span></h2>
 
 <div class="portfolio-list">
-
-    <a class="portfolio-item-link" target="_blank" href="http://funkytaco.fun">
-      <figure class="portfolio-item" style="--brand-color: #f1bd58;">
-        <img class="portfolio-item-background" srcset="/assets/images/FunkyTaco-bg.jpeg 1x, /assets/images/FunkyTaco-bg@2x.jpeg 2x" aria-hidden="true">
-        <img class="portfolio-item-image" srcset="/assets/images/FunkyTaco.png 1x, /assets/images/FunkyTaco@2x.png 2x">
-        <figcaption class="portfolio-item-header">
-          <p class="intro-type">Logotype</p>
-          <h3>Funky Taco</h3>
+  {% for portfolio in site.portfolio %}
+    <a class="portfolio-item-link" target="_blank" href="{{ portfolio.link }}">
+      <figure class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
+        <img class="portfolio-item-background" srcset="/assets/images/{{ portfolio.background }}.jpeg 1x, /assets/images/{{ portfolio.background }}@2x.jpeg 2x" aria-hidden="true">
+        <img class="portfolio-item-image" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x">
+        <figcaption class="portfolio-item-header" alt="{{ portfolio.title }}">
+          <p class="intro-type">{{ portfolio.type }}</p>
+          <h3>{{ portfolio.title }}</h3>
         </figcaption>
       </figure>
     </a>
+  {% endfor %}
 
-    <a class="portfolio-item-link" target="_blank" href="http://theracareinc.com">
-      <figure class="portfolio-item" style="--brand-color: #525967;">
-        <img class="portfolio-item-background" src="/assets/images/theracare-bg.jpeg" aria-hidden="true">
-        <img class="portfolio-item-image" srcset="/assets/images/theracare.jpg 1x, /assets/images/theracare@2x.jpg 2x, /assets/images/theracare@3x.jpg 3x">
+  {% for lab in site.lab %}
+    <a class="portfolio-item-link" href="/lab/">
+      <figure class="portfolio-item" style="--brand-color: var(--black-t3)">
+        <img class="portfolio-item-background" srcset="/assets/images/lab/{{ lab.image }}-bg.jpg" aria-hidden="true">
+        <img class="portfolio-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }}">
         <figcaption class="portfolio-item-header">
-          <p class="intro-type">Website Design/Development</p>
-          <h3>Theracare, Inc.</h3>
+          <p class="intro-type">Lab</p>
+          <h3>{{ lab.short-title }}</h3>
         </figcaption>
       </figure>
     </a>
-
-    <a class="portfolio-item-link" target="_blank" href="http://totsindy.com">
-      <figure class="portfolio-item" style="--brand-color: #f98347">
-        <img class="portfolio-item-background" src="/assets/images/TOTSIndy-bg.jpg" aria-hidden="true">
-        <img class="portfolio-item-image" srcset="/assets/images/TOTSIndy.jpg 1x, /assets/images/TOTSIndy@2x.jpg 2x, /assets/images/TOTSIndy@3x.jpg 3x">
-        <figcaption class="portfolio-item-header">
-          <p class="intro-type">Website Design/Development</p>
-          <h3>TOTS Indy</h3>
-        </figcaption>
-      </figure>
-    </a>
-
+    {% endfor %}
 </div>
 
 </section>
