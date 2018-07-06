@@ -5,7 +5,7 @@ page-title: Claxon Design Co.
 
 <section id="introduction" class="full-aside-right" markdown="1">
 
-<div aria-hidden="true" class="section-title" data-section-title="Introduction"></div>  
+<div aria-hidden="true" class="section-title"><span>Introduction</span></div>
 
 <div markdown="1" class="hero with-aside">
 
@@ -23,16 +23,16 @@ page-title: Claxon Design Co.
 
 <section class="dark" markdown="1">  
 
-<div aria-hidden="true" class="section-title" data-section-title="Services"></div>  
+<div aria-hidden="true" class="section-title"><span>Services</span></div>
 {% include sections-services.md %}
 </section>
 <section class="light" markdown="1">  
-<div aria-hidden="true" class="section-title" data-section-title="Ethics"></div>  
+<div aria-hidden="true" class="section-title"><span>Ethics</span></div>
 {% include sections-ethics.md %}
 </section>
 
 <section>
-<div aria-hidden="true" class="section-title" data-section-title="Work"></div>  
+<div aria-hidden="true" class="section-title"><span>Work</span></div>
 
 <h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Work</span></h2>
 
@@ -66,13 +66,12 @@ page-title: Claxon Design Co.
 
 </section>
 <section class="red" markdown="1">  
-
-<div aria-hidden="true" class="section-title" data-section-title="Testimonials"></div>  
+<div aria-hidden="true" class="section-title"><span>Testimonials</span></div>  
 <blockquote class="testimonial"><p>It's been fantastic working with Adam; he's fast and talented, with good creative vision, strong communication skills, and a willingness to collaborate that not all designers&nbsp;possess.</p><footer>— <cite>Kristen Proctor | Founder, Rocket Strategy</cite></footer></blockquote>  
 
 </section>
 
 <section>
-<div aria-hidden="true" class="section-title" data-section-title="Contact"></div>  
+<div aria-hidden="true" class="section-title"><span>Contact</span></div>  
   {% include contactform.html %}
 </section>

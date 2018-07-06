@@ -38,7 +38,6 @@ section
     position: relative
     margin: 0 0 ms(1)
     background-color: var(--white-t4)
-    line-height:  1.5em
     display: inline
     padding: 0.1em 0.3em
     -webkit-box-decoration-break: clone
@@ -107,53 +106,44 @@ section.full-aside-left
   width: 2.7rem
   pointer-events: none
 
+  span
+    display: block
+    writing-mode: vertical-rl
+    -webkit-transform: rotate(180deg)
+    transform: rotate(180deg)
+    height: 95vh
+    width: 1em
+    position: fixed
+    top: 0
+    left: 1.9552499998rem
+    font: 500 normal normal #{ms(-1)}/1em $mono
+    line-height: ms(-1)
+    text-transform: uppercase
+    letter-spacing: .3em
+    text-align: center
+    color: $black-t5
+    vertical-align: bottom
+    mix-blend-mode: multiply
+
 @media (min-width: 727px)
   .section-title
     width: 6.4rem
 
-.section-title::before
-  content: ''attr(data-section-title)''
-  display: inline-block
-  transform: rotate(-90deg)
-  left: -(ms(1))
-  position: fixed
-  width: 10em
-  text-align: center
-  top: 49vh
-  color: rgba(0,0,0,.2)
-  font: 900 ms(-1) $mono
-  line-height: ms(-1)
-  text-transform: uppercase
-  letter-spacing: .3em
+    span
+      left: 5.6552499998rem
 
 @media (min-width: 727px)
   .section-title::before
     left: 2.369rem
 
-.section-title::after
-  content: ''
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  width: 6.4rem
-  pointer-events: none
-  box-shadow: inset 10px -1.323rem 20px 0 $white-t4, inset 10px 1.323rem 20px 0 $white-t4
-
 section.light
   background-color: $white-t1
-
-section.light .section-title::after
-  box-shadow: inset 10px -1.323rem 10px 0 $white-t1, inset 10px 1.323rem 10px 0 $white-t1
 
 section.light a
   text-shadow: 0 .09em 0 $white-t1, 0 .1em 0 $white-t1, .09em .12em 0 $white-t1, -.09em .12em 0 $white-t1
 
 section.red
   background-color: $red
-
-section.red .section-title::after
-  box-shadow: inset 10px -1.323rem 10px 0 $red, inset 10px 1.323rem 10px 0 $red
 
 section.red a
   text-shadow: 0 .09em 0 $red, 0 .1em 0 $red, .09em .12em 0 $red, -.09em .12em 0 $red
@@ -165,11 +155,9 @@ section.dark
   background-color: $black
   color: $white
 
-section.dark .section-title::before
-  color: rgba(255,255,255,.2)
-
-section.dark .section-title::after
-  box-shadow: inset 10px -1.323rem 10px 0 $black, inset 10px 1.323rem 10px 0 $black
+section.dark .section-title span
+  mix-blend-mode: hard-light
+  color: $white-s3
 
 section.dark a
   color: $gold-t2
@@ -199,9 +187,6 @@ section.dark h5
   color: $white
 
 section.has-background
-  .section-title::after
-    box-shadow: none
-
   a
     color: $gold-s1
     text-shadow: none
