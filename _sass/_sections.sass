@@ -239,7 +239,7 @@ section.has-background
   display: block
   max-width: ms(14)
   opacity: 1
-  transition: opacity 250ms ease
+  transition: opacity 400ms ease
   will-change: opacity
 
   &:first-of-type
@@ -260,28 +260,22 @@ section.has-background
   max-width: ms(14)
 
   &::before
-    position: absolute
     content: ""
-    top: 0
-    right: 25%
-    bottom: 2.353777776rem
-    left: 0
     z-index: 0
-    background: $red
     background-color: var(--brand-color)
-    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%)
-    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%)
+    opacity: 0.93
+    grid-area: 4/1/1/5
 
 @media (min-width: 880px)
   .portfolio-item::before
-    right: 60%
+    // right: 60%
 
 @media (min-width: 1100px)
   .portfolio-item
     margin: 0 0 ms(1)
 
   .portfolio-item::before
-    right: 25%
+    // right: 25%
 
 .portfolio-item-header
   grid-area: 1/5/1/1

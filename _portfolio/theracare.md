@@ -6,4 +6,5 @@ background: theracare-bg
 image: theracare
 image-extension: jpg
 type: Website Design/Development
+homepage: yes
 ---

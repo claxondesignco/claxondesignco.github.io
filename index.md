@@ -38,30 +38,34 @@ page-title: Claxon Design Co.
 
 <div class="portfolio-list">
   {% for portfolio in site.portfolio %}
-    <a class="portfolio-item-link" target="_blank" href="{{ portfolio.link }}">
-      <figure class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
-        <img class="portfolio-item-background" srcset="/assets/images/{{ portfolio.background }}.jpeg 1x, /assets/images/{{ portfolio.background }}@2x.jpeg 2x" aria-hidden="true">
-        <img class="portfolio-item-image {% if portfolio.filter %}filter{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x">
-        <figcaption class="portfolio-item-header" alt="{{ portfolio.title }}">
-          <p class="intro-type">{{ portfolio.type }}</p>
-          <h3>{{ portfolio.title }}</h3>
-        </figcaption>
-      </figure>
-    </a>
+    {% if portfolio.homepage %}
+      <a class="portfolio-item-link" target="_blank" href="{{ portfolio.link }}">
+        <figure class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
+          <img class="portfolio-item-background" srcset="/assets/images/{{ portfolio.background }}.jpeg 1x, /assets/images/{{ portfolio.background }}@2x.jpeg 2x" aria-hidden="true">
+          <img class="portfolio-item-image {% if portfolio.filter %}filter{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x">
+          <figcaption class="portfolio-item-header" alt="{{ portfolio.title }}">
+            <p class="intro-type">{{ portfolio.type }}</p>
+            <h3>{{ portfolio.title }}</h3>
+          </figcaption>
+        </figure>
+      </a>
+    {% endif %}
   {% endfor %}
 
   {% for lab in site.lab %}
-    <a class="portfolio-item-link" href="/lab/">
-      <figure class="portfolio-item" {% if lab.display-color %} style="--brand-color: #{{ lab.display-color }}" {% else %} style="--brand-color: var(--black-t3)" {% endif %}>
-        <img class="portfolio-item-background" srcset="/assets/images/lab/{{ lab.image }}-bg.jpg" aria-hidden="true">
-        <img class="portfolio-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }}">
-        <figcaption class="portfolio-item-header">
-          <p class="intro-type">Lab{% if lab.tags %}{% for tag in lab.tags %}, {{ tag }}{% endfor %}{% endif %}</p>
-          <h3>{{ lab.short-title }}</h3>
-        </figcaption>
-      </figure>
-    </a>
-    {% endfor %}
+    {% if lab.homepage %}
+      <a class="portfolio-item-link" href="/lab/">
+        <figure class="portfolio-item" {% if lab.display-color %} style="--brand-color: #{{ lab.display-color }}" {% else %} style="--brand-color: var(--black-t3)" {% endif %}>
+          <img class="portfolio-item-background" srcset="/assets/images/lab/{{ lab.image }}-bg.jpg" aria-hidden="true">
+          <img class="portfolio-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }}">
+          <figcaption class="portfolio-item-header">
+            <p class="intro-type">Lab{% if lab.tags %}{% for tag in lab.tags %}, {{ tag }}{% endfor %}{% endif %}</p>
+            <h3>{{ lab.short-title }}</h3>
+          </figcaption>
+        </figure>
+      </a>
+    {% endif %}
+  {% endfor %}
 </div>
 
 </section>

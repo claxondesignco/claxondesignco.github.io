@@ -6,4 +6,5 @@ background: TOTSIndy-bg
 image: TOTSIndy
 image-extension: jpg
 type: Website Design/Development
+homepage: yes
 ---
