@@ -9,7 +9,7 @@ _site/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -46,4 +46,4 @@ assets/.DS_Store
 */.DS_Store
 
 assets/images/.DS_Store
-Icon
+Icon
