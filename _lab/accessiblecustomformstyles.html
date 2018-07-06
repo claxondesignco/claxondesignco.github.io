@@ -1,5 +1,6 @@
 ---
 title: Accessible Custom Form Styles
+short-title: Accessible<br>Forms
 stylesheet: accessiblecustomformstyles.css
 image: accessiblecustomformstyles
 codepen: https://codepen.io/adamclaxon/pen/PpJWpJ
@@ -30,13 +31,13 @@ row-span: 2
 </form>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script>
-$('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]').focus( function() {
-$(this).parent().addClass('active');
-});
+  $('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]').focus( function() {
+    $(this).parent().addClass('active');
+  });
 
-$('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]').blur( function() {
-if( $(this).val().length === 0 ) {
-$(this).parent().removeClass('active');
-}
-});
+  $('input[type="text"], input[type="email"], input[type="tel"], input[type="url"]').blur( function() {
+    if( $(this).val().length === 0 ) {
+      $(this).parent().removeClass('active');
+    }
+  });
 </script>
