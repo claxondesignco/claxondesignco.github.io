@@ -52,7 +52,7 @@ page-title: Claxon Design Co.
 
   {% for lab in site.lab %}
     <a class="portfolio-item-link" href="/lab/">
-      <figure class="portfolio-item" style="--brand-color: var(--black-t3)">
+      <figure class="portfolio-item" {% if lab.display-color %} style="--brand-color: #{{ lab.display-color }}" {% else %} style="--brand-color: var(--black-t3)" {% endif %}>
         <img class="portfolio-item-background" srcset="/assets/images/lab/{{ lab.image }}-bg.jpg" aria-hidden="true">
         <img class="portfolio-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }}">
         <figcaption class="portfolio-item-header">
