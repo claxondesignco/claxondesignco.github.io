@@ -1,7 +1,7 @@
 ---
 title: Theracare, Inc.
 link: http://theracareinc.com
-brand-color: 525967
+brand-color: 3DA2AF
 background: theracare-bg
 image: theracare
 image-extension: jpg
