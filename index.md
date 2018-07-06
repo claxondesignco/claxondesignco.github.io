@@ -56,7 +56,7 @@ page-title: Claxon Design Co.
         <img class="portfolio-item-background" srcset="/assets/images/lab/{{ lab.image }}-bg.jpg" aria-hidden="true">
         <img class="portfolio-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }}">
         <figcaption class="portfolio-item-header">
-          <p class="intro-type">Lab</p>
+          <p class="intro-type">Lab{% if lab.tags %}{% for tag in lab.tags %}, {{ tag }}{% endfor %}{% endif %}</p>
           <h3>{{ lab.short-title }}</h3>
         </figcaption>
       </figure>
