@@ -344,11 +344,15 @@ section.has-background
   max-height: 100%
   width: auto
   height: auto
-  -webkit-filter: drop-shadow(0.5em 0.5em 1em rgba(0,0,0,0.4))
-  filter: drop-shadow(0.5em 0.5em 1em rgba(0,0,0,0.4))
+  box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.25)
   position: relative
   justify-self: end
   align-self: start
   transform: scale(1)
   transition: transform 400ms ease
   will-change: transform
+
+  &.filter
+    box-shadow: none
+    -webkit-filter: drop-shadow(0.5em 0.5em 1em rgba(0,0,0,0.4))
+    filter: drop-shadow(0.5em 0.5em 1em rgba(0,0,0,0.4))

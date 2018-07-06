@@ -41,7 +41,7 @@ page-title: Claxon Design Co.
     <a class="portfolio-item-link" target="_blank" href="{{ portfolio.link }}">
       <figure class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
         <img class="portfolio-item-background" srcset="/assets/images/{{ portfolio.background }}.jpeg 1x, /assets/images/{{ portfolio.background }}@2x.jpeg 2x" aria-hidden="true">
-        <img class="portfolio-item-image" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x">
+        <img class="portfolio-item-image {% if portfolio.filter %}filter{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x">
         <figcaption class="portfolio-item-header" alt="{{ portfolio.title }}">
           <p class="intro-type">{{ portfolio.type }}</p>
           <h3>{{ portfolio.title }}</h3>
