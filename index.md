@@ -33,18 +33,18 @@ page-title: Claxon Design Co.
 </section>
 
 <section class="light">
-<div aria-hidden="true" class="section-title"><span>Work</span></div>
+<div aria-hidden="true" class="section-title"><span>Portfolio</span></div>
 
 <h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Work</span></h2>
 
 <div class="portfolio-list">
   {% for portfolio in site.portfolio %}
     {% if portfolio.homepage %}
-      <a class="portfolio-item-link" target="_blank" href="{{ portfolio.link }}">
+      <a class="portfolio-item-link aos-init aos-animate" target="_blank" href="{{ portfolio.link }}" data-aos="fade-up">
         <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
           <img class="portfolio-item-image {% if portfolio.filter %}filter{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
           <header class="portfolio-item-header">
-            <h3><span data-aos="fade-up" class="aos-init aos-animate">{{ portfolio.title }}</span></h3>
+            <h3>{{ portfolio.title }}</h3>
           </header>
           <footer class="portfolio-item-footer">
             <p class="intro-type">{{ portfolio.type }}</p>
@@ -56,7 +56,7 @@ page-title: Claxon Design Co.
 
   {% for lab in site.lab %}
     {% if lab.homepage %}
-      <a class="portfolio-item-link" href="/lab/">
+      <a class="portfolio-item-link aos-init aos-animate" href="/lab/" data-aos="fade-up">
         <article class="portfolio-item" {% if lab.display-color %} style="--brand-color: #{{ lab.display-color }}" {% else %} style="--brand-color: var(--black-t3)" {% endif %}>
           <img class="portfolio-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }} thumbnail">
           <header class="portfolio-item-header">
