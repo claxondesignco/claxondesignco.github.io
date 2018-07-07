@@ -5,13 +5,14 @@
 <ul class="columns columns-4">  
 
 <li>  
- 
+
   <h3><span data-aos="fade-up">Web</span></h3>  
   <ul data-aos="fade-in">  
     <li>Web Design</li>
     <li>UI/UX Design</li>
     <li>Front End Development</li>
     <li>Accessibility & Web Standards</li>
+    <li>Serverless</li>
   </ul>
 </li>
 <li markdown="1" >  
@@ -20,7 +21,7 @@
   <ul data-aos="fade-in">  
     <li>Naming & Identity</li>  
     <li>Logo Design</li>
-    <li>Brand Guidelines</li> 
+    <li>Brand Guidelines</li>
   </ul>
 </li>
 <li markdown="1" >  
