@@ -233,9 +233,9 @@ section.has-background
 @media (min-width: 768px)
   .portfolio-list
     display: grid
-    grid-template-columns: 1fr 1fr
-    grid-column-gap: ms(1)
-    grid-row-gap: ms(2)
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    grid-column-gap: ms(4)
+    grid-row-gap: ms(4)
     border-bottom: 1px solid $white-s1
     padding-bottom: ms(3)
 
@@ -245,21 +245,26 @@ section.has-background
 
 @media (min-width: 1260px)
   .portfolio-list
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
     max-width: ms(14)
+    grid-column-gap: ms(3)
 
 .portfolio-item-link
   text-decoration: none
   grid-column: span 1
+  grid-row: span 2
   border: 0
   border-bottom: none
   text-shadow: none
+  background-color: $white-t1
+  display: block
 
   & h3
     display: inline-block
     border-bottom: .07em solid transparent
     transition: color 400ms ease-in-out, border 400ms ease-in-out
     text-decoration: none
+    text-shadow: none
 
   &:hover,
   &:focus
@@ -270,15 +275,22 @@ section.has-background
     .portfolio-item-image
       opacity: 0.6
 
-@media (min-width: 768px) and (max-width: 1260px)
+@media (min-width: 768px) and (max-width: 1259px)
+  .portfolio-item-link
+    grid-column: span 4
+
   .portfolio-item-link:first-of-type
+    grid-column: 1 / span 8
+
+@media (min-width: 1260px)
+  .portfolio-item-link
     grid-column: span 2
 
 .portfolio-item
   width: auto
   max-width: unset
   display: grid
-  grid: .7666705436rem .7666705436rem 13rem .7666705436rem .7666705436rem/1fr 20fr
+  grid: .7666705436rem .7666705436rem 13rem .7666705436rem .7666705436rem / #{ms(0)} 20fr
   grid-column-gap: 0.25rem
   grid-row-gap: 0.5em
   height: ms(10)
@@ -290,7 +302,15 @@ section.has-background
     border: 1px solid $white-s1
     border-right: none
     height: calc(100% - 2em)
+    width: ms(-4)
     align-self: center
+
+@media (min-width: 1260px)
+  .portfolio-item
+    grid: .7666705436rem .7666705436rem 13rem .7666705436rem .7666705436rem / 0 20fr
+
+    &::before
+      border: none
 
 .portfolio-item-header
   grid-area: 1/2/3/3
@@ -299,7 +319,7 @@ section.has-background
 
   & > h3
     font-family: $serif
-    font-size: ms(1)
+    font-size: ms(0)
     font-weight: 400
     text-transform: uppercase
     color: $black-t1
@@ -307,6 +327,9 @@ section.has-background
     margin: 0
     line-height: 1.3em
     -webkit-font-smoothing: antialiased
+
+    abbr
+      letter-spacing: .04em
 
 .portfolio-item-footer
   grid-area: 4/2/6/3
@@ -326,6 +349,7 @@ section.has-background
   object-fit: cover
   opacity: 1
   transition: opacity 400ms ease
+  // border: 0.5px solid $white-s3
 
   &.filter
     box-shadow: none
