@@ -10,7 +10,7 @@ section
     padding: ms(6) ms(4) ms(5) ms(8)
     width: 100%
 
-    header
+    > header
         margin-bottom: ms(5)
 
 #introduction
@@ -207,7 +207,7 @@ section.has-background
     width: ms(6)
     position: absolute
     opacity: 0.2
-    top: -1em
+    top: -(ms(3))
     left: -10%
     z-index: 0
     mix-blend-mode: multiply
@@ -224,98 +224,108 @@ section.has-background
 #vc-funding::before
   background-image: url(/assets/images/icon_funding.svg)
 
-@media (min-width: 1100px)
-    .portfolio-list
-        display: grid
-        grid-template-columns: repeat(auto-fill, 49%)
-        grid-column-gap: ms(2)
-        grid-row-gap: ms(2)
-        grid-auto-flow: row dense
-        max-width: ms(14)
+.portfolio-list
+  display: grid
+  grid-template-columns: 1fr
+  grid-column-gap: ms(2)
+  grid-row-gap: ms(1)
 
+@media (min-width: 768px)
+  .portfolio-list
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: ms(1)
+    grid-row-gap: ms(2)
+    border-bottom: 1px solid $white-s1
+    padding-bottom: ms(3)
+
+@media (min-width: 727px)
+  .portfolio-list
+    padding-bottom: ms(5)
+
+@media (min-width: 1260px)
+  .portfolio-list
+    grid-template-columns: 1fr 1fr 1fr
+    max-width: ms(14)
 
 .portfolio-item-link
   text-decoration: none
-  display: block
-  max-width: ms(14)
-  opacity: 1
-  transition: opacity 400ms ease
-  will-change: opacity
+  grid-column: span 1
+  border: 0
+  border-bottom: none
+  text-shadow: none
 
-  &:first-of-type
-    grid-column: span 2
+  & h3
+    display: inline-block
+    border-bottom: .07em solid transparent
+    transition: color 400ms ease-in-out, border 400ms ease-in-out
+    text-decoration: none
 
   &:hover,
   &:focus
-    opacity: 0.8
+
+    & h3
+      border-bottom: .07rem solid $gold-t2
+
+    .portfolio-item-image
+      opacity: 0.6
+
+@media (min-width: 768px) and (max-width: 1260px)
+  .portfolio-item-link:first-of-type
+    grid-column: span 2
 
 .portfolio-item
   width: auto
   max-width: unset
   display: grid
-  grid: ms(6) 1fr 1fr ms(3) 0px / 1fr 45% 45% 2.5%
-  height: 350px
+  grid: .7666705436rem .7666705436rem 13rem .7666705436rem .7666705436rem/1fr 20fr
+  grid-column-gap: 0.25rem
+  grid-row-gap: 0.5em
+  height: ms(10)
   position: relative
-  margin-bottom: ms(2)
-  max-width: ms(14)
 
   &::before
     content: ""
-    z-index: 0
-    background-color: var(--brand-color)
-    opacity: 0.93
-    grid-area: 4/1/1/5
-
-@media (min-width: 880px)
-  .portfolio-item::before
-    // right: 60%
-
-@media (min-width: 1100px)
-  .portfolio-item
-    margin: 0 0 ms(1)
-
-  .portfolio-item::before
-    // right: 25%
+    grid-area: 1/1/6/2
+    border: 1px solid $white-s1
+    border-right: none
+    height: calc(100% - 2em)
+    align-self: center
 
 .portfolio-item-header
-  grid-area: 1/5/1/1
-  margin: 1em 0 0 0
+  grid-area: 1/2/3/3
   z-index: 1
-  padding: 0.5em 0 3.5em ms(2)
+  align-self: start
 
   & > h3
     font-family: $serif
-    font-size: ms(2)
-    font-weight: 600
-    color: $white-t4
-    letter-spacing: 0.02em
+    font-size: ms(1)
+    font-weight: 400
+    text-transform: uppercase
+    color: $black-t1
+    letter-spacing: .09em
     margin: 0
-    line-height: 1em
-    transition: color 400ms ease
+    line-height: 1.3em
+    -webkit-font-smoothing: antialiased
+
+.portfolio-item-footer
+  grid-area: 4/2/6/3
+  align-self: center
 
   & > .intro-type
-    margin: 0
-    color: $black
-    font-size: ms(-1)
-    font-weight: 500
+    margin-bottom: 0.5em
+    margin-top: 0.5em
+    font-weight: 300
+    font-size: ms(-2)
+    color: $black-s1
 
-.portfolio-item-background
+.portfolio-item-image
+  grid-area: 3/2/4/3
   width: 100%
   height: 100%
   object-fit: cover
-  grid-area: 1/1/4/5
-
-.portfolio-item-image
-  grid-area: 2/2/5/4
-  max-width: 100%
-  max-height: 100%
-  width: auto
-  height: auto
-  box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.25)
-  box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.15), 15px 5px 40px 5px rgba(148, 100, 48, 0.1),60px 20px 90px rgba(0,0,0,0.1)
-  position: relative
-  justify-self: end
-  align-self: start
+  opacity: 1
+  transition: opacity 400ms ease
 
   &.filter
     box-shadow: none
