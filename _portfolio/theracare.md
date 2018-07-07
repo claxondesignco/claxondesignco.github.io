@@ -1,5 +1,5 @@
 ---
-title: Theracare, Inc.
+title: Theracare,&nbsp;Inc.
 link: http://theracareinc.com
 brand-color: 3DA2AF
 background: theracare-bg
