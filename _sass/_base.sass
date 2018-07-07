@@ -147,24 +147,19 @@ ul
   padding-left: ms(1)
   margin-bottom: ms(2)
 
-p a,
-li a,
+a,
 input[type='submit'],
 input[type='resit'],
 input[type='button']
-  -webkit-transition: color .2s ease-in-out
-  -moz-transition: color .2s ease-in-out
-  -o-transition: color .2s ease-in-out
-  -ms-transition: color .2s ease-in-out
-  transition: color .2s ease-in-out
-  color: var(--gold)
+  transition: color 400ms ease-in-out
+  color: $gold
   text-decoration: none
   border: 0
-  border-bottom: .07em solid currentColor
+  border-bottom: .07rem solid currentColor
   text-shadow: 0 .09em 0 $white-t4, 0 .1em 0 $white-t4, .09em .12em 0 $white-t4, -.09em .12em 0 $white-t4
 
   &:hover
-    color: var(--red-s1)
+    color: $red-s1
 
 a img
     text-shadow: none
