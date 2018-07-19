@@ -224,39 +224,46 @@ section.has-background
 #vc-funding::before
   background-image: url(/assets/images/icon_funding.svg)
 
-.portfolio-list
+.portfolio-list,
+.lab-collection
   display: grid
   grid-template-columns: 1fr
   grid-column-gap: ms(2)
   grid-row-gap: ms(1)
+  padding: 0
 
 @media (min-width: 768px)
-  .portfolio-list
+  .portfolio-list,
+  .lab-collection
     display: grid
+    grid-template-rows: repeat(auto-fill, ms(3) ms(1) ms(1) ms(1))
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     grid-column-gap: ms(4)
-    grid-row-gap: ms(4)
+    grid-row-gap: ms(2)
     border-bottom: 1px solid $white-s1
     padding-bottom: ms(3)
 
 @media (min-width: 727px)
-  .portfolio-list
+  .portfolio-list,
+  .lab-collection
     padding-bottom: ms(5)
 
 @media (min-width: 1260px)
-  .portfolio-list
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
-    max-width: ms(14)
-    grid-column-gap: ms(3)
+  .portfolio-list,
+  .lab-collection
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+    // grid-template-rows: repeat(auto, 2rem auto auto)
+    // max-width: ms(14)
+    // grid-column-gap: ms(3)
 
-.portfolio-item-link
+.portfolio-item-link,
+.lab-item-link
   text-decoration: none
   grid-column: span 1
   grid-row: span 2
   border: 0
   border-bottom: none
   text-shadow: none
-  background-color: $white-t1
   display: block
 
   & h3
@@ -272,47 +279,99 @@ section.has-background
     & h3
       border-bottom: .07rem solid $gold-t2
 
-    .portfolio-item-image
+    .portfolio-item-image,
+    .lab-item-image,
       opacity: 0.6
 
 @media (min-width: 768px) and (max-width: 1259px)
-  .portfolio-item-link
+  .portfolio-item-link,
+  .lab-list-item
     grid-column: span 4
+    grid-row: span 4
 
   .portfolio-item-link:first-of-type
     grid-column: 1 / span 8
+    grid-row: 1 / span 4
+
+    .portfolio-item-image,
+    .lab-item-image
+      object-fit: cover
+
+  .portfolio-item-link:nth-of-type(2)
+    grid-column: span 5
+    grid-row: span 4
+
+  .portfolio-item-link:nth-of-type(3)
+    grid-column: span 3
+    grid-row: span 4
+
+  .portfolio-item-link:nth-of-type(4)
+    grid-column: 5 / span 3
+    grid-row: span 4
+
+  .portfolio-item-link:nth-of-type(3)
+    grid-column: 1/ span 3
+    grid-row: 5/span 8
+    height: auto
+
+    .portfolio-item
+      grid: auto auto auto auto auto / .993rem 20fr
+      height: calc(23.5112300044rem + #{ms(2)} + #{ms(2)} + #{ms(2)})
 
 @media (min-width: 1260px)
-  .portfolio-item-link
-    grid-column: span 2
 
-.portfolio-item
+  .portfolio-item-link,
+  .lab-list-item
+    grid-column: span 4
+    grid-row: span 3
+
+  .portfolio-item-link:first-of-type
+    grid-column: 1 / span 4
+    grid-row: 1 / span 4
+
+  .portfolio-item-link:nth-of-type(2)
+    grid-column: span 4
+    grid-row: span 4
+
+  .portfolio-item-link:nth-of-type(3)
+    grid-column: span 3
+    grid-row: span 4
+
+  .portfolio-item-link:nth-of-type(4)
+    grid-column: 5 / span 3
+    grid-row: span 4
+
+  .portfolio-item-link:nth-of-type(3)
+    grid-column: 1/ span 3
+    grid-row: 5/span 8
+    height: auto
+
+    .portfolio-item
+      grid: auto auto auto auto auto / .993rem 20fr
+      height: calc(23.5112300044rem + #{ms(2)} + #{ms(2)} + #{ms(2)})
+
+.portfolio-item,
+.lab-item
   width: auto
   max-width: unset
   display: grid
-  grid: .7666705436rem .7666705436rem 13rem .7666705436rem .7666705436rem / #{ms(0)} 20fr
+  grid: auto auto auto auto auto / #{ms(0)} 20fr
   grid-column-gap: 0.25rem
   grid-row-gap: 0.5em
-  height: ms(10)
+  // height: ms(10)
   position: relative
 
   &::before
     content: ""
     grid-area: 1/1/6/2
-    border: 1px solid $white-s1
+    border: 1px dotted $white-s3
     border-right: none
     height: calc(100% - 2em)
-    width: ms(-4)
+    // width: ms(-4)
     align-self: center
 
-@media (min-width: 1260px)
-  .portfolio-item
-    grid: .7666705436rem .7666705436rem 13rem .7666705436rem .7666705436rem / 0 20fr
-
-    &::before
-      border: none
-
-.portfolio-item-header
+.portfolio-item-header,
+.lab-item-header
   grid-area: 1/2/3/3
   z-index: 1
   align-self: start
@@ -331,25 +390,43 @@ section.has-background
     abbr
       letter-spacing: .04em
 
-.portfolio-item-footer
+.portfolio-item-footer,
+.lab-item-footer
   grid-area: 4/2/6/3
   align-self: center
 
-  & > .intro-type
+.portfolio-item-footer,
+.lab-item-footer,
+.lab-list-item
+
+  & .intro-type
     margin-bottom: 0.5em
     margin-top: 0.5em
     font-weight: 300
     font-size: ms(-2)
     color: $black-s1
 
-.portfolio-item-image
+  & a.intro-type
+    display: inline-block
+    border-bottom: .07em solid transparent
+    transition: color 400ms ease-in-out, border 400ms ease-in-out
+
+    &:hover
+      border-bottom: .07rem solid $gold-t2
+
+.portfolio-item-image,
+.lab-item-image
   grid-area: 3/2/4/3
   width: 100%
+  max-width: 100%
   height: 100%
-  object-fit: cover
+  max-height: 100%
+  object-fit: contain
   opacity: 1
-  transition: opacity 400ms ease
-  // border: 0.5px solid $white-s3
+  transition: all 400ms ease
+  // filter: drop-shadow(15px 15px 40px rgba(148, 100, 48, 0.2))
+  will-change: opacity
+  object-fit: contain
 
-  &.filter
-    box-shadow: none
+  &.contain
+    object-fit: contain
