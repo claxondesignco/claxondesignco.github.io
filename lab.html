@@ -5,28 +5,41 @@ permalink: /lab/
 
 <section>
 
-    <div aria-hidden="true" class="section-title" data-section-title="Lab"></div>
-    <header>
-        <h1>Design and Development Experiments</h1>
-        <h2>Select experiements and proofs&ndash;of&ndash;concept in design and development.</h2>
-    </header>
-    <ul class="lab-collection">
-        {% for lab in site.lab %}
-        <li class="lab-list-item"{% if lab.row-span %}style="grid-row-end: span {{ lab.row-span }};"{% endif %}>
-            <figure class="lab-item">
-                <a class="lab-link" href="{{ lab.url }}">
-                    <img class="lab-item_image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x">
-                </a>
-                <figcaption>
-                    <footer>
-                        <h3><a class="lab-link" href="{{ lab.url }}">{{ lab.title }}</a></h3>
-                        {% if lab.codepen %}
-                            <a class="lab-item-codepenlink" href="{{ lab.codepen }}">View on Codepen</a>
-                        {% endif %}
-                    </footer>
-                </figcaption>
-            </figure>
-        </li>
-        {% endfor %}
-    </ul>
+  <div aria-hidden="true" class="section-title"><span>Lab</span></div>
+
+  <header>
+    <h1>Design and Development Experiments</h1>
+    <h2>Select experiements and proofs&ndash;of&ndash;concept in design and development.</h2>
+  </header>
+
+  <ul class="lab-collection">
+
+    {% for lab in site.lab %}
+
+    <li class="lab-list-item" {% if lab.row-span %}style="grid-row-end: span {{ lab.row-span }};" {% endif %}>
+      <a class="lab-item-link" href="{{ lab.url }}" title="View {{ lab.title }}">
+        <article class="lab-item">
+
+          <header class="lab-item-header">
+            <h3>{{ lab.short-title }}</h3>
+          </header>
+
+          <img class="lab-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x">
+
+          <footer class=lab-item-footer>
+            {% if lab.tags %}
+            <p class="intro-type">{{ lab.tags | sort | join: ", " }}</p>
+            {% endif %}
+          </footer>
+        </article>
+      </a>
+      {% if lab.codepen %}
+      <a class="lab-item-codepenlink intro-type" href="{{ lab.codepen }}">View on Codepen</a>
+      {% endif %}
+    </li>
+
+    {% endfor %}
+
+  </ul>
+
 </section>

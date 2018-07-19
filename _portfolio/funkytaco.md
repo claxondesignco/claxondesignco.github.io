@@ -6,5 +6,6 @@ background: FunkyTaco-bg
 image: FunkyTaco
 image-extension: png
 type: Logotype
-filter: yes
+contain: true
+homepage: false
 ---
