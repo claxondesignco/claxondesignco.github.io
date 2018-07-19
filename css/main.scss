@@ -4,20 +4,32 @@
 @import "variables";
 @import "base";
 @import "navigation";
-@import "labs";
 
 .logo-small {
   height: ms(1);
   margin-bottom: calc((#{$ms1} - #{$ms0}) / 2);
   width: auto;
 
+  path {
+    transition: fill 400ms ease;
+  }
+
   .cd {
     fill: $gold-t1;
+    transition: fill 400ms ease;
   }
 
   .co {
     fill: $black-t2;
   }
+
+  &:hover {
+    .cd {
+      fill: $black-t2;
+    }
+
+  }
+
 }
 
 .logo-link {
@@ -109,3 +121,4 @@ code {
 @import "decorations";
 @import "forms";
 @import "custom-animations";
+@import "labs";
