@@ -11,7 +11,7 @@
     <li>Web Design</li>
     <li>UI/UX Design</li>
     <li>Front End Development</li>
-    <li>Accessibility & Web Standards</li>
+    <li>Accessibility</li>
     <li>Serverless</li>
   </ul>
 </li>
