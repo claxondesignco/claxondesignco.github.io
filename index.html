@@ -46,10 +46,10 @@ page-title: Claxon Design Co.
     {% if lab.homepage %}
       <a class="portfolio-item-link aos-init aos-animate" href="/lab/" data-aos="fade-up">
         <article class="portfolio-item" {% if lab.display-color %} style="--brand-color: #{{ lab.display-color }}" {% else %} style="--brand-color: var(--black-t3)" {% endif %}>
-          <img class="portfolio-item-image{% if lab.contain %} contain{% endif %}" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }} thumbnail">
           <header class="portfolio-item-header">
             <h3><span data-aos="fade-up" class="aos-init aos-animate">{{ lab.short-title }}</span></h3>
           </header>
+          <img class="portfolio-item-image{% if lab.contain %} contain{% endif %}" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }} thumbnail">
           <footer class="portfolio-item-footer">
             <p class="intro-type">Lab{% if lab.tags %}, {{ lab.tags | sort | join: ", " }}{% endif %}</p>
           </footer>

@@ -35,8 +35,9 @@ plugins:
 collections:
   lab:
     output: true
-    permalink: /lab/:name
+    permalink: /lab/:title/
   portfolio:
+    permalink: /work/:title/
     output: false
 
 defaults:
