@@ -17,12 +17,16 @@ nav[role="navigation"]
 
     li
       margin: 0
-      font-size: ms(0)
+      font-size: ms(-1)
       line-height: ms(3)
       display: block
 
       a
         text-shadow: none
+        color: $gold
+
+        &:hover
+          color: $white-t1
 
 button#toggle
   background: none
@@ -49,14 +53,17 @@ button#toggle
     transition: fill 350ms ease
 
     path
-      transition: transform 350ms ease, opacity 200ms ease
+      fill: $gold
+
+    path
+      transition: transform 350ms ease, opacity 200ms ease, fill 400ms ease
 
   &:hover
-    color: $red
+    color: $white
 
     & .menu-icon
       path
-        fill: var(--red)
+        fill: var(--white)
 
 #toggle[aria-expanded=true]
   & .menu-icon

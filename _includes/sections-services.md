@@ -8,7 +8,7 @@
 
   <h3><span data-aos="fade-up">Web</span></h3>  
   <ul data-aos="fade-in">  
-    <li>Web Design</li>
+    <li>Design</li>
     <li>UI/UX Design</li>
     <li>Front End Development</li>
     <li>Accessibility</li>

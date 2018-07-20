@@ -15,17 +15,17 @@
   }
 
   .cd {
-    fill: $gold-t1;
+    fill: $gold;
     transition: fill 400ms ease;
   }
 
   .co {
-    fill: $black-t2;
+    fill: $white;
   }
 
   &:hover {
     .cd {
-      fill: $black-t2;
+      fill: $white-s1;
     }
 
   }
