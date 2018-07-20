@@ -26,6 +26,7 @@ section
     font-weight: 500
     text-transform: uppercase
     color: $gold-t3
+    margin-top: -4.9rem
 
   h2
     font-size: ms(4)
@@ -177,8 +178,9 @@ section.dark h2
 section.dark h1 + h2
   color: $white-s4
 
-section.dark h3
-  color: $white-s2
+section.dark h3,
+section.dark li h3 span
+  color: $white-s3
 
 section.dark h4
   color: $white-s2
@@ -236,7 +238,6 @@ section.has-background
   .portfolio-list,
   .lab-collection
     display: grid
-    // grid-template-rows: repeat(auto-fill, ms(3) ms(1) ms(1) ms(1))
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     grid-column-gap: ms(4)
     grid-row-gap: ms(-2)
@@ -251,10 +252,7 @@ section.has-background
 @media (min-width: 1260px)
   .portfolio-list,
   .lab-collection
-    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
     grid-template-rows: repeat(auto, 2rem auto auto)
-    // max-width: ms(14)
-    // grid-column-gap: ms(3)
 
 .portfolio-item-link,
 .lab-item-link
@@ -283,98 +281,39 @@ section.has-background
     .lab-item-image,
       opacity: 0.6
 
-@media (min-width: 768px) and (max-width: 1259px)
+    .portfolio-item::before,
+    .lab-item::before
+      border-color: $gold
+
+@media (min-width: 768px) 
   .portfolio-item-link,
   .lab-list-item
     grid-column: span 4
-    grid-row: span 4
-
-  .portfolio-item-link:first-of-type
-    grid-column: 1 / span 8
-    grid-row: 1 / span 4
-
-    .portfolio-item-image,
-    .lab-item-image
-      object-fit: cover
-
-  .portfolio-item-link:nth-of-type(2)
-    grid-column: span 5
-    grid-row: span 4
-
-  .portfolio-item-link:nth-of-type(3)
-    grid-column: span 3
-    grid-row: span 4
-
-  .portfolio-item-link:nth-of-type(4)
-    grid-column: 5 / span 3
-    grid-row: span 4
-
-  .portfolio-item-link:nth-of-type(3)
-    grid-column: 1/ span 3
-    grid-row: 5/span 8
-    height: auto
-
-    .portfolio-item
-      grid: auto auto auto auto auto / .993rem 20fr
-      height: calc(23.5112300044rem + #{ms(2)} + #{ms(2)} + #{ms(2)})
-
-@media (min-width: 1260px)
-
-  .portfolio-item-link,
-  .lab-list-item
-    grid-column: span 4
-    grid-row: span 3
-
-  .portfolio-item-link:first-of-type
-    grid-column: 1 / span 4
-    grid-row: 1 / span 2
-
-  .portfolio-item-link:nth-of-type(2)
-    grid-column: span 4
-    grid-row: span 4
-
-  .portfolio-item-link:nth-of-type(3)
-    grid-column: span 3
-    grid-row: span 4
-
-  .portfolio-item-link:nth-of-type(4)
-    grid-column: 5 / span 3
-    grid-row: span 4
-
-  .portfolio-item-link:nth-of-type(3)
-    grid-column: 1/ span 3
-    grid-row: 5/span 8
-    height: auto
-
-    .portfolio-item
-      grid: auto auto auto auto auto / .993rem 20fr
-      height: calc(23.5112300044rem + #{ms(2)} + #{ms(2)} + #{ms(2)})
+    grid-row: span 1
 
 .portfolio-item,
 .lab-item
   width: auto
   max-width: unset
-  display: grid
-  grid: auto auto auto auto auto / #{ms(0)} 20fr
-  grid-column-gap: 0.25rem
-  grid-row-gap: 0.5em
-  // height: ms(10)
+  height: 100%
   position: relative
+  padding-bottom: ms(1)
 
   &::before
     content: ""
-    grid-area: 1/1/6/2
-    border: 1px dotted $white-s3
+    border: 1px dotted $gold-t4
     border-right: none
-    height: calc(100% - 2em)
-    // width: ms(-4)
-    align-self: center
+    width: ms(-1)
+    display: block
+    position: absolute
+    top: 0.75rem
+    bottom: 0.8rem
+    left: -#{ms(1)}
+    transition: border-color 400ms ease
 
 .portfolio-item-header,
 .lab-item-header
-  grid-area: 1/2/3/3
-  z-index: 1
-  align-self: start
+  margin-bottom: ms(-1)
 
   & > h3
     font-family: $serif
@@ -392,7 +331,6 @@ section.has-background
 
 .portfolio-item-footer,
 .lab-item-footer
-  grid-area: 4/2/6/3
   align-self: center
 
 .portfolio-item-footer,
@@ -414,15 +352,21 @@ section.has-background
     &:hover
       border-bottom: .07rem solid $gold-t2
 
+.portfolio-item-footer,
+.lab-item-footer
+  position: absolute
+  bottom: 0
+
 .portfolio-item-image,
 .lab-item-image
-  grid-area: 3/2/4/3
   width: 100%
   max-width: 100%
   height: auto
-  max-height: 100%
+  max-height: calc(100% - 4.6rem)
   opacity: 1
   transition: all 400ms ease
   // filter: drop-shadow(15px 15px 40px rgba(148, 100, 48, 0.2))
   will-change: opacity
   object-fit: contain
+  display: block
+  margin: 0 auto ms(-1)
