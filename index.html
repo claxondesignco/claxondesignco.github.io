@@ -30,10 +30,10 @@ page-title: Claxon Design Co.
     {% if portfolio.homepage %}
       <a class="portfolio-item-link aos-init aos-animate" target="_blank" href="{{ portfolio.link }}" data-aos="fade-up">
         <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
-          <img class="portfolio-item-image{% if portfolio.contain %} contain{% endif %}{% if portfolio.type == "Logotype" %} logo{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
           <header class="portfolio-item-header">
             <h3>{{ portfolio.title }}</h3>
           </header>
+          <img class="portfolio-item-image{% if portfolio.contain %} contain{% endif %}{% if portfolio.type == "Logotype" %} logo{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
           <footer class="portfolio-item-footer">
             <p class="intro-type">{{ portfolio.type }}</p>
           </footer>

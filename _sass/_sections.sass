@@ -354,27 +354,23 @@ section.has-background
 .lab-item
   width: auto
   max-width: unset
-  display: grid
-  grid: auto auto auto auto auto / #{ms(0)} 20fr
-  grid-column-gap: 0.25rem
-  grid-row-gap: 0.5em
-  // height: ms(10)
   position: relative
+  padding-left: ms(-4)
 
   &::before
     content: ""
-    grid-area: 1/1/6/2
     border: 1px dotted $white-s3
     border-right: none
     height: calc(100% - 2em)
     // width: ms(-4)
-    align-self: center
+    height: 100%
+    display: block
+    position: absolute
+    left: -#{ms(-4)}
 
 .portfolio-item-header,
 .lab-item-header
-  grid-area: 1/2/3/3
   z-index: 1
-  align-self: start
 
   & > h3
     font-family: $serif
@@ -392,7 +388,6 @@ section.has-background
 
 .portfolio-item-footer,
 .lab-item-footer
-  grid-area: 4/2/6/3
   align-self: center
 
 .portfolio-item-footer,
@@ -416,7 +411,6 @@ section.has-background
 
 .portfolio-item-image,
 .lab-item-image
-  grid-area: 3/2/4/3
   width: 100%
   max-width: 100%
   height: auto
