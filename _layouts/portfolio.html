@@ -7,9 +7,9 @@ layout: default
   <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
 
   <div class="portfolio-hero with-aside">
-    <h1>{{ page.title }}</h1>
+    <h1{% if page.brand-color %} style="color: #{{ page.brand-color }}"{% endif %}>{{ page.title }}</h1>
   </div>
-  <img srcset="/assets/images/{{ page.background }}.jpeg 1x, /assets/images/{{ page.background }}.jpeg 2x" class="aside" aria-hidden="true">
+  <img srcset="/assets/images/{{ page.background }}.jpg 1x, /assets/images/{{ page.background }}.jpg 2x" class="aside" aria-hidden="true">
 </section>
 <section class="portfolio-introduction">
   <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
@@ -33,5 +33,5 @@ layout: default
       <img class="portfolio-preview" src="/assets/images/{{ page.image }}.{{ page.image-extension}}">
     </div>
   </div>
-  {% if page.link %}<p><a href="{{ page.link }}" target="_blank" class="portfolio-link">Visit {% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</a></p>{% endif %}
+  {% if page.link %}<p><a href="{{ page.link }}" target="_blank" class="portfolio-link"{% if page.brand-color %} style="color: #{{ page.brand-color }}"{% endif %}>Visit {% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</a></p>{% endif %}
 </section>
