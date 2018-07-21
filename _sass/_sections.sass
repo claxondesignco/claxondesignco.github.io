@@ -13,9 +13,6 @@ section
     > header
         margin-bottom: ms(5)
 
-#introduction
-  min-height: 95vh
-
 .hero
 
   h1
@@ -27,25 +24,16 @@ section
     text-transform: uppercase
     color: $gold-t3
     margin-top: -4.9rem
-
-  h2
-    font-size: ms(4)
-    text-transform: none
-    line-height: 1.4em
-    font-family: $serif
-    -webkit-font-smoothing: subpixel-antialiased
-    font-weight: 900
-    color: var(--black-s1)
-    position: relative
-    margin: 0 0 ms(1)
-    background-color: var(--white-t4)
-    display: inline
-    padding: 0.1em 0.3em
-    -webkit-box-decoration-break: clone
-    -ms-box-decoration-break: clone
-    -o-box-decoration-break: clone
-    box-decoration-break: clone
-    margin-left: -0.3em
+    
+    span.background
+      background-color: var(--white-t4)
+      display: inline
+      padding: 0.3em 0.8em
+      -webkit-box-decoration-break: clone
+      -ms-box-decoration-break: clone
+      -o-box-decoration-break: clone
+      box-decoration-break: clone
+      margin-left: -0.8em
 
   p + p
     display: inline
@@ -56,6 +44,26 @@ section
     box-decoration-break: clone
     background: var(--white)
     margin-left: -0.3em
+
+.hero h2,
+.portfolio-hero h1
+  font-size: ms(4)
+  text-transform: none
+  line-height: 1.4em
+  font-family: $serif
+  -webkit-font-smoothing: subpixel-antialiased
+  font-weight: 900
+  color: var(--black-s1)
+  position: relative
+  margin: 0 0 ms(1)
+  background-color: var(--white-t4)
+  display: inline
+  padding: 0.1em 0.3em
+  -webkit-box-decoration-break: clone
+  -ms-box-decoration-break: clone
+  -o-box-decoration-break: clone
+  box-decoration-break: clone
+  margin-left: -0.3em
 
 section[class^="full-aside-"]
   display: grid
@@ -73,16 +81,36 @@ section[class^="full-aside-"]
 
   .aside,
   img.aside
-    grid-area: 1/3/4/8
+    grid-area: 1/1/4/8
     margin: 0
-    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
-    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%)
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%)
     z-index: 0
+
+  &.portfolio-intro
+    align-items: end
+
+    img.aside
+      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 70%)
+      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 70%)
 
 @media (min-width: 727px)
   section[class^="full-aside-"]
     grid-template-rows: ms(6) auto ms(5)
     grid-template-columns: ms(8) 2fr 1fr ms(3) 1fr 1fr ms(4)
+  
+    .aside,
+    img.aside
+      grid-area: 1/3/4/8
+      -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
+      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
+
+    &.portfolio-intro
+      align-items: center
+
+      img.aside
+        -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
+        clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
 
 @media (min-width: 1000px)
   section[class^="full-aside-"]
@@ -234,20 +262,20 @@ section.has-background
   grid-row-gap: ms(1)
   padding: 0
 
+@media (min-width: 727px)
+  .portfolio-list,
+  .lab-collection
+    padding-bottom: ms(5)
+
 @media (min-width: 768px)
   .portfolio-list,
   .lab-collection
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
-    grid-column-gap: ms(4)
+    grid-column-gap: ms(6)
     grid-row-gap: ms(-2)
     border-bottom: 1px solid $white-s1
     padding-bottom: ms(3)
-
-@media (min-width: 727px)
-  .portfolio-list,
-  .lab-collection
-    padding-bottom: ms(5)
 
 @media (min-width: 1260px)
   .portfolio-list,
@@ -297,12 +325,14 @@ section.has-background
   max-width: unset
   height: 100%
   position: relative
-  padding-bottom: ms(1)
 
-  &::before
+@media (min-width: 727px)
+  .portfolio-item::before,
+  .lab-item::before
     content: ""
     border: 1px dotted $gold-t4
     border-right: none
+    border-bottom: none
     width: ms(-1)
     display: block
     position: absolute
@@ -370,3 +400,65 @@ section.has-background
   object-fit: contain
   display: block
   margin: 0 auto ms(-1)
+  border: 1px dotted var(--white-s1)
+
+.portfolio-introduction
+  padding-bottom: 0
+
+.portfolio-intro-type
+  color: $black-s1
+  font-size: ms(2)
+  line-height: ms(3)
+  font-family: $serif
+  margin-bottom: 0
+  max-width: 26em
+
+.portfolio-meta
+  margin: 0 0 ms(3)
+
+@media (min-width: 768px)
+
+.portfolio-meta-header
+  font-size: ms(0)
+  line-height: ms(1)
+  font-weight: 400
+  letter-spacing: 0.09em
+  text-transform: uppercase
+  margin: 0
+  display: inline-block
+  height: 1.5rem
+
+  &::after
+    content: ""
+    width: ms(0)
+    height: 1px
+    border-bottom: 1px dotted $gold-t1
+    margin: 0 0.5em 0.19em
+    display: inline-block
+    vertical-align: middle
+
+.portfolio-services-list
+  line-height: ms(1)
+  padding: 0
+  margin: 0
+  display: inline-block
+  padding: 0.1em 0
+  height: 1.5rem
+
+.portfolio-services-list-item
+  list-style: none
+  display: inline
+  line-height: ms(1)
+
+  &:not(:last-of-type)::after
+    content: ","
+
+.portfolio-content
+
+  .columns
+    align-items: start
+
+.portfolio-preview
+  width: 100%
+  border: 1px dotted var(--white-s1)
+  margin-bottom: ms(3)
