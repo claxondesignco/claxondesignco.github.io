@@ -23,7 +23,7 @@ section
     font-weight: 500
     text-transform: uppercase
     color: $gold-t3
-    margin-top: -4.9rem
+    margin-top: -1.5rem
     
     span.background
       background-color: var(--white-t4)
@@ -44,6 +44,16 @@ section
     box-decoration-break: clone
     background: var(--white)
     margin-left: -0.3em
+
+  & + img
+    display: none
+
+@media (min-width: 727px)
+  .hero h1
+    margin-top: -4.9rem
+
+  .hero + img
+    display: block
 
 .hero h2,
 .portfolio-hero h1
@@ -71,6 +81,7 @@ section[class^="full-aside-"]
   grid-template-rows: ms(4) auto ms(3)
   grid-template-columns: ms(5) 1fr 1fr ms(2) 0px 0px 0px
   align-items: center
+  height: 88vh
 
   .section-title
     grid-area: section-title
@@ -83,16 +94,17 @@ section[class^="full-aside-"]
   img.aside
     grid-area: 1/1/4/8
     margin: 0
-    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%)
-    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%)
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%)
     z-index: 0
 
   &.portfolio-intro
     align-items: end
 
     img.aside
-      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 70%)
-      clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 70%)
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%)
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%)
+      object-position: 35% top
 
 @media (min-width: 727px)
   section[class^="full-aside-"]
@@ -111,6 +123,12 @@ section[class^="full-aside-"]
       img.aside
         -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
         clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%)
+        object-position: center center
+
+@media (min-width: 768px)
+  section[class^="full-aside-"]
+    height: 95vh
+  
 
 @media (min-width: 1000px)
   section[class^="full-aside-"]
@@ -425,8 +443,7 @@ section.has-background
   letter-spacing: 0.09em
   text-transform: uppercase
   margin: 0
-  display: inline-block
-  height: 1.5rem
+  float: left
 
   &::after
     content: ""
@@ -441,9 +458,8 @@ section.has-background
   line-height: ms(1)
   padding: 0
   margin: 0
-  display: inline-block
-  padding: 0.1em 0
-  height: 1.5rem
+  display: block
+  float: left
 
 .portfolio-services-list-item
   list-style: none
