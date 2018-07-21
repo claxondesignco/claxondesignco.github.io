@@ -15,4 +15,8 @@ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut ferm
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
+</section>
+
+<section class="dark sketch">
 {% include sections-services.md %}
+</section>
