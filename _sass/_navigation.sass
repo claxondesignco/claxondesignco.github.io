@@ -1,8 +1,53 @@
+header[role="banner"]
+  position: fixed
+  z-index: 9
+  top: 0
+  left: 0
+  transition: box-shadow 350ms ease-in-out
+  background: $black-s1
+  opacity: 0.87
+
+.logo-small 
+  height: .8rem
+  margin-bottom: ms(-10)
+  width: auto
+
+  path
+    transition: fill 400ms ease
+
+  .cd
+    fill: $gold
+    transition: fill 400ms ease
+
+  .co
+    fill: $white
+
+  &:hover
+    .cd
+      fill: $white-s1
+
+.logo-link
+  border-bottom: none
+  padding: 1rem ms(-1) 0 ms(-1)
+  display: block
+
+@media (min-width: 727px)
+
+  .logo-small 
+    height: ms(1)
+    margin-bottom: calc((#{$ms1} - #{$ms0}) / 2)
+    width: auto
+
+  .logo-link
+    border-bottom: none
+    padding: 1rem 1.4rem .4rem 1rem
+    display: block
+
 nav[role="navigation"]
   width: auto
   font-size: ms(0)
   line-height: ms(2)
-  padding: 0rem 1rem .4rem 1.25rem
+  padding: 0rem ms(-1) .4rem ms(-1)
 
   ul
     list-style: none
@@ -28,6 +73,10 @@ nav[role="navigation"]
         &:hover
           color: $white-t1
 
+@media (min-width: 727px)
+  nav[role="navigation"]
+    padding: 0rem 1rem .4rem 1.25rem
+
 button#toggle
   background: none
   border: 0
@@ -39,7 +88,7 @@ button#toggle
   font-family: $sans
   font-size: inherit
   text-transform: uppercase
-  margin: 0 0 ms(-3)
+  margin: 0
   padding: 0
   line-height: ms(-1)
   transition: all 250ms ease
@@ -64,6 +113,10 @@ button#toggle
     & .menu-icon
       path
         fill: var(--white)
+
+@media (min-width: 727px)
+  button#toggle
+    margin: 0 0 ms(-3)
 
 #toggle[aria-expanded=true]
   & .menu-icon
