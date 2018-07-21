@@ -14,7 +14,7 @@ title: Work
 
   <div class="portfolio-list">
     {% for portfolio in site.portfolio reversed %}
-      <a class="portfolio-item-link aos-init aos-animate" href="{{ portfolio.url }}" data-aos="fade-up">
+    <a class="portfolio-item-link aos-init aos-animate" href="{{ portfolio.url }}" data-aos="fade-up"{% if portfolio.row-span %} style="grid-row: span {{ portfolio.row-span }}"{% endif %}>
         <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
           <header class="portfolio-item-header">
             <h3>{% if portfolio.short-title %}{{ portfolio.short-title }}{% else %}{{ portfolio.title }}{% endif %}</h3>
