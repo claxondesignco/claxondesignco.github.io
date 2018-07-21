@@ -82,6 +82,7 @@ textarea
   font-size: ms(0)
   border: 0
   border-bottom: ms(-8) solid $white-s1
+  border-radius: 0
   transition: border $animate-time $animate-timing
   font-size: ms(0)
   line-height: 1.5em
@@ -122,6 +123,7 @@ button::-moz-focus-inner
 
 textarea
   margin-top: .5rem
+  border-radius: 0
 
 textarea + label,
 div + label
@@ -223,3 +225,6 @@ fieldset
 form fieldset .columns > div
   margin: 0
 
+input[type=text], input[type=button]
+  -webkit-appearance: none
+  -webkit-border-radius: 0
