@@ -1,5 +1,6 @@
 ---
 title: Funky Taco
+date: 2018-01-01
 link: http://funkytaco.fun
 year: 2018
 brand-color: f1bd58
