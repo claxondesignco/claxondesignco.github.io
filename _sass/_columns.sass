@@ -36,11 +36,14 @@
 
 img.aside
   object-fit: cover
-  height: 88vh
+  height: 65vh
   min-height: 100%
 
+.hero + img.aside
+  height: 88vh
+
 @media (min-width: 768px)
-  img.aside
+  .hero + img.aside
     height: 95vh
 
 .columns li h3,
