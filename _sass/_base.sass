@@ -109,8 +109,7 @@ h2
   color: var(--black-t1)
   -webkit-font-smoothing: subpixel-antialiased
 
-h1 + p,
-h2 + p
+h1 + p
   font-size: ms(1)
   color: var(--black)
   line-height: ms(2)
@@ -124,9 +123,13 @@ ul + h3
 h3
   font-size: ms(0)
   line-height: ms(1)
-  margin: 0 0 ms(2)
   font-weight: 400
   color: var(--black-t1)
+  font-family: $serif
+  margin: 0 0 ms(1)
+  letter-spacing: 0.09em
+  text-transform: uppercase
+  -webkit-font-smoothing: subpixel-antialiased
 
 h4
   font-size: ms(0)
@@ -183,3 +186,8 @@ a img
 .concrete
   background-image: url(/assets/images/concrete_grain.jpg)
   background-blend-mode: multiply
+
+.clearfix::after
+  content: ""
+  display: table
+  clear: both
