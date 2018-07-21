@@ -1,6 +1,6 @@
 <div markdown="1">  
 
-<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Ethics&nbsp;&amp;&nbsp;Priorities</span></h2>
+<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Ethics &amp; Priorities</span></h2>
 
 <ul class="columns columns-2">  
 
