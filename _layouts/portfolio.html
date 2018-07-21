@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<section id="introduction" class="full-aside-right portfolio-intro">
+
+  <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
+
+  <div class="portfolio-hero with-aside">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <img srcset="/assets/images/{{ page.background }}.jpeg 1x, /assets/images/{{ page.background }}.jpeg 2x" class="aside" aria-hidden="true">
+</section>
+<section class="portfolio-introduction">
+  <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
+  <p class="portfolio-intro-type">{{ page.excerpt }}</p>
+</section>
+<section class="portfolio-content">
+  <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
+  <div class="columns columns-2">
+    <div>
+      <div class="portfolio-meta">
+        <h2 class="portfolio-meta-header">Services</h2>
+        <ul class="portfolio-services-list">
+          {% for services in page.services %}
+            <li class="portfolio-services-list-item intro-type">{{ services }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {{ content }}
+    </div>
+    <div>
+      <img class="portfolio-preview" src="/assets/images/{{ page.image }}.{{ page.image-extension}}">
+    </div>
+  </div>
+  {% if page.link %}<p><a href="{{ page.link }}" target="_blank" class="portfolio-link">Visit {{ page.title }}</a></p>{% endif %}
+</section>

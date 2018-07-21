@@ -38,7 +38,7 @@ collections:
     permalink: /lab/:title/
   portfolio:
     permalink: /work/:title/
-    output: false
+    output: true
 
 defaults:
   - scope:
@@ -46,6 +46,11 @@ defaults:
       type: "lab"
     values:
       layout: lab
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: portfolio
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
