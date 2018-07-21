@@ -1,28 +1,26 @@
 ---
 layout: default
 permalink: /work/
+title: Work
 ---
 
-<section markdown="1">
+<section markdown="1" class="page-header">
 
 <div aria-hidden="true" class="section-title"><span>Portfolio</span></div>
 
-<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Work</span></h2>
+  <header>
+    <h1><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Work</span></h1>
+  </header>
 
 <div class="portfolio-list">
   {% for portfolio in site.portfolio %}
-    {% if portfolio.homepage %}
-      <a class="portfolio-item-link aos-init aos-animate" target="_blank" href="{{ portfolio.link }}" data-aos="fade-up">
-        <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
-          <img class="portfolio-item-image{% if portfolio.contain %} contain{% endif %}{% if portfolio.type == "Logotype" %} logo{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
-          <header class="portfolio-item-header">
-            <h3>{{ portfolio.title }}</h3>
-          </header>
-          <footer class="portfolio-item-footer">
-            <p class="intro-type">{{ portfolio.type }}</p>
-          </footer>
-        </article>
-      </a>
-    {% endif %}
+    <a class="portfolio-item-link aos-init aos-animate" href="{{ portfolio.url }}" data-aos="fade-up">
+      <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
+        <header class="portfolio-item-header">
+          <h3>{% if portfolio.short-title %}{{ portfolio.short-title }}{% else %}{{ portfolio.title }}{% endif %}</h3>
+        </header>
+        <img class="portfolio-item-image{% if portfolio.contain %} contain{% endif %}{% if portfolio.type == "Logotype" %} logo{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
+      </article>
+    </a>
   {% endfor %}
 </div>
