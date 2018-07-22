@@ -4,6 +4,7 @@ date: 2017-12-06 21:35
 link: http://theracareinc.com
 year: 2017
 brand-color: 33A5AD
+secondary-brand-color: 33A5AD
 background: theracare-bg
 image: theracare
 image-extension: jpg

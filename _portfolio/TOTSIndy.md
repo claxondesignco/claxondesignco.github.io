@@ -5,6 +5,7 @@ date: 2016-12-06 21:35
 year: 2016
 link: http://totsindy.com
 brand-color: F86C3A
+secondary-brand-color: 172949
 background: TOTSIndy-bg
 image: TOTSIndy
 image-extension: jpg

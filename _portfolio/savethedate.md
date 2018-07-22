@@ -3,6 +3,7 @@ title: Save the Date
 date: 2018-02-06 21:35
 year: 2018
 brand-color: 357D6B
+secondary-brand-color: 253A48
 background: SaveTheDate-bg
 background-image-extension: jpg
 image: SaveTheDate
