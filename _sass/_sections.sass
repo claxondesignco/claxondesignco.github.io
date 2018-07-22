@@ -1,17 +1,38 @@
 section
   margin: 0
-  padding: ms(4) ms(2) ms(3) ms(5)
+  padding: 0 ms(2) ms(3) ms(5)
   width: 100%
   position: relative
 
 @media (min-width: 727px)
   section
     margin: 0
-    padding: ms(6) ms(4) ms(5) ms(8)
+    padding: 0 ms(4) ms(5) ms(8)
     width: 100%
 
     > header
         margin-bottom: ms(5)
+
+section
+  & + section.dark,
+  & + section.red,
+  & + section.light,
+  & + section.portfolio-introduction,
+  &.dark + section,
+  &.red + section,
+  &.light + section
+    padding: ms(4) ms(2) ms(3) ms(5)
+
+@media (min-width: 727px)
+  section
+    & + section.dark,
+    & + section.red,
+    & + section.light,
+    & + section.portfolio-introduction,
+    &.dark + section,
+    &.red + section,
+    &.light + section
+      padding: ms(6) ms(4) ms(5) ms(8)
 
 .hero
 
@@ -294,7 +315,6 @@ section.has-background
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     grid-column-gap: ms(6)
     grid-row-gap: ms(1)
-    border-bottom: 1px solid $white-s1
     padding-bottom: ms(3)
 
 @media (min-width: 1260px)
@@ -335,7 +355,7 @@ section.has-background
 
 @media (min-width: 768px) 
   .portfolio-item-link,
-  .lab-list-item
+  .lab-item-link
     grid-column: span 4
     grid-row: span 1
 
@@ -416,15 +436,11 @@ section.has-background
   margin: 0 auto ms(-1)
   border: 1px dotted var(--white-s1)
 
-.portfolio-introduction
-  padding-bottom: 0
-
 .portfolio-intro-type
   color: $black-s1
   font-size: ms(2)
   line-height: ms(3)
   font-family: $serif
-  margin-bottom: 0
   max-width: 26em
 
 .portfolio-meta
