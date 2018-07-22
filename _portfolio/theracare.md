@@ -3,14 +3,14 @@ title: Theracare, Inc.
 date: 2017-12-06 21:35
 link: http://theracareinc.com
 year: 2017
-brand-color: 203861
+brand-color: 33A5AD
 background: theracare-bg
 image: theracare
 image-extension: jpg
 type: Website Design/Development
 services: 
 - Web Design
-- Front End Development
+- WordPress Development
 homepage: true
 excerpt: "Located in the heart of Indiana, Theracare has been serving the therapy caregiver community since&nbsp;1996."
 ---
