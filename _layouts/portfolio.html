@@ -11,7 +11,7 @@ layout: default
   <div class="portfolio-hero with-aside">
     <h1>{{ page.title }}</h1>
   </div>
-  <img srcset="/assets/images/{{ page.background }}.jpg 1x, /assets/images/{{ page.background }}.jpg 2x" class="aside" aria-hidden="true">
+  <img srcset="/assets/images/{{ page.background }}.{% if page.background-extension %}{{ page.background-extension }}{% else %}jpg{% endif %}" class="aside" aria-hidden="true">
 </section>
 <section class="portfolio-introduction">
   <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
@@ -32,7 +32,7 @@ layout: default
       {{ content }}
     </div>
     <div>
-      <img class="portfolio-preview" src="/assets/images/{{ page.image }}.{{ page.image-extension}}">
+      <img class="portfolio-preview" src="/assets/images/{{ page.image }}.{% if page.image-extension %}{{ page.image-extension}}{% else %}jpg{% endif %}">
     </div>
   </div>
   {% if page.link %}<p><a href="{{ page.link }}" target="_blank" class="portfolio-link{% if page.brand-color %} brand-color{% endif %}">Visit {{ page.title }}</a></p>{% endif %}
