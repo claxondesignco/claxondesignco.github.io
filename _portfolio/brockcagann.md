@@ -6,6 +6,7 @@ year: 2017
 brand-color: 85919A
 secondary-brand-color: 333333
 background: brockcagann-bg
+background-extension: gif
 image: brockcagann
 image-extension: jpg
 type: Website Design/Development
