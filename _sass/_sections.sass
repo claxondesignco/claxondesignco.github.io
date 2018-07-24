@@ -437,11 +437,14 @@ section.has-background
   border: 1px dotted var(--white-s1)
 
 .portfolio-intro-type
-  color: $black-s1
+  color: $gold-s1
   font-size: ms(2)
   line-height: ms(3)
   font-family: $serif
   max-width: 26em
+
+.dark .portfolio-intro-type
+  color: $white-t1
 
 .portfolio-meta
   margin: 0 0 ms(3)
@@ -482,6 +485,7 @@ section.has-background
     content: ","
 
 .portfolio-content
+  border-bottom: 1px dotted $white-s1
 
   .columns
     align-items: start
@@ -493,3 +497,32 @@ section.has-background
   max-height: 90vh
   border: 1px dotted var(--white-s1)
   margin-bottom: ms(3)
+
+a.prev,
+a.next
+  display: none
+  visibility: hidden
+
+@media (min-width: 727px)
+  a.prev,
+  a.next
+    position: fixed
+    top: 50%
+    display: block
+    visibility: visible
+    border-bottom: none
+    background-color: var(--black-s1)
+    text-shadow: none
+    text-align: center
+    width: ms(2)
+    margin-top: -2rem
+    font-size: ms(1)
+    line-height: ms(2)
+    vertical-align: middle
+    z-index: 3
+    color: $white-s1
+    opacity: .87
+    padding-bottom: 0.2em
+
+a.next
+  right: 0

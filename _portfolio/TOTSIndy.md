@@ -1,7 +1,7 @@
 ---
 title: Theracare Outpatient Therapy Services
 short-title: TOTS Indy
-date: 2016-12-06 21:35
+date: 2017-10-06
 year: 2016
 link: http://totsindy.com
 brand-color: F86C3A

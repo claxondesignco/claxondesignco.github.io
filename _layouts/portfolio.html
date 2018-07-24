@@ -9,7 +9,7 @@ layout: default
   <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
 
   <div class="portfolio-hero with-aside">
-    <h1{% if page.secondary-brand-color %} style="color: var(--secondary-brand-color)"{% endif %}>{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
   </div>
   <img srcset="/assets/images/{{ page.background }}.jpg 1x, /assets/images/{{ page.background }}.jpg 2x" class="aside" aria-hidden="true">
 </section>
@@ -39,3 +39,29 @@ layout: default
 </section>
 
 {% if page.brand-color %}</div>{% endif %}
+{% if page.previous.url %}
+<a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">&#11064;</a>
+      {% endif %}
+{% if page.next.url %}
+<a class="next" href="{{page.next.url}}" title="{{page.next.title}}">&#10513;</a>
+{% endif %}
+
+<section>
+
+<div aria-hidden="true" class="section-title"><span>Portfolio</span></div>
+
+  <div class="portfolio-list">
+    {% for portfolio in site.portfolio reversed %}
+    {% if portfolio.url != page.url %}
+    <a class="portfolio-item-link aos-init aos-animate" href="{{ portfolio.url }}" data-aos="fade-up"{% if portfolio.row-span %} style="grid-row: span {{ portfolio.row-span }}"{% endif %}>
+        <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
+          <header class="portfolio-item-header">
+            <h3>{% if portfolio.short-title %}{{ portfolio.short-title }}{% else %}{{ portfolio.title }}{% endif %}</h3>
+          </header>
+          <img class="portfolio-item-image{% if portfolio.contain %} contain{% endif %}{% if portfolio.type == "Logotype" %} logo{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
+        </article>
+      </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

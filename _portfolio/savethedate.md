@@ -17,4 +17,4 @@ row-span: 2
 homepage: true
 ---
 
-For our upcoming wedding, I created a collage of illstrations, organized to represent the locations of importance (Indianapolis&mdash;top left, and Fort Myers&mdash;bottom right), the season (fall, top right), and the purpose (a wedding, bottom left).
+For our upcoming wedding, I created a collage of illustrations, organized to represent the locations of importance (Indianapolis&mdash;top left, and Fort Myers&mdash;bottom right), the season (fall, top right), and the purpose (a wedding, bottom left).
