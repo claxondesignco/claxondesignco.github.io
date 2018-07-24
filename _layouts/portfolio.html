@@ -31,9 +31,7 @@ layout: default
       </div>
       {{ content }}
     </div>
-    <div>
-      <img class="portfolio-preview" src="/assets/images/{{ page.image }}.{% if page.image-extension %}{{ page.image-extension}}{% else %}jpg{% endif %}">
-    </div>
+    <img class="portfolio-preview" src="/assets/images/{{ page.image }}.{% if page.image-extension %}{{ page.image-extension}}{% else %}jpg{% endif %}">
   </div>
   {% if page.link %}<p><a href="{{ page.link }}" target="_blank" class="portfolio-link{% if page.brand-color %} brand-color{% endif %}">Visit {{ page.title }}</a></p>{% endif %}
 </section>

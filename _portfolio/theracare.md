@@ -16,4 +16,6 @@ homepage: true
 excerpt: "Located in the heart of Indiana, Theracare has been serving the therapy caregiver community since&nbsp;1996."
 ---
 
-Theracare Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+Theracare’s site was outdated, not only in design, but in content. An overly complex, difficult to use CMS stood between the team and basic updates. Rik from Manifest Brand and I worked together to bring Theracare’s site to the modern web.
+
+We moved Theracare from the outdated, unusable CMS, to WordPress. To help the team update the site, we included customized templates and easy-to-use custom fields for each page, and simplified the WordPress backend to provide exactly what they need: an easy to use, modern site and design for attracting new clients and employees that last them for years to come.
