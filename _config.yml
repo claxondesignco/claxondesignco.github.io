@@ -16,9 +16,7 @@
 title: Claxon Design Co. — Web Design & Development
 email: adam@claxondesign.co
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The digital design agency of Adam Claxon, located in Fort Myers, Florida.
 keywords: fort myers creative agency, fort myers digital agency, fort myers branding, fort myers web design, digital creative agency, fort myers design agency, web design fort myers
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
