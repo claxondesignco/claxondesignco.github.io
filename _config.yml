@@ -1,9 +1,0 @@
-title: Claxon Design Co. — Web Design & Development 
-email: adam@claxondesign.co
-description: Web design and development focused on standards and accessibility.
-baseurl: ""
-url: "http://claxondesign.co"
-markdown: kramdown
-sass:
-  style: compressed
-incremental: true
