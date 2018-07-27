@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   The digital design agency of Adam Claxon, located in Fort Myers, Florida.
 keywords: fort myers creative agency, fort myers digital agency, fort myers branding, fort myers web design, digital creative agency, fort myers design agency, web design fort myers
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://claxondesign.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adamclaxon
 github_username:  adamclaxon
 
@@ -27,8 +27,6 @@ github_username:  adamclaxon
 sass:
   style: compressed
 markdown: kramdown
-plugins:
-  - jekyll-feed
 
 collections:
   lab:
