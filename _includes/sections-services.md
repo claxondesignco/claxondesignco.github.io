@@ -36,7 +36,7 @@
 
   <h3><span data-aos="fade-up">Print</span></h3>  
   <ul data-aos="fade-in">  
-    <li>Stationary</li>
+    <li>Stationery</li>
     <li>Apparel</li>
   </ul>
 </li>
