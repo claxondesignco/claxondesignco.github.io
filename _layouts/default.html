@@ -1,0 +1,38 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} &#10731; Claxon Design Co.{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} &#10731; Claxon Design Co.{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="Claxon Design Co.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+    {% include header.html %}
+    <main role="main" id="main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/scripts/site.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      $("form").validate();
+      AOS.init({
+        duration: 400,
+        easing: 'ease-in-sine',
+        offset: 10
+      });
+    </script>

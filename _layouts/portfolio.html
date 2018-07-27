@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+{% if page.brand-color %}<div style="--brand-color: #{{ page.brand-color }};{% if page.secondary-brand-color %} --secondary-brand-color: #{{ page.secondary-brand-color }}{% endif %}">{% endif %}
+
+<section id="introduction" class="full-aside-right portfolio-intro">
+
+  <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
+
+  <div class="portfolio-hero with-aside">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <img srcset="/assets/images/{{ page.background }}.{% if page.background-extension %}{{ page.background-extension }}{% else %}jpg{% endif %}" class="aside" aria-hidden="true">
+</section>
+<section class="portfolio-introduction">
+  <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
+  <p class="portfolio-intro-type">{{ page.excerpt }}</p>
+</section>
+<section class="portfolio-content">
+  <div aria-hidden="true" class="section-title"><span>{% if page.short-title%}{{ page.short-title }}{% else %}{{ page.title }}{% endif %}</span></div>
+  <div class="columns columns-2">
+    <div>
+      <div class="portfolio-meta clearfix">
+        <h2 class="portfolio-meta-header">Services</h2>
+        <ul class="portfolio-services-list">
+          {% for services in page.services %}
+            <li class="portfolio-services-list-item intro-type">{{ services }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {{ content }}
+    </div>
+    <img class="portfolio-preview" src="/assets/images/{{ page.image }}.{% if page.image-extension %}{{ page.image-extension}}{% else %}jpg{% endif %}">
+  </div>
+  {% if page.link %}<p><a href="{{ page.link }}" target="_blank" class="portfolio-link{% if page.brand-color %} brand-color{% endif %}">Visit {{ page.title }}</a></p>{% endif %}
+</section>
+
+{% if page.brand-color %}</div>{% endif %}
+{% if page.previous.url %}
+<a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">&#11064;</a>
+      {% endif %}
+{% if page.next.url %}
+<a class="next" href="{{page.next.url}}" title="{{page.next.title}}">&#10513;</a>
+{% endif %}
+
+<section>
+
+<div aria-hidden="true" class="section-title"><span>Portfolio</span></div>
+
+  <div class="portfolio-list">
+    {% for portfolio in site.portfolio reversed %}
+    {% if portfolio.url != page.url %}
+    <a class="portfolio-item-link aos-init aos-animate" href="{{ portfolio.url }}" data-aos="fade-up"{% if portfolio.row-span %} style="grid-row: span {{ portfolio.row-span }}"{% endif %}>
+        <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
+          <header class="portfolio-item-header">
+            <h3>{% if portfolio.short-title %}{{ portfolio.short-title }}{% else %}{{ portfolio.title }}{% endif %}</h3>
+          </header>
+          <img class="portfolio-item-image{% if portfolio.contain %} contain{% endif %}{% if portfolio.type == "Logotype" %} logo{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
+        </article>
+      </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,224 @@
+$animate-timing: ease-in-out
+$animate-time: 200ms
+$border-radius: 0
+$field-padding: .618rem
+$light-gray: $black-t3
+$text-color: $black
+$highlight: $black
+$text: $black
+$background: $black-t3
+$accent: $gold-t1
+$brand: $gold-t1
+$dark-highlight: $accent
+$light-background: $white-t4
+
+label
+  font-size: ms(-1)
+  line-height: 1.5em
+  font-family: $sans
+  color: $black-t4
+
+  &:hover
+    color: $black-s1
+
+form
+  margin: 0 0 ms(1)
+  text-align: left
+  max-width: ms(14)
+
+  div
+    margin: ms(1) 0
+    position: relative
+    transition: margin $animate-time ease-in-out
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translateZ(0)
+
+    label
+      font-size: ms(-1)
+      line-height: 1.5em
+      font-family: $sans
+      font-weight: bold
+
+.js form div label
+  position: absolute
+  left: 0
+  top: $ms1 - 1rem
+  transition: top $animate-time ease-in-out, color $animate-time ease-in-out
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translateZ(0)
+
+  &.error
+    top: auto
+    bottom: -$ms1
+    color: $red
+    font-size: ms(-1)
+    font-weight: 400
+
+.js form div
+  &.active,
+  &.complete
+
+    label
+      left: 0
+      top: -$ms0
+
+      &.error
+        top: auto
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+textarea
+  -webkit-appearance: none
+  width: 100%
+  padding: calc(#{$ms1} - 1rem) 0
+  font-size: ms(0)
+  border: 0
+  border-bottom: ms(-8) solid $white-s1
+  border-radius: 0
+  transition: border $animate-time $animate-timing
+  font-size: ms(0)
+  line-height: 1.5em
+  font-family: $sans
+  color: $black-s1
+  background-color: transparent
+
+  &:focus
+    outline: none
+    border-color: $brand
+
+textarea
+  border: ms(-8) solid $white-s1
+  padding: ms(-1) ms(-1)
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button
+  background: none
+  color: $gold
+  font: inherit
+  font-weight: 400
+  overflow: visible
+  padding: 0
+  margin-top: 1em
+  display: block
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  border-radius: 0
+
+input::-moz-focus-inner,
+button::-moz-focus-inner
+  border: 0
+  padding: 0
+
+textarea
+  margin-top: .5rem
+  border-radius: 0
+
+textarea + label,
+div + label
+  margin-top: 1em
+  display: block
+  font-weight: bold
+
+form div input[type='checkbox']
+  width: 2em
+  position: relative
+  overflow: hidden
+  margin: 0 .9em 0 0
+  padding: 0
+  border: 0
+  outline: 0
+  opacity: 0
+
+  & + label
+    position: relative
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translateZ(0)
+    transition: color $animate-time $animate-timing
+    color: $black-t2
+    font-size: $ms0
+    font-weight: 400
+    cursor: pointer
+
+    &::before
+      content: ''
+      width: ms(0)
+      height: ms(0)
+      display: block
+      position: absolute
+      top: 0
+      left: -1.6em
+      background: transparent
+      border: ms(-8) solid $white-s2
+      vertical-align: top
+      box-sizing: border-box
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: translateZ(0)
+      transition: border $animate-time $animate-timing, transform $animate-time $animate-timing, background $animate-time $animate-timing, height $animate-time $animate-timing
+
+    &:hover
+      color: $black-s1
+
+      &::before
+        border-color: $black-s1
+
+  &:focus
+    outline: 0
+
+    & + label
+      color: $black-s1
+
+    & + label::before
+      border-color: $gold
+
+  &:checked
+
+    & + label
+      color: $black-s1
+
+    & + label::before
+      border-color: $gold
+      border-top: 0
+      border-right: 0
+      border-radius: 0
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: rotate(-45deg)
+      height: .618em
+      background: transparent
+
+  &:checked:focus
+
+    & + label::before
+      border-color: $red
+
+fieldset
+  border: none
+  padding: 0
+  margin: ms(0) 0 ms(2)
+
+  h2
+    margin-bottom: 0
+
+  legend
+    width: 100%
+    display: block
+    margin-bottom: ms(0)
+    font-size: ms(0)
+
+  span
+    color: $background
+    font-weight: 300
+    font-size: ms(-1)
+    line-height: ms(0)
+
+form fieldset .columns > div
+  margin: 0
+
+input[type=text], input[type=button]
+  -webkit-appearance: none
+  -webkit-border-radius: 0

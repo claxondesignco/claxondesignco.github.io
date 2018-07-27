@@ -1,0 +1,56 @@
+<form id="contact_form" action="https://formspree.io/&#097;&#100;&#097;&#109;&#064;&#099;&#108;&#097;&#120;&#111;&#110;&#100;&#101;&#115;&#105;&#103;&#110;&#046;&#099;&#111;" method="POST">
+  <h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Hi, it's Nice to Meet You</span></h2>
+  <div class="columns columns-2" data-aos="fade-in" data-aos-delay="100">
+    <div>
+      <label for="name">Name</label>
+      <input required name="client-name" type="text" id="name">
+    </div>
+    <div>
+      <label for="company">Company/Organization</label>
+      <input required name="client-company" type="text" id="company">
+    </div>
+  </div>
+  <div class="columns columns-2" data-aos="fade-in" data-aos-delay="100">
+    <div>
+      <label for="email">Email Address</label>
+      <input required name="_replyto" type="email" id="email">
+    </div>
+    <div>
+      <label for="phone-number">Phone Number</label>
+      <input required name="client-phone" type="tel" id="phone-number">
+    </div>
+  </div>
+  <fieldset>
+    <legend data-aos="fade-up"><h3>Project Needs</h3><span>(select all that apply)</span>  
+    </legend>
+    <div class="columns columns-2" data-aos="fade-in" data-aos-delay="100">
+      <div>
+        <input id="website" type="checkbox" name="project-needs-website" value="Web Design and Development"><label for="website">Website Design &amp; Development</label><br>
+        <input id="branding" type="checkbox" name="project-needs-branding" value="Branding"><label for="branding">Branding</label><br>
+      </div>
+      <div>
+        <input id="content-strategy" type="checkbox" name="project-needs-content-strategy" value="Content Strategy"><label for="content-strategy">Content Strategy</label><br>
+        <input id="optimization" type="checkbox" name="project-needs-optimization" value="Accessibility review and optimization"><label for="optimization">Accessibility Review and Optimization</label>
+      </div>
+    </div>
+  </fieldset>
+  <div class="columns columns-2" data-aos="fade-in" data-aos-delay="100">
+    <div>
+      <label for="deadline">Deadline (in months)</label>
+      <input required name="deadline" type="text" id="deadline">
+    </div>
+    <div>
+      <label for="budget">Budget (a range is fine)</label>
+      <input required name="budget" type="text" id="budget">
+    </div>
+  </div>
+  <div>
+    <h3 data-aos="fade-up">Additional Information</h3>
+  </div>
+  <span data-aos="fade-in" data-aos-delay="100">
+    <label for="project-details">Project Details</label>
+    <textarea rows="3" id="project-details" name="project-details"></textarea>
+    <input type="submit" value="Send" />
+    <input type="hidden" name="_next" value="http://claxondesign.co/thanks/" />
+  </span>
+</form>

@@ -1,0 +1,93 @@
+---
+sitemap:
+  exclude: 'yes'
+---
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Karla:400,400i,700|Playfair+Display:400,700,900');
+@import "variables";
+@import "base";
+@import "navigation";
+
+#color-scheme + ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#color-scheme +ul + h4 {
+  margin-top: ms(4)
+}
+
+#color-scheme + ul li {
+	margin: 0;
+	padding: 0;
+}
+
+#color-scheme + ul li::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+}
+
+figure {
+  display: inline-block;
+  position: relative;
+  margin: 1em 0 2em;
+  max-width: 24%;
+  width: 24%;
+}
+
+@import "sections";
+
+@import "columns";
+
+.color-block {
+	display: inline-block;
+	height: ms(6);
+	width: ms(6);
+	box-sizing: border-box;
+	padding: 0.5em 0 0 1em;
+	text-transform: uppercase;
+	font: 900 ms(-1) $mono;
+  line-height: ms(1);
+	letter-spacing: 0.05em;
+	color: $white-t4;
+	float: left;
+}
+
+.color-block.light {
+	color: $black
+}
+
+.color-block-variations {
+	height: ms(6);
+	width: ms(8);
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: ms(-1);
+	float: left;
+	overflow: hidden;
+}
+
+.color-block-variations .color-block {
+	width: 50%;
+	height: 52%;
+	font-size: 0.8em;
+	display: block;
+}
+
+@import "testimonials";
+
+code {
+	background: $white-s1;
+	padding: 0.5em 1em;
+	border-radius: 2px;
+}
+@import "decorations";
+@import "forms";
+@import "custom-animations";
+@import "labs";

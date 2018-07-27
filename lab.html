@@ -1,0 +1,27 @@
+---
+layout: default
+permalink: /lab/
+---
+
+<section markdown="1" class="page-header">
+
+<div aria-hidden="true" class="section-title"><span>Lab</span></div>
+
+  <header>
+    <h1>Design and Development Experiments</h1>
+    <h2>Select experiements and proofs&ndash;of&ndash;concept in design and development.</h2>
+  </header>
+
+  <div class="portfolio-list">
+    {% for lab in site.lab reversed %}
+    <a class="lab-item-link aos-init aos-animate" href="{{ lab.url }}" data-aos="fade-up"{% if lab.row-span %} style="grid-row: span {{ lab.row-span }}"{% endif %}>
+        <article class="lab-item" style="--brand-color: #{{ lab.brand-color }};">
+          <header class="portfolio-item-header">
+            <h3>{% if lab.short-title %}{{ lab.short-title }}{% else %}{{ lab.title }}{% endif %}</h3>
+          </header>
+          <img class="lab-item-image" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x">
+        </article>
+      </a>
+    {% endfor %}
+  </div>
+</section>

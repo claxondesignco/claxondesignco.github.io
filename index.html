@@ -1,0 +1,76 @@
+---
+layout: home
+page-title: Claxon Design Co.
+id: index
+---
+
+<section id="introduction" class="full-aside-right homepage-hero">
+
+  <div aria-hidden="true" class="section-title"><span>Introduction</span></div>
+
+  <div class="hero with-aside">
+    <h1><span class="background">Claxon Design Co. <span class="fancy">of</span> Fort&nbsp;Myers,&nbsp;FL</h1></span>
+    <h2>A Digital Design Agency</h2>
+  </div>
+  <img srcset="/assets/images/hero.jpg 1x, /assets/images/hero@2x.jpg 2x" class="aside" alt="Photograph of a computer on a desk">
+</section>
+
+<section id="services" class="dark sketch">
+
+<div aria-hidden="true" class="section-title"><span>Services</span></div>
+{% include sections-services.md %}
+</section>
+
+<section id="work">
+<div aria-hidden="true" class="section-title"><span>Portfolio</span></div>
+
+<h2><span data-aos="blank-out" data-aos-duration="0" data-aos-delay="400">Recent Work</span></h2>
+
+<div class="portfolio-list">
+  {% for portfolio in site.portfolio reversed %}
+    {% if portfolio.homepage %}
+    <a class="portfolio-item-link aos-init aos-animate" href="{{ portfolio.url }}" data-aos="fade-up"{% if portfolio.row-span %} style="grid-row: span {{ portfolio.row-span }}"{% endif %}>
+        <article class="portfolio-item" style="--brand-color: #{{ portfolio.brand-color }};">
+          <header class="portfolio-item-header">
+            <h3>{% if portfolio.short-title %}{{ portfolio.short-title }}{% else %}{{ portfolio.title }}{% endif %}</h3>
+          </header>
+          <img class="portfolio-item-image{% if portfolio.contain %} contain{% endif %}{% if portfolio.type == "Logotype" %} logo{% endif %}" srcset="/assets/images/{{ portfolio.image }}.{{ portfolio.image-extension }} 1x, /assets/images/{{ portfolio.image }}@2x.{{ portfolio.image-extension }} 2x" alt="{{ portfolio.title }} thumbnail">
+        </article>
+      </a>
+    {% endif %}
+  {% endfor %}
+
+  {% for lab in site.lab %}
+    {% if lab.homepage %}
+      <a class="portfolio-item-link aos-init aos-animate" href="/lab/" data-aos="fade-up">
+        <article class="portfolio-item" {% if lab.display-color %} style="--brand-color: #{{ lab.display-color }}" {% else %} style="--brand-color: var(--black-t3)" {% endif %}>
+          <header class="portfolio-item-header">
+            <h3><span data-aos="fade-up" class="aos-init aos-animate">{{ lab.short-title }}</span></h3>
+          </header>
+          <img class="portfolio-item-image{% if lab.contain %} contain{% endif %}" srcset="/assets/images/lab/{{ lab.image }}.jpg 1x, /assets/images/lab/{{ lab.image }}@2x.jpg 2x" alt="{{ lab.title }} thumbnail">
+          <footer class="portfolio-item-footer">
+            <p class="intro-type">Lab{% if lab.tags %}, {{ lab.tags | sort | join: ", " }}{% endif %}</p>
+          </footer>
+        </article>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+</section>
+
+<!-- <section id="testimonials" class="red concrete">
+  <div aria-hidden="true" class="section-title"><span>Testimonials</span></div>
+  <blockquote class="testimonial"><p>It's been fantastic working with Adam; he's fast and talented, with good creative vision, strong communication skills, and a willingness to collaborate that not all designers&nbsp;possess.</p><footer>— <cite>Kristen Proctor | Founder, Rocket Strategy</cite></footer></blockquote> -->
+
+</section>
+
+<section id="ethics" class="light">
+  <div aria-hidden="true" class="section-title"><span>Ethics</span></div>
+  {% include sections-ethics.md %}
+</section>
+
+<section id="contact">
+  <div aria-hidden="true" class="section-title"><span>Contact</span></div>
+  {% include contactform.html %}
+</section>

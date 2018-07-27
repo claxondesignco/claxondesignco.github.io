@@ -1,0 +1,88 @@
+.columns
+  margin: 0
+
+@media (min-width: 900px)
+  .columns.columns-2
+    grid: auto / 1fr 1fr
+    grid-column-gap: ms(3)
+
+.columns.columns-4
+  grid: auto / auto
+
+@media (min-width: 540px)
+  .columns.columns-4
+    grid: auto / auto auto
+    grid-column-gap: ms(3)
+
+@media (min-width: 880px)
+  .columns.columns-4
+    grid: auto / auto auto auto auto
+    grid-column-gap: ms(1)
+
+.columns
+  padding: 0
+  display: grid
+  align-items: center
+
+.with-aside
+  grid-column: 1 / 2
+
+.aside
+  grid-column: 2 / 2
+  width: 100%
+
+  img
+    object-fit: cover
+
+img.aside
+  object-fit: cover
+  height: 65vh
+  min-height: 100%
+
+.hero + img.aside
+  height: 88vh
+
+@media (min-width: 768px)
+  .hero + img.aside
+    height: 95vh
+
+.columns li h3,
+.columns li h4,
+.columns li p:first-child
+  font-family: $serif
+  font-size: ms(0)
+  font-weight: 400
+  margin: 0 0 ms(1)
+  letter-spacing: 0.09em
+  text-transform: uppercase
+  -webkit-font-smoothing: subpixel-antialiased
+  color: inherit
+
+.columns > li
+  list-style: none
+  margin-bottom: ms(2)
+  color: inherit
+  align-self: start
+
+.columns.columns-4 li ul
+  margin-top: ms(1)
+  display: block
+  margin-bottom: 0
+  list-style: none
+  padding: 0
+
+.columns.columns-4 li ul li
+  float: none
+  width: 100%
+  font-family: $sans
+  font-size: ms(0)
+  margin: 0
+  letter-spacing: 0
+  -webkit-font-smoothing: subpixel-antialiased
+
+
+.section.dark columns li h3,
+.section.dark columns li h4,
+.section.dark columns li p:first-child,
+section.dark .columns.columns-4 li ul li
+  -webkit-font-smoothing: antialiased

@@ -1,13 +1,9 @@
-
-# Created by https://www.gitignore.io/api/jekyll,osx,vim
-
 ### Jekyll ###
 _site/
 .sass-cache/
 .jekyll-metadata
 
-
-### OSX ###
+### macOS ###
 *.DS_Store
 .AppleDouble
 .LSOverride
@@ -16,6 +12,7 @@ _site/
 Icon
 # Thumbnails
 ._*
+
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
@@ -24,6 +21,7 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
@@ -31,6 +29,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+<<<<<<< HEAD
 
 ### Vim ###
 # swap
@@ -38,6 +37,7 @@ Temporary Items
 [._]*.sw[a-p]
 [._]s[a-v][a-z]
 [._]sw[a-p]
+
 # session
 Session.vim
 # temporary
@@ -45,5 +45,9 @@ Session.vim
 *~
 # auto-generated tag files
 tags
-
-# End of https://www.gitignore.io/api/jekyll,osx,vim
+assets/.DS_Store
+.DS_Store
+*.DS_Store
+*/.DS_Store
+assets/images/.DS_Store
+Icon

@@ -1,0 +1,31 @@
+.testimonial
+  background-color: rgba(36,36,39,.96)
+  color: $white-t4
+  -webkit-font-smoothing: subpixel-antialiased
+  display: inline-block
+  width: auto
+  max-width: ms(14)
+  margin: ms(1) 0 ms(4) 0
+
+.testimonial p
+  font: ms(1) $serif
+  line-height: ms(2)
+  margin: 0 0 ms(0)
+
+@media (min-width: 768px)
+  .testimonial p
+    font: ms(2) $serif
+    line-height: ms(3)
+    margin: 0 0 ms(1)
+
+.testimonial footer
+    text-align: right
+    font-size: ms(0)
+
+    cite a
+      text-shadow: none
+      border: none
+
+      &:hover
+        color: $white-t4
+
