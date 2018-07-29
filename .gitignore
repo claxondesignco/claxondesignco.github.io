@@ -29,8 +29,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-<<<<<<< HEAD
-
 ### Vim ###
 # swap
 [._]*.s[a-v][a-z]
@@ -50,4 +48,4 @@ assets/.DS_Store
 *.DS_Store
 */.DS_Store
 assets/images/.DS_Store
-Icon
+robots.txt
