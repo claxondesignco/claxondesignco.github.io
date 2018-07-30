@@ -15,19 +15,29 @@ layout: compress
     <meta name="author" content="Claxon Design Co.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
   </head>
   <body>
     <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
     {% include header.html %}
-    <main role="main" id="main">
-      {{ content }}
+
+    <main role="main" id="barba-wrapper">
+      <div class="barba-container">
+        {% if page.previous.url %}
+          <a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">&#11064;</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}" title="{{page.next.title}}">&#10513;</a>
+        {% endif %}
+        {{ content }}
+      </div>
     </main>
     {% include footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="/scripts/site.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="/scripts/site.js"></script>
     <script>
       $("form").validate();
       AOS.init({
