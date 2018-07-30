@@ -25,9 +25,6 @@ body
   width: 100%
   background-color: var(--white-t4)
 
-main
-  min-height: 110vh
-
 main > p
   margin-left: 2.2rem
 
@@ -200,6 +197,7 @@ footer[role="contentinfo"]
   text-align: center
   height: ms(4)
   display: grid
+  grid-template-columns: 1fr 4fr 1fr
   align-content: center
 
   p
@@ -212,3 +210,12 @@ footer[role="contentinfo"]
       text-transform: uppercase
       width: 100%
       max-width: unset
+      grid-column: 2
+
+  .top
+    grid-column: 3
+    border-bottom: none
+    color: $black-t2
+    vertical-align: middle
+    text-align: right
+    margin-right: ms(3)
